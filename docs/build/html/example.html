@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7. Example scripts &mdash; Test Cases for UFS Weather Model 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-dataframe.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7.1. Plotting Hurricane Track and Intensity Map" href="TC_Tracks_Intensity.html" />
+    <link rel="prev" title="6. 2020 Janurary Cold Bias" href="2020ColdBias.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Test Cases for UFS Weather Model
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019Barry.html">2. 2019 Hurricane Barry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2018Michael.html">3. 2018 Hurricane Michael</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019Haloween.html">4. 2019 Halloween Storm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2017DenverPBL.html">5. 2017 Denver Inversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020ColdBias.html">6. 2020 Janurary Cold Bias</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Example scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TC_Tracks_Intensity.html">7.1. Plotting Hurricane Track and Intensity Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TC_WS_TimeSeries.html">7.2. Plotting Time Series of Vortex Center Max. WS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tc_radial_time_RMW.html">7.3. Plotting Radial WS with Leading Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Spatial_2m_T.html">7.4. Plotting Spatial Map of 2-m Temperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="500mb_HGT_ABS.html">7.5. Plotting 500mb Geopotential Height and Absolute Vorticity</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Test Cases for UFS Weather Model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">7. </span>Example scripts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/example.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="example-scripts">
+<span id="sphx-glr-auto-examples"></span><h1><span class="section-number">7. </span>Example scripts<a class="headerlink" href="#example-scripts" title="Permalink to this headline">¶</a></h1>
+<p>This page shows some example scripts using Python and NCL to plot UFS Weather Model outputs.</p>
+<div class="sphx-glr-thumbcontainer" tooltip="Plotting Hurricane Tracks and Intensity"><div class="figure align-default" id="id1">
+<img alt="Plotting Hurricane Tracks and Intensity" src="_images/sphx_glr_HurricanTrackIntensity_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/TC_Tracks_Intensity.html#sphx-glr-auto-examples-tc-tracks-intensity-py"><span class="std std-ref">Plotting Hurricane Track and Intensity Map</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Plotting Vortex Center Max. Wind Speed"><div class="figure align-default" id="id2">
+<img alt="Plotting Vortex Center Max. Wind Speed" src="_images/sphx_glr_tracker_ws_Barry_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/TC_WS_TimeSeries.html#sphx-glr-auto-examples-tc-ws-timeseries-py"><span class="std std-ref">Plotting Time Series of Vortex Center Max. WS</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Plotting 850 hPa Radial Wind Speed Variation with Leading times"><div class="figure align-default" id="id3">
+<img alt="Plotting 850 hPa Radial Wind Speed Variation with Leading times" src="_images/Radial_WS_TimeSeries_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="tc_radial_time_RMW.html#sphx-glr-auto-examples-tc-radial-time-rmw-py"><span class="std std-ref">Plotting Radial WS with Leading Times</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Plotting Spatial Map of 2-m Temperature"><div class="figure align-default" id="id4">
+<img alt="Plotting Spatial Map of 2-m Temperature" src="_images/FV3_T2_20200121_1200_GFSv16beta.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/Spatial_2m_T.html#sphx-glr-auto-examples-spatial-2m-t-py"><span class="std std-ref">Plotting Spatial Map of 2-m Temperature</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Plotting 500mb Geopotential Height and Absolute Vorticity"><div class="figure align-default" id="id5">
+<img alt="Plotting 500mb Geopotential Height and Absolute Vorticity&quot;" src="_images/500mb_2019110100_GFSv16beta_150s.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/500mb_HGT_ABS.html#sphx-glr-auto-examples-500mb-hgt-abs-py"><span class="std std-ref">Plotting 500mb Geopotential Height and Absolute Vorticity</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-clear"></div><div class="sphx-glr-footer class sphx-glr-footer-gallery docutils container">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="_downloads/1a74ff333aa809ccc5756c0f4a5f6a00/UFS_Examples.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Python/NCL</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">UFS_Examples.zip</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="TC_Tracks_Intensity.html" class="btn btn-neutral float-right" title="7.1. Plotting Hurricane Track and Intensity Map" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2020ColdBias.html" class="btn btn-neutral float-left" title="6. 2020 Janurary Cold Bias" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

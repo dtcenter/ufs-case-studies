@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Plotting Spatial Map of 2-m Temperature &mdash; Test Cases for UFS Weather Model 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-dataframe.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Test Cases for UFS Weather Model
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../Intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019Barry.html">2. 2019 Hurricane Barry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2018Michael.html">3. 2018 Hurricane Michael</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2019Haloween.html">4. 2019 Halloween Storm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2017DenverPBL.html">5. 2017 Denver Inversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2020ColdBias.html">6. 2020 Janurary Cold Bias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example.html">7. Example scripts</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Test Cases for UFS Weather Model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Plotting Spatial Map of 2-m Temperature</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/auto_examples/Spatial_2m_T.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-spatial-2m-t-py"><span class="std std-ref">here</span></a>     to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="plotting-spatial-map-of-2-m-temperature">
+<span id="sphx-glr-auto-examples-spatial-2m-t-py"></span><h1>Plotting Spatial Map of 2-m Temperature<a class="headerlink" href="#plotting-spatial-map-of-2-m-temperature" title="Permalink to this headline">¶</a></h1>
+<p>This example plots the spatial distribution of 2-m temperature from UFS WM outputs.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Ngl</span><span class="o">,</span> <span class="nn">Nio</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">import</span> <span class="nn">netCDF4</span> <span class="k">as</span> <span class="nn">nc</span>
+<span class="kn">from</span> <span class="nn">netCDF4</span> <span class="kn">import</span> <span class="n">Dataset</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Read in NetCDF data</span>
+<span class="n">fv3</span><span class="o">=</span><span class="n">nc</span><span class="o">.</span><span class="n">MFDataset</span><span class="p">(</span><span class="s1">&#39;GFSv16veta/GFSPRS.GrbF96.nc&#39;</span><span class="p">)</span>
+<span class="n">tmp2m</span><span class="o">=</span><span class="n">fv3</span><span class="p">[</span><span class="s2">&quot;TMP_2maboveground&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,:,:]</span>
+<span class="n">tmp2mF</span><span class="o">=</span><span class="p">(</span><span class="n">tmp2m</span><span class="o">-</span><span class="mf">273.15</span><span class="p">)</span><span class="o">*</span><span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="o">+</span><span class="mi">32</span>
+<span class="n">lat</span><span class="o">=</span><span class="n">fv3</span><span class="p">[</span><span class="s2">&quot;latitude&quot;</span><span class="p">]</span>
+<span class="n">lon</span><span class="o">=</span><span class="n">fv3</span><span class="p">[</span><span class="s2">&quot;longitude&quot;</span><span class="p">]</span>
+
+<span class="c1"># Read in NetCDF data</span>
+<span class="n">wks_type</span> <span class="o">=</span> <span class="s2">&quot;png&quot;</span>
+<span class="n">wks</span> <span class="o">=</span> <span class="n">Ngl</span><span class="o">.</span><span class="n">open_wks</span><span class="p">(</span><span class="n">wks_type</span><span class="p">,</span><span class="s2">&quot;FV3_T2_20200121_1200_GFSv16beta&quot;</span><span class="p">)</span>
+<span class="n">cnres</span>                 <span class="o">=</span> <span class="n">Ngl</span><span class="o">.</span><span class="n">Resources</span><span class="p">()</span>
+
+<span class="c1"># Contour resources</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnFillOn</span>        <span class="o">=</span> <span class="kc">True</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnFillPalette</span>   <span class="o">=</span> <span class="s2">&quot;NCV_bright_white&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnLinesOn</span>       <span class="o">=</span> <span class="kc">False</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnLineLabelsOn</span>  <span class="o">=</span> <span class="kc">False</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnLevelSelectionMode</span> <span class="o">=</span> <span class="s2">&quot;ManualLevels&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnMinLevelValF</span> <span class="o">=</span> <span class="o">-</span><span class="mi">30</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">cnMaxLevelValF</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">nglMaximize</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">tiXAxisString</span> <span class="o">=</span> <span class="s2">&quot;Lon&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">tiYAxisString</span> <span class="o">=</span> <span class="s2">&quot;Lat&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">lbOrientation</span>   <span class="o">=</span> <span class="s2">&quot;horizontal&quot;</span>
+
+<span class="c1"># Scalar field resources</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">sfXArray</span>        <span class="o">=</span> <span class="n">lon</span><span class="p">[:]</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">sfYArray</span>        <span class="o">=</span> <span class="n">lat</span><span class="p">[:]</span>
+
+<span class="c1"># Map resources</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpFillOn</span>               <span class="o">=</span> <span class="kc">False</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpGridAndLimbOn</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpLandFillColor</span>        <span class="o">=</span> <span class="s2">&quot;Transparent&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpOceanFillColor</span>       <span class="o">=</span> <span class="s2">&quot;Transparent&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpInlandWaterFillColor</span> <span class="o">=</span> <span class="s2">&quot;Transparent&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpLimitMode</span>        <span class="o">=</span> <span class="s2">&quot;LatLon&quot;</span>
+
+<span class="c1"># Map region</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpMaxLonF</span> <span class="o">=</span> <span class="o">-</span><span class="mi">65</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpMaxLatF</span> <span class="o">=</span> <span class="mi">55</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpMinLonF</span> <span class="o">=</span> <span class="o">-</span><span class="mi">125</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpMinLatF</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpDataBaseVersion</span>     <span class="o">=</span> <span class="s2">&quot;MediumRes&quot;</span>
+<span class="n">cnres</span><span class="o">.</span><span class="n">mpOutlineBoundarySets</span> <span class="o">=</span> <span class="s2">&quot;USStates&quot;</span>
+
+<span class="c1"># Plot resources</span>
+<span class="n">cnres0</span><span class="o">=</span><span class="n">cnres</span>
+<span class="n">cnres0</span><span class="o">.</span><span class="n">tiMainString</span> <span class="o">=</span> <span class="s2">&quot;FV3 GFSv16beta: 2m Temp (F) FV3 ~C~Initilized 12Z 17 Jan 2020 valid 12Z 21 Jan 2020&quot;</span><span class="c1">#&quot;{} ({}) at {:.2f} hPa with fast_sat&quot;.format(clwmr.long_name,clwmr.units,vpfull)</span>
+<span class="n">cnres0</span><span class="o">.</span><span class="n">tiMainFontHeightF</span><span class="o">=</span><span class="mf">0.012</span>
+<span class="n">contour</span> <span class="o">=</span> <span class="n">Ngl</span><span class="o">.</span><span class="n">contour_map</span><span class="p">(</span><span class="n">wks</span><span class="p">,</span><span class="n">tmp2mF</span><span class="p">[:,:],</span><span class="n">cnres0</span><span class="p">)</span>
+
+<span class="c1"># Draw the plot</span>
+<span class="n">Ngl</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">contour</span><span class="p">)</span>
+<span class="n">Ngl</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/FV3_T2_20200121_1200_GFSv16beta.png"><img alt="../_images/FV3_T2_20200121_1200_GFSv16beta.png" src="../_images/FV3_T2_20200121_1200_GFSv16beta.png" style="width: 600px;" /></a>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-spatial-2m-t-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/f1faafa3d72f74310bcb79a469da1163/Spatial_2m_T.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">Spatial_2m_T.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/596e18bf5fbec08c8bb40dbb56ed4101/Spatial_2m_T.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">Spatial_2m_T.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>7.3. Plotting Radial WS with Leading Times &mdash; Test Cases for UFS Weather Model 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-dataframe.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7.4. Plotting Spatial Map of 2-m Temperature" href="Spatial_2m_T.html" />
+    <link rel="prev" title="7.2. Plotting Time Series of Vortex Center Max. WS" href="TC_WS_TimeSeries.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Test Cases for UFS Weather Model
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019Barry.html">2. 2019 Hurricane Barry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2018Michael.html">3. 2018 Hurricane Michael</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019Haloween.html">4. 2019 Halloween Storm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2017DenverPBL.html">5. 2017 Denver Inversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020ColdBias.html">6. 2020 Janurary Cold Bias</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="example.html">7. Example scripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="TC_Tracks_Intensity.html">7.1. Plotting Hurricane Track and Intensity Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TC_WS_TimeSeries.html">7.2. Plotting Time Series of Vortex Center Max. WS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7.3. Plotting Radial WS with Leading Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Spatial_2m_T.html">7.4. Plotting Spatial Map of 2-m Temperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="500mb_HGT_ABS.html">7.5. Plotting 500mb Geopotential Height and Absolute Vorticity</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Test Cases for UFS Weather Model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="example.html"><span class="section-number">7. </span>Example scripts</a> &raquo;</li>
+        
+      <li><span class="section-number">7.3. </span>Plotting Radial WS with Leading Times</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tc_radial_time_RMW.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-tc-radial-time-rmw-py"><span class="std std-ref">here</span></a>     to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="plotting-radial-ws-with-leading-times">
+<span id="sphx-glr-auto-examples-tc-radial-time-rmw-py"></span><h1><span class="section-number">7.3. </span>Plotting Radial WS with Leading Times<a class="headerlink" href="#plotting-radial-ws-with-leading-times" title="Permalink to this headline">¶</a></h1>
+<p>This script plots the 850 hPa radial wind speed with leading times. The <a class="reference external" href="https://github.com/E3SM-Project/ACME-ECP/blob/master/components/homme/dcmip_tests/dcmip2016_test2_tropical_cyclone/preqx/radialAvg.ncl">radialAvg.ncl</a> needs to be staged to the same directory as the example ncl script below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>loadscript( &quot;radialAvg.ncl&quot;)
+
+begin
+
+; Define plot name
+pngname=&quot;ufs_GFSv16beta_radial_ws_time_plot&quot;
+wks=gsn_open_wks(&quot;png&quot;, pngname)
+
+; Read GFSv16beta vortext tracker results
+tcfile=&quot;GFSv16beta/fort.69&quot;
+delim=&quot;,&quot;
+tclines=asciiread(tcfile, -1, &quot;string&quot;)
+leadtimestr=tointeger(str_get_field(tclines, 6, delim))
+tclatstr=str_get_field(tclines, 7, delim)
+tclonstr=str_get_field(tclines, 8, delim)
+tcRMWstr=str_get_field(tclines, 20, delim)
+tcRMW=tofloat(tcRMWstr)
+
+
+tcdimsize=dimsizes(leadtimestr)-1
+critstr=str_get_field(tclines, 12, delim)
+crit=toint(critstr)
+count=0
+newtcRMW=new((/29/),float)
+do i=0,tcdimsize,1
+
+    if(crit(i).eq.34) then
+        newtcRMW(count)=tcRMW(i)
+        count=count+1
+    end if
+end do
+
+do i=0,tcdimsize,1
+    if(leadtimestr(i).eq.leadtime) then
+        tclat=tofloat(str_get_cols(tclatstr(i), 0, 3))*0.1
+        tclon=tofloat(str_get_cols(tclonstr(i), 0, 4))*0.1
+        print(tclat)
+        print(tclon)
+    end if
+end do
+psminlat= tclat
+psminlon= tclon*(-1)+360
+
+; Use wgrib2 to convert all the GFSPRS* outputs to netcdf format, and read in all the nc files
+ncfili=systemfunc(&quot;ls GFSv16beta/GFSPRS.GrbF*.nc&quot;)
+ncfiles=addfiles(ncfili,&quot;r&quot;)
+
+UGRD850=ncfiles[:]-&gt;UGRD_850mb
+VGRD850=ncfiles[:]-&gt;VGRD_850mb
+WS850=(wind_speed(UGRD850,VGRD850))*1.944
+
+
+; Make a array for leading time after landfall from f66 to f120
+time=(/66,72,78,84,90,96,102,108,114,120/)
+dsizes=dimsizes(UGRD850)
+
+; Define a new array for 850 hPa wind speed, /Pressure, latitude, longitude/
+verTMP=new((/dsizes(0),dsizes(1),dsizes(2)/),float)
+verTMP!0 =&quot;Pressure&quot;
+verTMP&amp;Pressure=time ;Trick to replace pressure with leading time data
+verTMP&amp;Pressure@units=&quot;hPa&quot;
+verTMP!1=&quot;latitude&quot;
+verTMP&amp;latitude=UGRD850&amp;latitude
+verTMP!2=&quot;longitude&quot;
+verTMP&amp;longitude=UGRD850&amp;longitude
+
+verTMP(0,:,:)=(/WS850(0,:,:)/)
+verTMP(1,:,:)=(/WS850(1,:,:)/)
+verTMP(2,:,:)=(/WS850(2,:,:)/)
+verTMP(3,:,:)=(/WS850(3,:,:)/)
+verTMP(4,:,:)=(/WS850(4,:,:)/)
+verTMP(5,:,:)=(/WS850(5,:,:)/)
+verTMP(6,:,:)=(/WS850(6,:,:)/)
+verTMP(7,:,:)=(/WS850(7,:,:)/)
+verTMP(8,:,:)=(/WS850(8,:,:)/)
+verTMP(9,:,:)=(/WS850(9,:,:)/)
+
+; Using the radialAvg3D function from the radialAvg.ncl
+outerRad=700.
+mergeInnerBins=True
+radiaverWS850=radialAvg3D(verTMP(:,:,:),lat,lon,verTMP&amp;Pressure,psminlat,psminlon,outerRad,mergeInnerBins)
+radiaverWS850f=tofloat(radiaverWS850)
+copy_VarCoords(radiaverWS850, radiaverWS850f)
+
+
+
+; Plot the contour field of wind speed at 850hPa
+resx=True
+resx@gsnDraw = False
+resx@gsnFrame=False
+ resx@cnFillOn             = True            ; turn on color fill
+resx@cnLinesOn            = False        ; turn lines on/off         ; True is default
+resx@cnLineLabelsOn       = False          ; turn line labels on/off   ; True is default
+resx@cnFillPalette=&quot;WhiteBlueGreenYellowRed&quot;;&quot;temp_19lev&quot;
+resx@cnLevelSelectionMode=&quot;ManualLevels&quot;
+ resx@tmXTOn=False
+ resx@tmYROn=False
+ resx@lbOrientation=&quot;Vertical&quot;
+resx@tiYAxisString =&quot;Forecast Hour&quot;
+resx@tiXAxisString=&quot;Radius (km)&quot;
+radiaverWS850f@units=&quot;knots&quot;
+radiaverWS850f@long_name=&quot;GFSv16beta 850hPa Wind Speed&quot;
+resx@cnLevelSelectionMode=&quot;ManualLevels&quot;
+resx@cnMinLevelValF= 10
+resx@cnMaxLevelValF= 60
+resx@cnLevelSpacingF= 2
+resx@trYMinF=66
+resx@trYMaxF=96
+resx@tmYLMode=&quot;Explicit&quot;
+resx@tmYLValues=(/66,72,78,84,90,96/)
+resx@tmYLLabels=(/66,72,78,84,90,96/)
+plot=gsn_csm_contour(wks, radiaverWS850f(0:5,:), resx)
+
+
+; Overlay the whiteline of radius of the maximum wind (RMW) to the wind speed contour plot
+res=True
+res@gsnDraw = False
+res@gsnFrame=False
+res@xyLineColors        = (/&quot;white&quot;/)
+res@xyLineThicknesses   = (/5.0/)
+plotxy=gsn_csm_xy(wks, newtcRMW(10:15), time(0:5),res)
+overlay(plot, plotxy)
+draw(plot)
+frame(wks)
+
+end
+</pre></div>
+</div>
+<div class="figure align-center" id="sphx-glr-download-auto-examples-tc-radial-time-rmw-py">
+<a class="reference internal image-reference" href="_images/Radial_WS_TimeSeries_thumb.png"><img alt="_images/Radial_WS_TimeSeries_thumb.png" src="_images/Radial_WS_TimeSeries_thumb.png" style="width: 600px;" /></a>
+</div>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="_downloads/7007adc8c81bee0c353131ecb95bb756/tc_radial_time_RMW.ncl"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">NCL</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">tc_radial_time_RMW.ncl</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Spatial_2m_T.html" class="btn btn-neutral float-right" title="7.4. Plotting Spatial Map of 2-m Temperature" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="TC_WS_TimeSeries.html" class="btn btn-neutral float-left" title="7.2. Plotting Time Series of Vortex Center Max. WS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

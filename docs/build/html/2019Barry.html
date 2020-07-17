@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. 2019 Hurricane Barry &mdash; Test Cases for UFS Weather Model 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery-dataframe.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. 2018 Hurricane Michael" href="2018Michael.html" />
+    <link rel="prev" title="1. Introduction" href="Intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Test Cases for UFS Weather Model
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Intro.html">1. Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. 2019 Hurricane Barry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#model-configuration-and-datasets">2.1. Model Configuration and Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#case-results">2.2. Case Results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hurricane-track-and-intensity">2.2.1. Hurricane Track and Intensity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comparison-with-satellite-data">2.2.2. Comparison with Satellite Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hovmoller-diagram-of-850-hpa-ws-after-landfall">2.2.3. Hovmöller diagram of 850 hPa WS after Landfall</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2018Michael.html">3. 2018 Hurricane Michael</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2019Haloween.html">4. 2019 Halloween Storm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2017DenverPBL.html">5. 2017 Denver Inversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2020ColdBias.html">6. 2020 Janurary Cold Bias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">7. Example scripts</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Test Cases for UFS Weather Model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>2019 Hurricane Barry</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/2019Barry.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <style> .red {color:red}
+.green{color:green}
+.cyan{color:#00D7D7}
+.purple{color:purple}
+.blue{color:blue}
+.yellow{color:#CDCD00}
+
+</style><div class="section" id="hurricane-barry">
+<h1><span class="section-number">2. </span>2019 Hurricane Barry<a class="headerlink" href="#hurricane-barry" title="Permalink to this headline">¶</a></h1>
+<p>Hurricane Barry made landfall in Louisiana on July 11, 2019. The peak wind speed and minimum pressure reached 72 mph and 992 hPa, respectively during the storm.</p>
+<div class="section" id="model-configuration-and-datasets">
+<h2><span class="section-number">2.1. </span>Model Configuration and Datasets<a class="headerlink" href="#model-configuration-and-datasets" title="Permalink to this headline">¶</a></h2>
+<p>The UFS Medium-Range (MR) Weather Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (<code class="docutils literal notranslate"><span class="pre">GFSv15p2</span></code> and <code class="docutils literal notranslate"><span class="pre">GFSv16beta</span></code>) are tested using the <em>C768</em> (~13km) spatial resolution with 64 vertical levels (default).</p>
+<p>The case runs are initialized at 00z Jul 11, 2019 with 120 hours forecasting. The app uses <code class="docutils literal notranslate"><span class="pre">./xmlchange</span></code> to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./xmlchange <span class="nv">RUN_STARTDATE</span><span class="o">=</span><span class="m">2019</span>-07-01,START_TOD<span class="o">=</span><span class="m">0</span>,STOP_OPTION<span class="o">=</span>nhours,STOP_N<span class="o">=</span><span class="m">120</span>
+</pre></div>
+</div>
+<p>Initial condition (IC)  files are created from GFS reanalysis dataset in nemsio format. The <a class="reference external" href="https://dtcenter.org/community-code/gfdl-vortex-tracker">Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker</a> is a tool to estimate hurricane tracks and intensities. The <a class="reference external" href="https://domain.invalid/">BestTrack dataset</a> provides the ‘truth’ data for hurricane evolution.</p>
+<blockquote>
+<div><div class="sphx-glr-footer class sphx-glr-footer-example docutils container">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download external" download="" href="https://domain.invalid/"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">initial</span> <span class="pre">condition</span> <span class="pre">files:</span> <span class="pre">2019071100.gfs.nemsio.tar.gz</span></code></a></p>
+</div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="case-results">
+<h2><span class="section-number">2.2. </span>Case Results<a class="headerlink" href="#case-results" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="hurricane-track-and-intensity">
+<h3><span class="section-number">2.2.1. </span>Hurricane Track and Intensity<a class="headerlink" href="#hurricane-track-and-intensity" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/tracker_Barry_ufsv1.png"><img alt="_images/tracker_Barry_ufsv1.png" src="_images/tracker_Barry_ufsv1.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">Hurricane tracks from GFSv16beta (red dashline), GFSv15p2 (blue dash line), and BestTrack (black dash line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt).</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Both GFSv16beta and GFSv15p2 generate right-of-track bias.</p></li>
+<li><p>Hurricane track and intensity simulated by GFSv15p2 are closer to BestTrack compared with GFSv16beta.</p></li>
+</ul>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/tracker_ws_mslp_Barry.png"><img alt="_images/tracker_ws_mslp_Barry.png" src="_images/tracker_ws_mslp_Barry.png" style="width: 1200px;" /></a>
+<p class="caption"><span class="caption-text">Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="comparison-with-satellite-data">
+<h3><span class="section-number">2.2.2. </span>Comparison with Satellite Data<a class="headerlink" href="#comparison-with-satellite-data" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/Satellite_OLR.png"><img alt="_images/Satellite_OLR.png" src="_images/Satellite_OLR.png" style="width: 1600px;" /></a>
+<p class="caption"><span class="caption-text">Simulated outgoing longwave radiation (OLR) at the top of atmosphere (TOA) from GFSv16beta and GFSv15p2, and infrared images from <a class="reference external" href="https://worldview.earthdata.nasa.gov/">NASA Worldview</a> at the forecast hour of 72.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Comparison with satellite product also indicates a right-of-track error</p></li>
+<li><p>Lower OLR near the tropical cyclone (TC) center suggests more clouds in GFSv15p2 than in GFSv16beta</p></li>
+</ul>
+</div>
+<div class="section" id="hovmoller-diagram-of-850-hpa-ws-after-landfall">
+<h3><span class="section-number">2.2.3. </span>Hovmöller diagram of 850 hPa WS after Landfall<a class="headerlink" href="#hovmoller-diagram-of-850-hpa-ws-after-landfall" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/Radial_WS_TimeSeries.png"><img alt="_images/Radial_WS_TimeSeries.png" src="_images/Radial_WS_TimeSeries.png" style="width: 1600px;" /></a>
+<p class="caption"><span class="caption-text">Hovmöller diagram of wind speed and 850hPa and the radius of maximum wind (RMW, white line) after landfall</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>The low-level wind speed in GFS model is smaller than GFS_ANL</p></li>
+<li><p>The GFSv16beta has the largest inner core size. GFS15p2 has similar inner core sizes and GFS_ANL</p></li>
+<li><p>Hurricane intensity attenuates faster in the model compared with BestTrack after landfall</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="2018Michael.html" class="btn btn-neutral float-right" title="3. 2018 Hurricane Michael" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Intro.html" class="btn btn-neutral float-left" title="1. Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020 
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
