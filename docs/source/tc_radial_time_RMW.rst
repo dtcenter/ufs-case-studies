@@ -148,7 +148,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
 
 .. _sphx_glr_download_auto_examples_tc_radial_time_RMW.py:
 
-.. figure:: /auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
+.. figure:: auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
   :width: 600
   :align: center
 .. only :: html

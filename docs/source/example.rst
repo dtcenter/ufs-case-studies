@@ -18,7 +18,7 @@ This page shows some example scripts using Python and NCL to plot UFS Weather Mo
 
 .. only:: html
 
- .. figure:: /auto_examples/images/thumb/sphx_glr_HurricanTrackIntensity_thumb.png
+ .. figure:: auto_examples/images/thumb/sphx_glr_HurricanTrackIntensity_thumb.png
      :alt: Plotting Hurricane Tracks and Intensity
 
      :ref:`sphx_glr_auto_examples_TC_tracks_Intensity.py`
@@ -39,7 +39,7 @@ This page shows some example scripts using Python and NCL to plot UFS Weather Mo
 
 .. only:: html
 
- .. figure:: /auto_examples/images/thumb/sphx_glr_tracker_ws_Barry_thumb.png
+ .. figure:: auto_examples/images/thumb/sphx_glr_tracker_ws_Barry_thumb.png
      :alt: Plotting Vortex Center Max. Wind Speed
 
      :ref:`sphx_glr_auto_examples_TC_WS_Timeseries.py`
@@ -61,7 +61,7 @@ This page shows some example scripts using Python and NCL to plot UFS Weather Mo
 
 .. only:: html
 
- .. figure:: /auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
+ .. figure:: auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
      :alt: Plotting 850 hPa Radial Wind Speed Variation with Leading times
 
      :ref:`sphx_glr_auto_examples_tc_radial_time_RMW.py`

@@ -81,7 +81,7 @@ This example plots time series of the maximum wind speed at the vortex center es
 
 .. _sphx_glr_download_auto_examples_tracker_ws_Barry.py:
 
-.. figure:: /auto_examples/images/thumb/sphx_glr_tracker_ws_Barry_thumb.png
+.. figure:: auto_examples/images/thumb/sphx_glr_tracker_ws_Barry_thumb.png
   :width: 600
   :align: center
 
