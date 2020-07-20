@@ -37,6 +37,7 @@ Case Results
 Skew-T Log-P Plot
 ======================================================
 
+The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https://sharppy.github.io/SHARPpy/index.html>`_. The steps for using the SHARPpy scripting in Python programming language is `here <https://sharppy.github.io/SHARPpy/scripting.html>`_.
 
 .. figure:: images/2017101700_84z_DNR_GFS_Obs_indices.png
   :width: 1200
