@@ -6,7 +6,7 @@
         Click :ref:`here <sphx_glr_download_auto_examples_tc_radial_time_RMW.py>`     to download the full example code
     .. rst-class:: sphx-glr-example-title
 
-    .. _sphx_glr_auto_examples_tc_radial_time_RMW.py:
+    .. _sphx_glr_auto_examples_tc_radial_time_RMW.ncl:
 
 
 Plotting Radial WS with Leading Times
@@ -146,7 +146,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
 
 
 
-.. _sphx_glr_download_auto_examples_tc_radial_time_RMW.py:
+.. _sphx_glr_download_auto_examples_tc_radial_time_RMW.ncl:
 
 .. figure:: auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
   :width: 600

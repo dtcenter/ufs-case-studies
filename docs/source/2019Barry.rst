@@ -61,7 +61,7 @@ Hurricane Track and Intensity
   :width: 400
   :align: center
 
-  Hurricane tracks from GFSv16beta (red dash line), GFSv15p2 (blue dash line), and BestTrack (black dash line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+  Hurricane tracks from GFSv16beta (red dashed line), GFSv15p2 (blue dashed line), and BestTrack (black dashed line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
 * Both GFSv16beta and GFSv15p2 generate right-of-track bias. 
 * Hurricane track and intensity simulated by GFSv15p2 are closer to BestTrack compared with GFSv16beta. 

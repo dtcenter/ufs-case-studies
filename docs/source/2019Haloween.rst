@@ -44,7 +44,7 @@ Case Results
   :width: 1200
   :align: center
 
-  500 hPa geopotential heights (Dam), absolute vorticity (10 :sup:`-5`/s), and winds (m/s)
+  500 hPa geopotential heights (dam), absolute vorticity (10 :sup:`-5`/s), and winds (m/s)
 
 * GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data. 
 * GFSv16beta alleviates the progressiveness of synoptic pattern.
