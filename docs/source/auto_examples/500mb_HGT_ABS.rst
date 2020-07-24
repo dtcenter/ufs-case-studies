@@ -142,7 +142,7 @@ This example plots the 500mb geopotential height and absolute vorticity.
     Ngl.end()
 
 
-.. figure:: ../images/500mb_2019110100_GFSv16beta_150s.png
+.. figure:: /images/500mb_2019110100_GFSv16beta_150s.png
  :width: 600
  :align: center
 

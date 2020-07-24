@@ -22,7 +22,7 @@ The case runs are initialized at 12z Oct 25, 2019 with 120 hours forecasting. Th
 
 .. warning:: The model run time step is reduced from the default 225s to 150s in this case due to the model instability in GFSv16beta. To set the time step, add ``dt_atmos=150`` to ``user_nl_ufsatm``
 
-Initial condition (IC)  files are created from GFS reanalysis dataset in nemsio format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
+Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
 
  .. container:: sphx-glr-footer
     :class: sphx-glr-footer-example
@@ -37,14 +37,14 @@ Case Results
 ..............
 
 ======================================================
-500mb Geopotentail Height and Aboslute Vorticity Map
+500 mb Geopotential Height and Absolute Vorticity Map
 ======================================================
 
 .. figure:: images/500mb_2019110100_150s.png
   :width: 1200
   :align: center
 
-  500 hPa geopotential heights (Dam), absolute vorticity ( 10 :sup:`-5`/s), and winds (m/s)
+  500 hPa geopotential heights (Dam), absolute vorticity (10 :sup:`-5`/s), and winds (m/s)
 
 * GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data. 
 * GFSv16beta alleviates the progressiveness of synoptic pattern.
@@ -68,8 +68,9 @@ Surface Gust and 2-m Temperature
 
   2-m temperature (K) valid at 00z 1 Nov 2019 
 
-* Temperature drops earlier in GFSv15p2 along the U.S. east coast compared with GFS_ANL.  
-* Temperature drops later in GFSv16beta at Gorgia and Carolina compared with GFS_ANL. 
+* Colder 2-m T in GFSv15p2 along the U.S. east coast compared with GFS_ANL
+* Colder 2-m T at northern east coast and warmer 2-m T at southern east coast in GFSv16beta
+
 
 ====================================
 Composite Reflectivity

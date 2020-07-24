@@ -82,7 +82,7 @@ This example plots the spatial distribution of 2-m temperature from UFS WM outpu
     Ngl.end()
 
 
-.. figure:: ../images/FV3_T2_20200121_1200_GFSv16beta.png
+.. figure:: /images/FV3_T2_20200121_1200_GFSv16beta.png
  :width: 600
  :align: center
 

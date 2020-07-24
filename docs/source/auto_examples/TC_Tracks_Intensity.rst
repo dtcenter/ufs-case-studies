@@ -190,7 +190,7 @@ This example plots the hurricane tracks and intensity estimated from tc-tracker 
     plt.savefig('Tracker_Barry_ufsv1.png')
 
 
-.. figure:: images/thumb/sphx_glr_HurricanTrackIntensity_thumb.png
+.. figure:: /auto_examples/images/thumb/sphx_glr_HurricanTrackIntensity_thumb.png
  :width: 600
  :align: center
 

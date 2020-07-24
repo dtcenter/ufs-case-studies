@@ -34,7 +34,7 @@ The case runs are initialized at 00z Oct 07, 2018 with 120 hours forecasting. Th
  
    ./xmlchange RUN_STARTDATE=2018-10-07,START_TOD=0,STOP_OPTION=nhours,STOP_N=120
 
-Initial condition (IC)  files are created from GFS reanalysis dataset in nemsio format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `BestTrack dataset <https://domain.invalid/>`_ provides the ‘truth’ data for hurricane evolution.
+Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `BestTrack dataset <https://domain.invalid/>`_ provides the ‘truth’ data for hurricane evolution.
 
  .. container:: sphx-glr-footer
     :class: sphx-glr-footer-example
@@ -57,10 +57,10 @@ Hurricane Track and Intensity
   :width: 400
   :align: center
 
-  Hurricane tracks from GFSv16beta (red dashline), GFSv15p2 (blue dash line), and BestTrack (black dash line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+  Hurricane tracks from GFSv16beta (red dash line), GFSv15p2 (blue dash line), and BestTrack (black dash line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
 * GFSv16beta and GFSv15p2 generate left-of-track bias. 
-* GFSv16beta and GFSv15p2 do not capture the hurricane intensities (represented by max WS),especially before the landfall.
+* GFSv16beta and GFSv15p2 do not capture the hurricane intensities (represented by max WS), especially before the landfall.
 
 
 .. figure:: images/tracker_timeseries_Michael_ufsv1.png
