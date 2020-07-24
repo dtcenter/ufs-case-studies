@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the Test Cases Page for the UFS weather model
+Welcome to the Case Studies Page for the UFS Weather Model
 =======================================================
 
 .. |logo1| image:: images/tracker_Barry_ufsv1.png  
