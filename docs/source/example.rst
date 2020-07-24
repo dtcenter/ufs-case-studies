@@ -64,7 +64,7 @@ This page shows some example scripts using Python and NCL to plot UFS Weather Mo
  .. figure:: auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
      :alt: Plotting 850 hPa Radial Wind Speed Variation with Leading times
 
-     :ref:`sphx_glr_auto_examples_tc_radial_time_RMW.py`
+     :ref:`sphx_glr_auto_examples_tc_radial_time_RMW.ncl`
 
 .. raw:: html
 

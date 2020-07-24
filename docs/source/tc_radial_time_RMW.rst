@@ -6,7 +6,7 @@
         Click :ref:`here <sphx_glr_download_auto_examples_tc_radial_time_RMW.py>`     to download the full example code
     .. rst-class:: sphx-glr-example-title
 
-    .. _sphx_glr_auto_examples_tc_radial_time_RMW.py:
+    .. _sphx_glr_auto_examples_tc_radial_time_RMW.ncl:
 
 
 Plotting Radial WS with Leading Times
@@ -25,7 +25,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
     pngname="ufs_GFSv16beta_radial_ws_time_plot"
     wks=gsn_open_wks("png", pngname)
 
-    ; Read GFSv16beta vortext tracker results
+    ; Read GFSv16beta vortex tracker results
     tcfile="GFSv16beta/fort.69"
     delim=","
     tclines=asciiread(tcfile, -1, "string")
@@ -60,7 +60,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
     psminlat= tclat
     psminlon= tclon*(-1)+360
 
-    ; Use wgrib2 to convert all the GFSPRS* outputs to netcdf format, and read in all the nc files
+    ; Use wgrib2 to convert all the GFSPRS* outputs to NetCDF (nc) format, and read in all the nc files
     ncfili=systemfunc("ls GFSv16beta/GFSPRS.GrbF*.nc")
     ncfiles=addfiles(ncfili,"r")
 
@@ -69,7 +69,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
     WS850=(wind_speed(UGRD850,VGRD850))*1.944
 
 
-    ; Make a array for leading time after landfall from f66 to f120
+    ; Make an array for leading time after landfall from f66 to f120
     time=(/66,72,78,84,90,96,102,108,114,120/)
     dsizes=dimsizes(UGRD850)
 
@@ -131,7 +131,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
     plot=gsn_csm_contour(wks, radiaverWS850f(0:5,:), resx)
 
 
-    ; Overlay the whiteline of radius of the maximum wind (RMW) to the wind speed contour plot
+    ; Overlay the white line of radius of the maximum wind (RMW) to the wind speed contour plot
     res=True
     res@gsnDraw = False
     res@gsnFrame=False
@@ -146,7 +146,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
 
 
 
-.. _sphx_glr_download_auto_examples_tc_radial_time_RMW.py:
+.. _sphx_glr_download_auto_examples_tc_radial_time_RMW.ncl:
 
 .. figure:: auto_examples/images/thumb/Radial_WS_TimeSeries_thumb.png
   :width: 600

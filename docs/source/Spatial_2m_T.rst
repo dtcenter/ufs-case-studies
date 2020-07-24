@@ -73,7 +73,7 @@ This example plots the spatial distribution of 2-m temperature from UFS WM outpu
 
     # Plot resources
     cnres0=cnres
-    cnres0.tiMainString = "FV3 GFSv16beta: 2m Temp (F) FV3 ~C~Initilized 12Z 17 Jan 2020 valid 12Z 21 Jan 2020"#"{} ({}) at {:.2f} hPa with fast_sat".format(clwmr.long_name,clwmr.units,vpfull)
+    cnres0.tiMainString = "FV3 GFSv16beta: 2m Temp (F) FV3 ~C~Initialized 12Z 17 Jan 2020 valid 12Z 21 Jan 2020"#"{} ({}) at {:.2f} hPa with fast_sat".format(clwmr.long_name,clwmr.units,vpfull)
     cnres0.tiMainFontHeightF=0.012
     contour = Ngl.contour_map(wks,tmp2mF[:,:],cnres0)
 

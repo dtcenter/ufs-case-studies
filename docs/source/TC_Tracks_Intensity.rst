@@ -33,11 +33,11 @@ This example plots the hurricane tracks and intensity estimated from tc-tracker 
     # Define plot size
     fig, ax = plt.subplots(figsize=(8,8))
 
-    # Read GFSv15p2 vortext tracker results
+    # Read GFSv15p2 vortex tracker results
     csv_file = "GFSv15p2/fort.69"
     tc = np.recfromcsv(csv_file, unpack=True, names=['stormid', 'count', 'initdate', 'constant', 'atcf', 'leadtime', 'lat','lon','ws','mslp','placehoder', 'thresh', 'neq', 'blank1', 'blank2', 'blank3','blank4','blank5','blank6','blank7'], dtype=None)
 
-    # Read GFSv16beta vortext tracker results
+    # Read GFSv16beta vortex tracker results
     csv_file2 = "16beta/fort.69"
     tc2 = np.recfromcsv(csv_file2, unpack=True, names=['stormid', 'count', 'initdate', 'constant', 'atcf', 'leadtime', 'lat','lon','ws','mslp','placehoder', 'thresh', 'neq', 'blank1', 'blank2', 'blank3','blank4','blank5','blank6','blank7'], dtype=None)
 

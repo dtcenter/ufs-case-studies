@@ -1,3 +1,6 @@
 /docs/build
 .DS_Store
 .git-credentials
+*.pickle
+/docs/source/auto_examples/*.zip
+/docs/source/auto_examples/*.rst

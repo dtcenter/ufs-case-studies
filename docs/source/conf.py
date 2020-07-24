@@ -21,7 +21,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-project = 'Test Cases for UFS Weather Model'
+project = 'Case Studies for UFS Weather Model'
 copyright = '2020 '
 author = 'Xia Sun'
 
