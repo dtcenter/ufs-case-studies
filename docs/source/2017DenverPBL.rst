@@ -19,7 +19,7 @@ The case runs are initialized at 00z Oct 16, 2017 with 120 hours forecasting. Th
    ./xmlchange RUN_STARTDATE=2017-10-16,START_TOD=0,STOP_OPTION=nhours,STOP_N=120
 
 
-Initial condition (IC)  files are created from GFS reanalysis dataset in nemsio format. Sounding profiles can be downloaded from the `University of Wyoming <http://weather.uwyo.edu/upperair/sounding.html>`_.
+Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. Sounding profiles can be downloaded from the `University of Wyoming <http://weather.uwyo.edu/upperair/sounding.html>`_.
 
  .. container:: sphx-glr-footer
     :class: sphx-glr-footer-example
@@ -43,4 +43,4 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
   :width: 1200
   :align: center
 
-  Skew-T Log-P plot from observed and simulated sounding profiles
+  Skew-T Log-P plot from observed and simulated sounding profiles. Indices including K-index and lapse rate are shown in the bottom.

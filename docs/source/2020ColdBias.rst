@@ -5,7 +5,7 @@
 
 
 
-2020 Janurary Cold Bias
+2020 January Cold Bias
 =====================================
   
 ..............................
@@ -19,7 +19,7 @@ The case runs are initialized at 12z Jan 17, 2020 with 120 hours forecasting. Th
    ./xmlchange RUN_STARTDATE=2020-01-17,START_TOD=43200,STOP_OPTION=nhours,STOP_N=120
 
 
-Initial condition (IC)  files are created from GFS reanalysis dataset in nemsio format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
+Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
 
  .. container:: sphx-glr-footer
     :class: sphx-glr-footer-example

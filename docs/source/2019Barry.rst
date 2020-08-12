@@ -38,7 +38,7 @@ The case runs are initialized at 00z Jul 11, 2019 with 120 hours forecasting. Th
  
    ./xmlchange RUN_STARTDATE=2019-07-01,START_TOD=0,STOP_OPTION=nhours,STOP_N=120
 
-Initial condition (IC)  files are created from GFS reanalysis dataset in nemsio format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `BestTrack dataset <https://domain.invalid/>`_ provides the ‘truth’ data for hurricane evolution.
+Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `BestTrack dataset <https://domain.invalid/>`_ provides the ‘truth’ data for hurricane evolution.
 
  .. container:: sphx-glr-footer
     :class: sphx-glr-footer-example
@@ -61,7 +61,7 @@ Hurricane Track and Intensity
   :width: 400
   :align: center
 
-  Hurricane tracks from GFSv16beta (red dashline), GFSv15p2 (blue dash line), and BestTrack (black dash line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+  Hurricane tracks from GFSv16beta (red dashed line), GFSv15p2 (blue dashed line), and BestTrack (black dashed line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
 * Both GFSv16beta and GFSv15p2 generate right-of-track bias. 
 * Hurricane track and intensity simulated by GFSv15p2 are closer to BestTrack compared with GFSv16beta. 
@@ -94,7 +94,7 @@ Hovmöller diagram of 850 hPa WS after Landfall
   :width: 1600
   :align: center
 
-  Hovmöller diagram of wind speed and 850hPa and the radius of maximum wind (RMW, white line) after landfall
+  Hovmöller diagram of wind speed and 850 hPa and the radius of maximum wind (RMW, white line) after landfall
 
 * The low-level wind speed in GFS model is smaller than GFS_ANL
 * The GFSv16beta has the largest inner core size. GFS15p2 has similar inner core sizes and GFS_ANL 
