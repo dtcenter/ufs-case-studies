@@ -70,7 +70,7 @@ for k in range(len(bal.lat)):
         lonptt,latptt=m(xptt,yptt,inverse=True)
         bxs1.append(lonn)
         bys1.append(latt)
-cs1=m.plot(bxs1, bys1, linestyle='--',color='Black',label='BestTrack')   
+cs1=m.plot(bxs1, bys1, linestyle='--',color='Black',label='Best Track')   
 
 # Read the vortex center, lat and lon, from BestTrack data to make colored dots along with the tracks  
 bxs1 = []
@@ -103,7 +103,7 @@ for j in range(len(tc.ws)):
         lonpt, latpt = m(xpt, ypt, inverse=True)
         xs1.append(lon)
         ys1.append(lat)  
-cs2=m.plot(xs1, ys1, linestyle='--',color='Red',label='UFSv1.0.0_15p2_hybedmf')
+cs2=m.plot(xs1, ys1, linestyle='--',color='Red',label='MRW_GFSv15p2')
 
 # Read the vortex center, lat and lon, from tc-tracker results for GFSv15p2 to make colored dots along with the tracks  
 xs1 = []
@@ -139,7 +139,7 @@ for j in range(len(tc2.ws)):
         lonpt2, latpt2 = m(xpt2, ypt2, inverse=True)
         xs12.append(lon2)
         ys12.append(lat2)  
-cs22=m.plot(xs12, ys12, linestyle='--',color='Blue',label='UFSv1.0.0_16beta')
+cs22=m.plot(xs12, ys12, linestyle='--',color='Blue',label='MRW_GFSv16beta')
 
 # Read the vortex center, lat and lon, from tc-tracker results for GFSv16beta to make colored dots along with the tracks 
 xs12 = []
