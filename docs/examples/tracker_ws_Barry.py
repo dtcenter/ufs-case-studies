@@ -51,9 +51,9 @@ t=np.arange(0,16,1)
 
 #Make the plot
 plt.figure(figsize=(8,6)) 
-plt.plot(t,tcws,'.-r',label="GFSv15p2")
-plt.plot(t,tc2ws,'.-b',label="GFSv16beta")
-plt.plot(t,balws,'.-k',label="BestTrack")
+plt.plot(t,tcws,'.-r',label="MRW_GFSv15p2")
+plt.plot(t,tc2ws,'.-b',label="MRW_GFSv16beta")
+plt.plot(t,balws,'.-k',label="Best Track")
 plt.legend(loc="upper left")
 my_xticks=['11/00z','','11/12z','','12/00z','','12/12z','','13/00z','','13/12z','','14/00z','','14/12z','']
 plt.xlabel('Date/Time (UTC)')

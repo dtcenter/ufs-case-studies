@@ -42,4 +42,4 @@ Case Results
   :width: 1200
   :align: center
 
-  2-m temperature (K) from GFSv16beta (upper left), GFSv15p2 (upper right), GFS_ANL (lower left), and difference between GFSv16beta and GFS_ANL (lower right)
+  2-m temperature (K) from MRW_GFSv16beta (upper left), MRW_GFSv15p2 (upper right), GFS_ANL (lower left), and difference between MRW_GFSv16beta and GFS_ANL (lower right)

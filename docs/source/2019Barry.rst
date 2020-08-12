@@ -30,7 +30,7 @@ Hurricane Barry made landfall in Louisiana on July 11, 2019. The peak wind speed
 Model Configuration and Datasets
 ................................
 
-The UFS Medium-Range (MR) Weather Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``GFSv16beta``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
+The UFS Medium-Range Weather (MRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``GFSv16beta``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
 
 The case runs are initialized at 00z Jul 11, 2019 with 120 hours forecasting. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
 
@@ -61,10 +61,10 @@ Hurricane Track and Intensity
   :width: 400
   :align: center
 
-  Hurricane tracks from GFSv16beta (red dashed line), GFSv15p2 (blue dashed line), and BestTrack (black dashed line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+  Hurricane tracks from MRW_GFSv16beta (red dashed line), MRW_GFSv15p2 (blue dashed line), and BestTrack (black dashed line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
-* Both GFSv16beta and GFSv15p2 generate right-of-track bias. 
-* Hurricane track and intensity simulated by GFSv15p2 are closer to BestTrack compared with GFSv16beta. 
+* Both MRW_GFSv16beta and MRW_GFSv15p2 generate right-of-track bias. 
+* Hurricane track and intensity simulated by MRW_GFSv15p2 are closer to BestTrack compared with GFSv16beta. 
 
 
 .. figure:: images/tracker_ws_mslp_Barry.png
@@ -81,10 +81,10 @@ Comparison with Satellite Data
   :width: 1600
   :align: center
 
-  Simulated outgoing longwave radiation (OLR) at the top of atmosphere (TOA) from GFSv16beta and GFSv15p2, and infrared images from `NASA Worldview <https://worldview.earthdata.nasa.gov/>`_ at the forecast hour of 72.
+  Simulated outgoing longwave radiation (OLR) at the top of atmosphere (TOA) from MRW_GFSv16beta and MRW_GFSv15p2, and infrared images from `NASA Worldview <https://worldview.earthdata.nasa.gov/>`_ at the forecast hour of 72.
 
 * Comparison with satellite product also indicates a right-of-track error
-* Lower OLR near the tropical cyclone (TC) center suggests more clouds in GFSv15p2 than in GFSv16beta 
+* Lower OLR near the tropical cyclone (TC) center suggests more clouds in MRW_GFSv15p2 than in MRW_GFSv16beta 
 
 =============================================
 Hovmöller diagram of 850 hPa WS after Landfall
@@ -97,7 +97,7 @@ Hovmöller diagram of 850 hPa WS after Landfall
   Hovmöller diagram of wind speed and 850 hPa and the radius of maximum wind (RMW, white line) after landfall
 
 * The low-level wind speed in GFS model is smaller than GFS_ANL
-* The GFSv16beta has the largest inner core size. GFS15p2 has similar inner core sizes and GFS_ANL 
+* The MRW_GFSv16beta has the largest inner core size. MRW_GFS15p2 has similar inner core sizes and GFS_ANL 
 * Hurricane intensity attenuates faster in the model compared with BestTrack after landfall 
 
 

@@ -46,8 +46,8 @@ Case Results
 
   500 hPa geopotential heights (dam), absolute vorticity (10 :sup:`-5`/s), and winds (m/s)
 
-* GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data. 
-* GFSv16beta alleviates the progressiveness of synoptic pattern.
+* MRW_GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data. 
+* MRW_GFSv16beta alleviates the progressiveness of synoptic pattern.
 
 ====================================
 Surface Gust and 2-m Temperature
@@ -59,8 +59,8 @@ Surface Gust and 2-m Temperature
 
   Surface gust (m/s) valid at 00z 1 Nov 2019
 
-* GFSv15p2 captures the magnitudes of surface gust in GFS_ANL. 
-* GFSv16beta does not reach the peak of surface gust in GFS_ANL. 
+* MRW_GFSv15p2 captures the magnitudes of surface gust in GFS_ANL. 
+* MRW_GFSv16beta does not reach the peak of surface gust in GFS_ANL. 
   
 .. figure:: images/Haloween_f156_TMP_2maboveground.png
   :width: 1200
@@ -68,8 +68,8 @@ Surface Gust and 2-m Temperature
 
   2-m temperature (K) valid at 00z 1 Nov 2019 
 
-* Colder 2-m T in GFSv15p2 along the U.S. east coast compared with GFS_ANL
-* Colder 2-m T at northern east coast and warmer 2-m T at southern east coast in GFSv16beta
+* Colder 2-m T in MRW_GFSv15p2 along the U.S. east coast compared with GFS_ANL
+* Colder 2-m T at New England and warmer 2-m T at the Southeast in MRW_GFSv16beta
 
 
 ====================================
