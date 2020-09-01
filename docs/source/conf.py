@@ -69,6 +69,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.autodoc',
     'sphinx_gallery.gen_gallery',
+    'sphinx_tabs.tabs',
 #    'sphinx_rtd_theme',
 #    'sphinx_gallery.gen_gallery',
 #    'sphinx-prompt',

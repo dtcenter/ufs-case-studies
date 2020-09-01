@@ -24,9 +24,18 @@ Welcome to the Case Studies Page for the UFS Weather Model
 | |logo1| | |logo2| | |logo3| |
 +---------+---------+---------+
 
+.. tabs::
+  .. tab:: Medium-Range Weather (MRW) App 
 
-:Release:  *ufs-v1.0*
-:Compsets:  ``GFSv16beta``, ``GFSv15p2``
+    :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
+    :Public Release:  *v1.0*
+    :Compsets:  ``GFSv16beta``, ``GFSv15p2``
+  .. tab:: Global Workflow
+
+    :GitHub: `NOAA-EMC/global-workflow <https://github.com/NOAA-EMC/global-workflow>`_
+    :Branch:  *feature/gfs16b*
+    :ufs-weather-model tag:  ``GFS.v16.0.10``    
+
 :Date:  |today|  
 :Case Catalog:
   * :ref:`2019 Hurricane Barry <2019 Hurricane Barry>`
@@ -44,6 +53,7 @@ Notable Links
 * `Developmental Testbed Center (DTC) <https://www.dtcenter.org/>`_
 * `Unified Forecast System (UFS) <https://ufscommunity.org/>`_
 * `The UFS Medium-Range Weather App Users Guide <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_
+* `NOAA Environmental Modeling Center (EMC) global-workflow GitHub Wiki page <https://github.com/NOAA-EMC/global-workflow/wiki>`_
 * `Current known biases of UFS <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_
 
 ..............................
