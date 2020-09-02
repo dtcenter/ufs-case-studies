@@ -98,4 +98,4 @@ Hovmöller diagram of 850 hPa WS after Landfall
 
 * The low-level wind speed in GFS model is smaller than GFS_ANL
 * The MRW_GFSv16beta has the largest inner core size. MRW_GFS15p2 has similar inner core sizes and GFS_ANL 
-* Hurricane intensity attenuates faster in the model compared with BestTrack after landfall 
+* Hurricane intensity attenuates faster in the model compared with Best Track after landfall 
