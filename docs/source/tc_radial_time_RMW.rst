@@ -118,7 +118,7 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
     resx@tiYAxisString ="Forecast Hour"
     resx@tiXAxisString="Radius (km)"
     radiaverWS850f@units="knots"
-    radiaverWS850f@long_name="GFSv16beta 850hPa Wind Speed"
+    radiaverWS850f@long_name="MRW_GFSv16beta 850hPa Wind Speed"
     resx@cnLevelSelectionMode="ManualLevels"
     resx@cnMinLevelValF= 10
     resx@cnMaxLevelValF= 60

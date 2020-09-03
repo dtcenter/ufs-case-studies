@@ -80,7 +80,7 @@ cnres0=cnres
 cnres0.lbLabelFontHeightF = 0.012
 cnres0.pmLabelBarHeightF =0.1
 cnres0.pmLabelBarWidthF=0.6
-mpres.tiMainString = "UFS_v1.0.0_GFSv16beta: 500mb Heights(dam) /Abs Vorticity (10^-5/s)/ Winds (m/s)  ~C~  Initialized: 12Z 25 Oct 2019 | Valid: 00Z 1 Nov 2019"
+mpres.tiMainString = "MRW_GFSv16beta: 500mb Heights(dam) /Abs Vorticity (10^-5/s)/ Winds (m/s)  ~C~  Initialized: 12Z 25 Oct 2019 | Valid: 00Z 1 Nov 2019"
 mpres.tiMainFontHeightF=0.012
 mpres.tiMainPosition = "Center"
 

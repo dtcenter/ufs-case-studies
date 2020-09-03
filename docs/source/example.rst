@@ -10,6 +10,22 @@ Example scripts
 
 This page shows some example scripts using Python and NCL to plot UFS Weather Model outputs.
 
+If you are using Python and NCL on a high-performance computing platform, e.g. NOAA-Hera, the modules need to be loaded first.
+
+To run a Python script, download the example script, make modifications, and run:
+
+.. code-block:: bash
+  
+  module load anaconda
+  python example.py 
+
+To use an NCL script, download the example script, make modifications, and run:
+
+.. code-block:: bash
+  
+  module load ncl
+  ncl example.ncl
+
 
 
 .. raw:: html
