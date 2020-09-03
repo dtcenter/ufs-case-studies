@@ -25,17 +25,16 @@ Welcome to the Case Studies Page for the UFS Weather Model
 +---------+---------+---------+
 
 .. tabs::
-  .. tab:: Medium-Range Weather (MRW) App 
+  .. group-tab:: Medium-Range Weather (MRW) App 
 
     :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
     :Public Release:  *v1.0*
     :Compsets:  ``GFSv16beta``, ``GFSv15p2``
-  .. tab:: Global Workflow
+  .. group-tab:: Global Workflow
 
     :GitHub: `NOAA-EMC/global-workflow <https://github.com/NOAA-EMC/global-workflow>`_
     :Branch:  *feature/gfs16b*
-    :ufs-weather-model tag:  ``GFS.v16.0.10``    
-
+    :ufs-weather-model: ``GFS.v16.0.10``    
 :Date:  |today|  
 :Case Catalog:
   * :ref:`2019 Hurricane Barry <2019 Hurricane Barry>`

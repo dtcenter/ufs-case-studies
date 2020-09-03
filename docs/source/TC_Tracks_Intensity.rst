@@ -12,7 +12,7 @@
 Plotting Hurricane Track and Intensity Map
 ==========================================
 
-This example plots the hurricane tracks and intensity estimated from tc-tracker as well as the BestTrack data.
+This example plots the hurricane tracks and intensity estimated from `GFDL tc-tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ as well as the Best Track data.
 
 
 .. code-block:: default
