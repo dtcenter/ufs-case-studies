@@ -3,7 +3,7 @@
 This documentation provides resources, including initial condition datasets and example programming scripts, for representative case studies in the Unified Forecast System (UFS) Weather model.
 
 ### Important links:
-* HTML Documentation: ufs-case-studies.readthedocs.io/
+* HTML Documentation: https://ufs-case-studies.readthedocs.io
 * GitHub repository: https://github.com/dtcenter/ufs-case-studies
 
 ### ufs-case-studies Development Team
