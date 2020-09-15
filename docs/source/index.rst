@@ -6,17 +6,17 @@
 Welcome to the Case Studies Page for the UFS Weather Model
 =======================================================
 
-.. |logo1| image:: images/tracker_Barry_ufsv1.png  
+.. |logo1| image:: images/2019Barry/tracker_Barry_ufsv1.png  
    :width: 300
    :align: middle
 
 
 
-.. |logo2| image:: images/Diff_FV3_T2_20200121_1200_GFSv16beta.png
+.. |logo2| image:: images/2020JanCold/Diff_FV3_T2_20200121_1200_GFSv16beta.png
    :width: 300
    :align: top
 
-.. |logo3| image:: images/2017101700_84z_DNR_16betavsObs_indices-1.png 
+.. |logo3| image:: images/2017DNR/2017101700_84z_DNR_16betavsObs_indices-1.png 
    :width: 300
    :align: top
 
@@ -42,6 +42,7 @@ Welcome to the Case Studies Page for the UFS Weather Model
   * :ref:`2019 Halloween Storm <2019 Halloween Storm>`
   * :ref:`2017 Denver Inversion <2017 Denver Inversion>`
   * :ref:`2020 January Cold Bias <2020 January Cold Bias>`
+  * :ref:`2020 Easter Sunday Storm <2020 Easter Sunday Storm>`
   
 This documentation provides resources for representative case studies in the Unified Forecast System Weather model.
 
@@ -69,6 +70,7 @@ Contents
    2019Haloween.rst
    2017DenverPBL.rst
    2020ColdBias.rst
+   2020Easter.rst
    example.rst
 
 

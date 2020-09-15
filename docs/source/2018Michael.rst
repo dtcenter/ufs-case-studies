@@ -77,7 +77,7 @@ Hurricane Track and Intensity
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/tracker_Michael_ufsv1.png
+    .. figure:: images/2018Michael/tracker_Michael_ufsv1.png
       :width: 400
       :align: center
 
@@ -87,7 +87,7 @@ Hurricane Track and Intensity
     * MRW_GFSv16beta and MRW_GFSv15p2 do not capture the hurricane intensities (represented by max WS), especially before the landfall.
 
 
-    .. figure:: images/tracker_timeseries_Michael_ufsv1.png
+    .. figure:: images/2018Michael/tracker_timeseries_Michael_ufsv1.png
       :width: 1200
       :align: center
 
@@ -95,7 +95,7 @@ Hurricane Track and Intensity
   
   .. group-tab:: GFS.v16.0.10
 
-     .. figure:: images/tracker_Michael_GFS.v16.0.10.png
+     .. figure:: images/2018Michael/tracker_Michael_GFS.v16.0.10.png
       :width: 400
       :align: center
 
@@ -103,7 +103,7 @@ Hurricane Track and Intensity
 
     * GFS.v16.0.10 generates left-of-track bias. 
 
-    .. figure:: images/tracker_ws_mslp_Michael_GFS.v16.0.10.png
+    .. figure:: images/2018Michael/tracker_ws_mslp_Michael_GFS.v16.0.10.png
       :width: 1200
       :align: center
       

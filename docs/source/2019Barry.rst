@@ -82,7 +82,7 @@ Hurricane Track and Intensity
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/tracker_Barry_ufsv1.png
+    .. figure:: images/2019Barry/tracker_Barry_ufsv1.png
       :width: 400
       :align: center
 
@@ -92,7 +92,7 @@ Hurricane Track and Intensity
     * Hurricane track and intensity simulated by MRW_GFSv15p2 are closer to BestTrack compared with MRW_GFSv16beta. 
 
 
-    .. figure:: images/tracker_ws_mslp_Barry.png
+    .. figure:: images/2019Barry/tracker_ws_mslp_Barry.png
       :width: 1200
       :align: center
 
@@ -100,7 +100,7 @@ Hurricane Track and Intensity
 
   .. group-tab:: GFS.v16.0.10
 
-     .. figure:: images/tracker_Barry_GFS.v16.0.10.png
+     .. figure:: images/2019Barry/tracker_Barry_GFS.v16.0.10.png
       :width: 400
       :align: center
 
@@ -108,7 +108,7 @@ Hurricane Track and Intensity
 
     * GFS.v16.0.10 generates right-of-track bias. 
 
-    .. figure:: images/tracker_ws_mslp_BARRY_GFS.v.16.0.10.png
+    .. figure:: images/2019Barry/tracker_ws_mslp_BARRY_GFS.v.16.0.10.png
       :width: 1200
       :align: center
 
@@ -120,7 +120,7 @@ Comparison with Satellite Data
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/Satellite_OLR.png
+    .. figure:: images/2019Barry/Satellite_OLR.png
       :width: 1600
       :align: center
 
@@ -135,7 +135,7 @@ Hovmöller diagram of 850 hPa WS after Landfall
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/Radial_WS_TimeSeries.png
+    .. figure:: images/2019Barry/Radial_WS_TimeSeries.png
       :width: 1600
       :align: center
 

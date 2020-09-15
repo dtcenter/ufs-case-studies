@@ -66,7 +66,7 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 .. tabs::
   .. group-tab:: MRW.v1.0
   
-    .. figure:: images/2017101700_84z_DNR_GFS_Obs_indices.png
+    .. figure:: images/2017DNR/2017101700_84z_DNR_GFS_Obs_indices.png
       :width: 1200
       :align: center
 
@@ -74,7 +74,7 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 
   .. group-tab:: GFS.v16.0.10
   
-    .. figure:: images/2017101700_84z_DNR_16.0.10.vsObs_indices.png
+    .. figure:: images/2017DNR/2017101700_84z_DNR_16.0.10.vsObs_indices.png
       :width: 400
       :align: center
 

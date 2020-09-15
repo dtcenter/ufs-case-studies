@@ -68,7 +68,7 @@ Case Results
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/500mb_2019110100_150s.png
+    .. figure:: images/2019Halloween/500mb_2019110100_150s.png
       :width: 1200
       :align: center
 
@@ -78,7 +78,7 @@ Case Results
     * MRW_GFSv16beta alleviates the progressiveness of synoptic pattern.
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/Halloween_GFS.v16.0.10_500mb_2019110100.png
+    .. figure:: images/2019Halloween/Halloween_GFS.v16.0.10_500mb_2019110100.png
       :width: 1200
       :align: center
 
@@ -92,7 +92,7 @@ Surface Gust and 2-m Temperature
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/Halloween_f156_GUST_surface.png
+    .. figure:: images/2019Halloween/Halloween_f156_GUST_surface.png
       :width: 1200
       :align: center
 
@@ -100,7 +100,7 @@ Surface Gust and 2-m Temperature
 
     * MRW_GFSv15p2 captures the magnitudes of surface gust in GFS_ANL. 
     * MRW_GFSv16beta does not reach the peak of surface gust in GFS_ANL. 
-    .. figure:: images/Haloween_f156_TMP_2maboveground.png
+    .. figure:: images/2019Halloween/Haloween_f156_TMP_2maboveground.png
       :width: 1200
       :align: center
 
@@ -110,7 +110,7 @@ Surface Gust and 2-m Temperature
     * Colder 2-m T at New England and warmer 2-m T at the Southeast in MRW_GFSv16beta  
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/Halloween_GFS16.0.10_f156_GUST_surface.png
+    .. figure:: images/2019Halloween/Halloween_GFS16.0.10_f156_GUST_surface.png
       :width: 1200
       :align: center
 
@@ -118,7 +118,7 @@ Surface Gust and 2-m Temperature
 
     * GFS.v16.0.10 does not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with GFS_ANL. 
       
-    .. figure:: images/Halloween_GFS16.0.10_f156_TMP_2maboveground.png
+    .. figure:: images/2019Halloween/Halloween_GFS16.0.10_f156_TMP_2maboveground.png
       :width: 1200
       :align: center
 
@@ -133,14 +133,14 @@ Composite Reflectivity
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/Halloween_f156_REFC_entireatmosphere.png
+    .. figure:: images/2019Halloween/Halloween_f156_REFC_entireatmosphere.png
       :width: 1200
       :align: center
 
       Composite reflectivity (dB)
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/Halloween_GFS16.0.10_f156_REFC_entireatmosphere.png
+    .. figure:: images/2019Halloween/Halloween_GFS16.0.10_f156_REFC_entireatmosphere.png
       :width: 1200
       :align: center
 
