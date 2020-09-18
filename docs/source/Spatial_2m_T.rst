@@ -84,7 +84,7 @@ This example plots the spatial distribution of 2-m temperature from UFS MRW outp
 
 .. _sphx_glr_download_auto_examples_Spatial_2m_T.py:
 
-.. figure:: images/FV3_T2_20200121_1200_GFSv16beta.png
+.. figure:: images/2020JanCold/FV3_T2_20200121_1200_GFSv16beta.png
   :width: 600
   :align: center
 
