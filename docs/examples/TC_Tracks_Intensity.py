@@ -29,7 +29,7 @@ tc = np.recfromcsv(csv_file, unpack=True, names=['stormid', 'count', 'initdate',
 csv_file2 = "16beta/fort.69"
 tc2 = np.recfromcsv(csv_file2, unpack=True, names=['stormid', 'count', 'initdate', 'constant', 'atcf', 'leadtime', 'lat','lon','ws','mslp','placehoder', 'thresh', 'neq', 'blank1', 'blank2', 'blank3','blank4','blank5','blank6','blank7'], dtype=None)
 
-# Read BestTrack data
+# Read Best Track data
 bal_file ="BestTrack/bal022019_post.dat"
 bal = np.recfromcsv(bal_file,unpack=True,delimiter=",",usecols=[0,2,6,7,8,9,10,11],names=['stormid','time','lat','lon','ws','mslp','intens','thresh'],dtype=None)
 
@@ -60,7 +60,7 @@ col=colors.to_rgba(tc.ws)
 bcol=colors.to_rgba(bal.ws)
 col2=colors.to_rgba(tc2.ws)
 
-# Read the vortex center, lat and lon, from BestTrack data  
+# Read the vortex center, lat and lon, from Best Track data  
 for k in range(len(bal.lat)):
     if bal.thresh[k] == 34 or bal.thresh[k] == 0:
         ballon=float(bal.lon[k][1:5])*0.1*(-1)
@@ -72,7 +72,7 @@ for k in range(len(bal.lat)):
         bys1.append(latt)
 cs1=m.plot(bxs1, bys1, linestyle='--',color='Black',label='Best Track')   
 
-# Read the vortex center, lat and lon, from BestTrack data to make colored dots along with the tracks  
+# Read the vortex center, lat and lon, from Best Track data to make colored dots along with the tracks  
 bxs1 = []
 bys1 = []
 ballon=[]
