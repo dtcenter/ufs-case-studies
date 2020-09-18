@@ -2,7 +2,7 @@
 Plotting Time Series of Vortex Center Max. WS
 ==========================================
 
-This example plots time series of the maximum wind speed at the vortex center estimated from tc-tracker, as well as BestTrack data.
+This example plots time series of the maximum wind speed at the vortex center estimated from `GFDL tc-tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ , as well as Best Track data.
 """
 
 from matplotlib import pyplot as plt
