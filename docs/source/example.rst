@@ -98,7 +98,7 @@ To use an NCL script, download the example script, make modifications, and run:
 
 .. only:: html
 
- .. figure:: images/FV3_T2_20200121_1200_GFSv16beta.png
+ .. figure:: images/2020JanCold/FV3_T2_20200121_1200_GFSv16beta.png
      :alt: Plotting Spatial Map of 2-m Temperature
 
      :ref:`sphx_glr_auto_examples_Spatial_2m_T.py`
@@ -119,7 +119,7 @@ To use an NCL script, download the example script, make modifications, and run:
 
 .. only:: html
 
- .. figure:: images/500mb_2019110100_GFSv16beta_150s.png
+ .. figure:: images/2019Halloween/500mb_2019110100_GFSv16beta_150s.png
      :alt: Plotting 500mb Geopotential Height and Absolute Vorticity"
 
      :ref:`sphx_glr_auto_examples_500mb_HGT_ABS.py`

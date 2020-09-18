@@ -20,7 +20,7 @@
 .. role:: blue
 .. role:: yellow
 
-
+.. _2018 Hurricane Michael:
 2018 Hurricane Michael
 =====================================
 

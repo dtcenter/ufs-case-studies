@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 
-
+.. _2017 Denver Inversion:
 2017 Denver Inversion
 =====================================
   

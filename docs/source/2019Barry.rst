@@ -20,7 +20,7 @@
 .. role:: blue
 .. role:: yellow
 
-
+.. _2019 Hurricane Barry:
 2019 Hurricane Barry
 =====================================
 

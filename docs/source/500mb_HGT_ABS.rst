@@ -144,7 +144,7 @@ This example plots the 500mb geopotential height and absolute vorticity.
 
 .. _sphx_glr_download_auto_examples_500mb_HGT_ABS.py:
 
-.. figure:: images/500mb_2019110100_GFSv16beta_150s.png
+.. figure:: images/2019Halloween/500mb_2019110100_GFSv16beta_150s.png
   :width: 600
   :align: center
 

@@ -10,8 +10,6 @@ Welcome to the Case Studies Page for the UFS Weather Model
    :width: 300
    :align: middle
 
-
-
 .. |logo2| image:: images/2020JanCold/Diff_FV3_T2_20200121_1200_GFSv16beta.png
    :width: 300
    :align: top
@@ -37,12 +35,13 @@ Welcome to the Case Studies Page for the UFS Weather Model
     :ufs-weather-model: ``GFS.v16.0.10``    
 :Date:  |today|  
 :Case Catalog:
-  * :ref:`2019 Hurricane Barry <2019 Hurricane Barry>`
   * :ref:`2018 Hurricane Michael <2018 Hurricane Michael>`
+  * :ref:`2019 Hurricane Barry <2019 Hurricane Barry>`
   * :ref:`2019 Halloween Storm <2019 Halloween Storm>`
-  * :ref:`2017 Denver Inversion <2017 Denver Inversion>`
   * :ref:`2020 January Cold Bias <2020 January Cold Bias>`
+  * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
   * :ref:`2020 Easter Sunday Storm <2020 Easter Sunday Storm>`
+  * :ref:`2017 Denver Inversion <2017 Denver Inversion>`
   
 This documentation provides resources for representative case studies in the Unified Forecast System Weather model.
 
@@ -65,12 +64,13 @@ Contents
    :maxdepth: 3
    
    Intro.rst
-   2019Barry.rst
    2018Michael.rst
-   2019Haloween.rst
-   2017DenverPBL.rst
+   2019Barry.rst
+   2019HaloweenStorm.rst
+   2020EasterStorm.rst
+   2019MemHeat.rst
    2020ColdBias.rst
-   2020Easter.rst
+   2017DenverPBL.rst
    example.rst
 
 

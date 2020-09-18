@@ -70,6 +70,6 @@ Ngl.draw(contour)
 Ngl.end()
 
 # %%
-# .. figure:: /images/FV3_T2_20200121_1200_GFSv16beta.png
+# .. figure:: /images/2020JanCold/FV3_T2_20200121_1200_GFSv16beta.png
 #  :width: 600
 #  :align: center
