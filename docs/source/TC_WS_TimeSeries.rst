@@ -12,7 +12,7 @@
 Plotting Time Series of Vortex Center Max. WS
 ==========================================
 
-This example plots time series of the maximum wind speed at the vortex center estimated from tc-tracker, as well as Best Track data.
+This example plots time series of the maximum wind speed at the vortex center estimated from `GFDL tc-tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ as well as the Best Track data.
 
 
 .. code-block:: default
@@ -31,7 +31,7 @@ This example plots time series of the maximum wind speed at the vortex center es
     csv_file2 = "GFSv16beta/fort.69"
     tc2 = np.recfromcsv(csv_file2, unpack=True, names=['stormid', 'count', 'initdate', 'constant', 'atcf', 'leadtime', 'lat','lon','ws','mslp','placehoder', 'thresh', 'neq', 'blank1', 'blank2', 'blank3','blank4','blank5','blank6','blank7'], dtype=None)
 
-    # Read BestTrack data
+    # Read Best Track data
     bal_file ="/home/Xia.Sun/PySripts/TC_tracker/bal022019_post.dat"
     bal = np.recfromcsv(bal_file,unpack=True,delimiter=",",usecols=[0,2,6,7,8,9,10,11],names=['stormid','time','lat','lon','ws','mslp','intens','thresh'],dtype=None)
 
