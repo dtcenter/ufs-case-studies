@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020040712.gfs.nemsio.tar.gz <https://domain.invalid/>`
+        :download:`Download initial condition files: 2020040712.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040712.gfs.nemsio.tar.gz>`
   
   .. group-tab:: GFS.v16.0.10
 

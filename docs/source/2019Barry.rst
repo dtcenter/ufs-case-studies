@@ -40,7 +40,7 @@ Model Configuration and Datasets
  
       ./xmlchange RUN_STARTDATE=2019-07-01,START_TOD=0,STOP_OPTION=nhours,STOP_N=120
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `Best Track dataset <https://domain.invalid/>`_ provides the ‘truth’ data for hurricane evolution.
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `Best Track dataset <https://www.nhc.noaa.gov/data/#hurdat>`_ provides the ‘truth’ data for hurricane evolution.
 
     .. container:: sphx-glr-footer
        :class: sphx-glr-footer-example
@@ -48,7 +48,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019071100.gfs.nemsio.tar.gz  <https://domain.invalid/>`
+        :download:`Download initial condition files: 2019071100.gfs.nemsio.tar.gz  <https://ufs-case-studies.s3.amazonaws.com/2019071100.gfs.nemsio.tar.gz>`
 
   .. group-tab:: GFS.v16.0.10
 

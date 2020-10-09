@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 project = 'Case Studies for UFS Weather Model'
-copyright = '2020 '
+copyright = '2020, Development supported by Hurricane Supplemental Project Plan 1A-2-2a: Complete Hierarchical Testing Framework (HTF) architecture'
 author = 'Xia Sun'
 
 # The full version, including alpha/beta/rc tags
