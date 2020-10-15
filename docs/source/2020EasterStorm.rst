@@ -71,7 +71,7 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * MRW_GFSv16beta more correctly forecasted the surface low compared with MRW_GFSv15p2.
+    * MRW_GFSv16beta more correctly forecasts the surface low compared with MRW_GFSv15p2.
 
     .. figure:: images/2020Easter/500mb_MRW_v1.0_2020EasterStorm_trim.png
       :width: 1200
@@ -88,8 +88,8 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * GFS.v16.0.10 generated a surface low eastward of GFS_ANL.
-    * The trough in GFS.v16.0.10 moved eastwards slightly faster compared with GFS_ANL.
+    * GFS.v16.0.10 generates a surface low eastward of GFS_ANL.
+    * The trough in GFS.v16.0.10 moves eastwards slightly faster compared with GFS_ANL.
   
     .. figure:: images/2020Easter/500mb_GFS.v16.0.10_2020EasterStorm_trim.png
       :width: 1200
@@ -97,7 +97,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * GFS.v16.0.10 generated a progressive synoptic pattern compared GFS_ANL. 
+    * GFS.v16.0.10 generates a progressive synoptic pattern compared GFS_ANL. 
 
 ====================================
 Surface Temperature and Wind Speed
@@ -119,7 +119,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * MRW_GFSv16beta more correctly captured the magnitudes of surface gust at the Gulf of Mexico compared with MRW_GFSv15p2.
+    * MRW_GFSv16beta more correctly captures the magnitudes of surface gust at the Gulf of Mexico compared with MRW_GFSv15p2.
   .. group-tab:: GFS.v16.0.10
 
     .. figure:: images/2020Easter/2mT_GFS.v16.0.10_2020EasterStorm_trim.png
@@ -135,5 +135,5 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * GFS.v16.0.10 generated higher magnitudes of surface gust over the Southeastern U.S. which is related to the progressive synoptic pattern compared with GFS_ANL.
+    * GFS.v16.0.10 generates higher magnitudes of surface gust over the Southeastern U.S. which is related to the progressive synoptic pattern compared with GFS_ANL.
 

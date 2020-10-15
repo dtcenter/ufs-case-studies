@@ -73,7 +73,7 @@ Synoptic Dynamics
 
       Mean sea-level pressure (MSLP, hPa)
 
-    * MRW_GFSv15p2 simulated the sea level pressure structure more reasonably than MRW_GFSv16beta.
+    * MRW_GFSv15p2 simulates the sea level pressure structure more reasonably than MRW_GFSv16beta.
 
     .. figure:: images/2019Halloween/500mb_MRW_v1.0_2019HalloweenStorm_trim.png
       :width: 1200
@@ -81,8 +81,8 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * MRW_GFSv15p2 generated a progressive synoptic pattern compared with reanalysis data.
-    * MRW_GFSv16beta alleviated the progressiveness of synoptic pattern.     
+    * MRW_GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data.
+    * MRW_GFSv16beta alleviates the progressiveness of synoptic pattern.     
 
   .. group-tab:: GFS.v16.0.10
 
@@ -92,8 +92,8 @@ Synoptic Dynamics
 
       Mean sea-level pressure (MSLP, hPa)
 
-    * The strength of sea level pressure gradient was weaker in GFS.v16.0.10 over the Northeastern U.S.
-    * Higher seal level pressure controlled the U.S. east coast in GFS.v16.0.10.
+    * The strength of sea level pressure gradient is weaker in GFS.v16.0.10 over the Northeastern U.S.
+    * Higher sea level pressure controlls the U.S. east coast in GFS.v16.0.10.
 
     .. figure:: images/2019Halloween/500mb_GFS.v16.0.10_2019HalloweenStorm_trim.png
       :width: 1200
@@ -101,7 +101,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * GFS.v16.0.10 generated a progressive synoptic pattern compared with reanalysis data.
+    * GFS.v16.0.10 generates a progressive synoptic pattern compared with reanalysis data.
     * The positive tilted trough in GFS.v16.0.10, versus the negative tilted trough in GFS_ANL, indicates a less severe storm over the eastern U.S.
 
 ====================================
@@ -125,8 +125,8 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s) valid at 00z 1 Nov 2019
 
-    * MRW_GFSv15p2 captured the magnitudes of surface gust as in GFS_ANL. 
-    * MRW_GFSv16beta did not reach the peak of surface gust as in GFS_ANL.
+    * MRW_GFSv15p2 captures the magnitudes of surface gust as in GFS_ANL. 
+    * MRW_GFSv16beta does not reach the peak of surface gust as in GFS_ANL.
   .. group-tab:: GFS.v16.0.10
 
     .. figure:: images/2019Halloween/2mT_GFS.v16.0.10_2019HalloweenStorm_trim.png
@@ -143,7 +143,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s) valid at 00z 1 Nov 2019
 
-    * GFS.v16.0.10 did not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with GFS_ANL. 
+    * GFS.v16.0.10 does not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with GFS_ANL. 
 
 
 ====================================
@@ -158,7 +158,7 @@ Moisture/Precipitation
 
       2-m relative Humidity (RH,%) valid at 00z 1 Nov 2019
 
-    * Dryline across the central U.S. was not simulated well in the two physics compsets.
+    * Dryline across the central U.S. is not simulated well in the two physics compsets.
 
     .. figure:: images/2019Halloween/Refc_MRW_v1.0_2019HalloweenStorm_trim.png
       :width: 1200
@@ -166,7 +166,7 @@ Moisture/Precipitation
 
       Composite reflectivity (dB) valid at 00z 1 Nov 2019 
 
-    * The precipitation location lagged behind the MRW_GFSv16beta compared with GFS_ANL, while moved further northeastwards in MRW_GFSv15p2. 
+    * The precipitation location lags behind the MRW_GFSv16beta compared with GFS_ANL, while the precipitation location moves further northeastwards in MRW_GFSv15p2 compared with GFS_ANL. 
   .. group-tab:: GFS.v16.0.10
 
     .. figure:: images/2019Halloween/2mRH_GFS.v16.0.10_2019HalloweenStorm_trim.png
@@ -175,7 +175,7 @@ Moisture/Precipitation
 
       2-m relative Humidity (RH,%) valid at 00z 1 Nov 2019 
 
-    * The dryline across the middle U.S. blurred out in GFS.v16.0.10.
+    * The dryline across the middle U.S. blurs out in GFS.v16.0.10.
     * Dry bias over the Eastern U.S. and wet bias over the Western U.S.  
 
     .. figure:: images/2019Halloween/Refc_GFS.v16.0.10_2019HalloweenStorm_trim.png
@@ -184,4 +184,4 @@ Moisture/Precipitation
 
       Composite reflectivity (dB) valid at 00z 1 Nov 2019  
 
-    * Lower composite reflectivity values suggesting less intensive precipitation over the Northeastern U.S. 
+    * Lower composite reflectivity values suggest less intensive precipitation over the Northeastern U.S. 

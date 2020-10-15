@@ -70,8 +70,8 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * Positive bias of sea level pressure in Midwestern U.S. and Southern Ontario existed in both MRW_GFSv15p2 and MRW_GFSv16beta simulations, featuring with clearer skies.
-    * The surface flow pattern over Midwestern U.S was from northwest in the model, which lead more cold air from Canada compared with GFS_ANL.
+    * Positive bias of sea level pressure in Midwestern U.S. and Southern Ontario exist in both MRW_GFSv15p2 and MRW_GFSv16beta simulations, featuring with clearer skies.
+    * The surface flow pattern over Midwestern U.S is from northwest in the model, which leads more cold air from Canada compared with GFS_ANL.
 
     .. figure:: images/2020JanCold/500mb_MRW_v1.0_2020JanCold_trim.png
       :width: 1200
@@ -79,7 +79,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * Both two physics compsets simulated a positive trough over Ontario, which usually generates the least amount of severe weather.
+    * Both two physics compsets simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -89,8 +89,8 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * GFS.v16.0.10 simulated higher sea level pressure and weaker pressure gradient over Ontario, and lower sea level pressure over the Northeast.
-    * The surface flow pattern over Midwestern U.S was from northwest in the model, which lead more cold air from Canada compared with GFS_ANL. 
+    * GFS.v16.0.10 simulates higher sea level pressure and weaker pressure gradient over Ontario, and lower sea level pressure over the Northeast.
+    * The surface flow pattern over Midwestern U.S is from northwest in the model, which leads more cold air from Canada compared with GFS_ANL. 
 
     .. figure:: images/2020JanCold/500mb_GFS.v16.0.10_2020JanCold_trim.png
       :width: 1200
@@ -98,7 +98,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * A positive tilted trough was located at Ontario in GFS.v16.0.10, while not in GFS_ANL
+    * A positive tilted trough is located at Ontario in GFS.v16.0.10, while not in GFS_ANL
 
 ======================================================
 Surface Temperature and Wind Speed
@@ -112,7 +112,7 @@ Surface Temperature and Wind Speed
 
       2-m temperature (F) 
 
-    * MRW_GFSv16beta and MRW_GFSv15p2 generated a cold bias over central U.S. and Ontario during this Arctic cold blast event.
+    * MRW_GFSv16beta and MRW_GFSv15p2 generates a cold bias over central U.S. and Ontario during this Arctic cold blast event.
 
     .. figure:: images/2020JanCold/GUST_MRW_v1.0_2020JanCold_trim.png
       :width: 1200
@@ -120,7 +120,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * The surface wind gust over Ontario was not simulated well in the model, which is related to the higher simulated surface pressure and weaker pressure gradient at this region.
+    * The surface wind gust over Ontario is not simulated well in the model, which is related to the higher simulated surface pressure and weaker pressure gradient at this region.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -130,7 +130,7 @@ Surface Temperature and Wind Speed
 
       2-m temperature (F)
 
-    * Consistent cold bias (larger than -15 F) existed over Ontario and scattered cold bias over Midwest.
+    * Consistent cold bias (larger than -15 F) exists over Ontario and scattered cold bias over Midwest.
 
     .. figure:: images/2020JanCold/GUST_GFS.v16.0.10_2020JanCold_trim.png
       :width: 1200
@@ -138,4 +138,4 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * GFS.v16.0.10 simulated weaker wind speed across Midwest and Ontario.
+    * GFS.v16.0.10 simulates weaker wind speed across Midwest and Ontario.

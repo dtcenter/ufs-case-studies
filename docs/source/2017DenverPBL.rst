@@ -72,7 +72,7 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 
       Skew-T Log-P plot from observed and simulated sounding profiles. Indices including K-index and lapse rate are shown in the bottom.
 
-    * The two physics compsets, MRW_GFSv15p2 and MRW_GFSv16beta, underestimated the temperature inversion strength at 800 hPa with a warmer near surface temperature and a colder temperature at the top of inversion.  
+    * The two physics compsets, MRW_GFSv15p2 and MRW_GFSv16beta, underestimate the temperature inversion strength at 800 hPa with a warmer near surface temperature and a colder temperature at the top of inversion.  
 
   .. group-tab:: GFS.v16.0.10
   
@@ -82,6 +82,6 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 
       Skew-T Log-P plot from observed and simulated sounding profiles. Indices including K-index and lapse rate are shown in the bottom.
 
-    * GFS.v16.0.10 underestimated the temperature inversion strength at 800 hPa with a warmer near surface temperature and a colder temperature at the top of inversion.  
+    * GFS.v16.0.10 underestimates the temperature inversion strength at 800 hPa with a warmer near surface temperature and a colder temperature at the top of inversion.  
 
 

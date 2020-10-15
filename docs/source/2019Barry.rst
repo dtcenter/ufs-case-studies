@@ -88,8 +88,8 @@ Hurricane Track and Intensity
 
       Hurricane tracks from MRW_GFSv16beta (red line), MRW_GFSv15p2 (blue line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
-    * Both MRW_GFSv16beta and MRW_GFSv15p2 generated right-of-track biases. 
-    * Hurricane track and intensity simulated by MRW_GFSv15p2 were closer to Best Track compared with MRW_GFSv16beta.
+    * Both MRW_GFSv16beta and MRW_GFSv15p2 generate right-of-track biases. 
+    * Hurricane track and intensity simulated by MRW_GFSv15p2 are closer to Best Track compared with MRW_GFSv16beta.
 
 
     .. figure:: images/2019Barry/tracker_ws_mslp_Barry.png
@@ -98,8 +98,8 @@ Hurricane Track and Intensity
 
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
-    * The peak wind speed at the vortex center in MRW_GFSv15p2 (60 kts) was closer to Best Track (67 kts) compared with MRW_GFSv16beta (50 kts).
-    * Both two physics compsets simulated the minimum sea level pressure relatively well.  
+    * The peak wind speed at the vortex center in MRW_GFSv15p2 (60 kts) is closer to Best Track (67 kts) compared with MRW_GFSv16beta (50 kts).
+    * Both two physics compsets simulate the minimum sea level pressure relatively well.  
 
   .. group-tab:: GFS.v16.0.10
 
@@ -109,7 +109,7 @@ Hurricane Track and Intensity
 
       Hurricane tracks from GFS.v16.0.10 (red line) and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
-    * GFS.v16.0.10 generated right-of-track bias. 
+    * GFS.v16.0.10 generates right-of-track bias. 
 
     .. figure:: images/2019Barry/tracker_ws_mslp_BARRY_GFS.v.16.0.10.png
       :width: 1200
@@ -117,8 +117,8 @@ Hurricane Track and Intensity
 
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
-    * The time variation of maximum wind speed in GFS.v16.0.10 agreed well with Best Track.
-    * The minimum sea level pressure reached to a lower value in GFS.v16.0.10 (982 hPa) compared with Best Track (993 hPa). 
+    * The time variation of maximum wind speed in GFS.v16.0.10 agrees well with Best Track.
+    * The minimum sea level pressure reaches to a lower value in GFS.v16.0.10 (982 hPa) compared with Best Track (993 hPa). 
 
 ====================================
 Comparison with Satellite Data
@@ -147,6 +147,6 @@ Hovmöller diagram of 850 hPa WS after Landfall
 
       Hovmöller diagram of wind speed and 850 hPa and the radius of maximum wind (RMW, white line) after landfall
 
-    * The low-level wind speed in UFS weather model was smaller than GFS_ANL.
-    * The MRW_GFSv16beta had the largest inner core size. MRW_GFS15p2 had similar inner core sizes and GFS_ANL.
-    * Hurricane intensity attenuated faster in the model compared with Best Track after landfall.
+    * The low-level wind speed in UFS weather model is smaller than GFS_ANL.
+    * The MRW_GFSv16beta has the largest inner core size. MRW_GFS15p2 has similar inner core sizes and GFS_ANL.
+    * Hurricane intensity attenuates faster in the model compared with Best Track after landfall.
