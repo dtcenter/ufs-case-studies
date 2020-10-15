@@ -93,7 +93,7 @@ Synoptic Dynamics
       Mean sea-level pressure (MSLP, hPa)
 
     * The strength of sea level pressure gradient is weaker in GFS.v16.0.10 over the Northeastern U.S.
-    * Higher sea level pressure controlls the U.S. east coast in GFS.v16.0.10.
+    * Higher sea level pressure controls the U.S. east coast in GFS.v16.0.10.
 
     .. figure:: images/2019Halloween/500mb_GFS.v16.0.10_2019HalloweenStorm_trim.png
       :width: 1200
