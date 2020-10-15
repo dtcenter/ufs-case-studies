@@ -7,7 +7,7 @@
 Introduction
 =====================================
 
-Challenges for accurate weather prediction still exist in numerical models. To facilitate the development and improvement of the NOAA `Unified Forecast System (UFS) <https://ufscommunity.org/>`_ Weather Model (WM), case studies are needed based on these forecast challenges. There are several known model biases in the UFS WM. These known biases include but are not limited to progressive synoptic patters, degraded tropical cyclone tracks, and incapability to simulate stable boundary layer structures.
+Challenges for accurate weather prediction still exist in numerical models. To facilitate the development and improvement of the NOAA `Unified Forecast System (UFS) <https://ufscommunity.org/>`_ Weather Model (WM), case studies are needed based on these forecast challenges. There are several `known model biases in the UFS WM <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_. These known biases include but are not limited to progressive synoptic patters, degraded tropical cyclone tracks, and incapability to simulate stable boundary layer structures.
 
 This document provides case studies evaluation results for the UFS Weather Model using `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ and `NOAA Enviromental Model Center (EMC) Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_. It should be noted that this is an ongoing effort that is aligned with the model public release and model development. Namely these evaluation results only apply to specific model versions.
 
