@@ -5,6 +5,9 @@ Plotting Spatial Map of 2-m Temperature
 This example plots the spatial distribution of 2-m temperature from UFS WM outputs.
 
 """
+# Purpose: plot spatial map of 2-m temperature field from UFS Medium-Range Weather App model run outputs.
+# Usage: python Spatial_2m_T.py
+# Author: Xia Sun, xia.sun@noaa.gov, Oct 15, 2020
 
 import Ngl, Nio
 import pandas as pd

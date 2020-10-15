@@ -16,6 +16,10 @@ This example plots the hurricane tracks and intensity estimated from `GFDL tc-tr
 
 
 .. code-block:: default
+    
+    # Purpose: plot hurricane tracks and intensity (maximum wind speed) map from GFDL tc-tracker results.
+    # Usage: python TC_Tracks_Intensity.py
+    # Author: Xia Sun, xia.sun@noaa.gov, Oct 15, 2020
 
     from matplotlib import pyplot as plt
     from mpl_toolkits.basemap import Basemap

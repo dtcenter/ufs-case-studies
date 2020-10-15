@@ -16,6 +16,10 @@ This script plots the 850 hPa radial wind speed with leading times. The `radialA
 
 
 .. code-block:: default
+    
+    ; Purpose: plot the 850 hPa radial wind speed variation with leading times from UFS Medium-Range Weather App model run outputs, as well as the GFDL tc-tracker outputs. The radialAvg.ncl needs to be staged to the same directory from UFS Medium-Range Weather App model run outputs, as well as the GFDL tc-tracker outputs.
+    ; Usage: ncl tc_radial_time_RMW.ncl
+    ; Author: Xia Sun, xia.sun@noaa.gov, Oct 15, 2020
 
     loadscript( "radialAvg.ncl")
 
