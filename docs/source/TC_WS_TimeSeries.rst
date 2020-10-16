@@ -17,6 +17,9 @@ This example plots time series of the maximum wind speed at the vortex center es
 
 .. code-block:: default
 
+    # Purpose: plot time series of the maximum wind speed at the vortex center from GFDL tc-tracker results.
+    # Usage: python TC_WS_TimeSeries.py
+    # Author: Xia Sun, xia.sun@noaa.gov, Oct 15, 2020
 
     from matplotlib import pyplot as plt
     import numpy as np

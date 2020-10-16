@@ -8,7 +8,7 @@
 2019 Memorial Day Heat Wave
 =====================================
 
-A heat wave occurs on the weekend of 2019 Memorial Day across the Southeast U.S. 
+A heat wave occurred on the weekend of 2019 Memorial Day across the Southeast U.S. 
 
 ..............................
 Model Configuration and Datasets
@@ -74,8 +74,10 @@ Synoptic Dynamics
       :width: 1200
       :align: center
 
-      500 hPa geopotential heights (dam), absolute vorticity (10 :sup:`-5`/s), and winds (m/s)
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
+    * The synoptic patterns at surface and 500hPa from the two physics compsets agree well with GFS_ANL.
+    
   .. group-tab:: GFS.v16.0.10
 
     .. figure:: images/2019MemHeat/MSLP_GFS.v16.0.10_2019MemHeat_trim.png
@@ -88,7 +90,9 @@ Synoptic Dynamics
       :width: 1200
       :align: center
 
-      500 hPa geopotential heights (dam), absolute vorticity (10 :sup:`-5`/s), and winds (m/s)
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * The synoptic patterns at surface and 500hPa from GFS.v16.0.10 agree well with GFS_ANL.
 
 ======================================================
 Surface Temperature
@@ -103,6 +107,7 @@ Surface Temperature
       2-m temperature (F) 
 
     * MRW_GFSv15p2 forecasts the heat wave better than MRW_GFSv16beta across the Southeast.
+    * There is cold bias over the contiguous U.S. in MRW_GFSv16beta.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -112,4 +117,4 @@ Surface Temperature
 
       2-m temperature (F)
 
-    * GFS.v16.0.10 captures the high temperatures across the Southeast.
+    * GFS.v16.0.10 successfully captures the high temperatures across the Southeast.

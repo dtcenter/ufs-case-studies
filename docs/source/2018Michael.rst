@@ -23,6 +23,7 @@
 .. _2018 Hurricane Michael:
 2018 Hurricane Michael
 =====================================
+Hurricane Michael was a category 5 hurricane, which made landfall at Florida on October 10, 2018.  The peak wind speed and the minimum surface pressure reached to 140 knots and 919 hPa, respectively.
 
 ................................
 Model Configuration and Datasets
@@ -83,7 +84,7 @@ Hurricane Track and Intensity
 
       Hurricane tracks from MRW_GFSv16beta (red line), MRW_GFSv15p2 (blue line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
-    * MRW_GFSv16beta and MRW_GFSv15p2 generate left-of-track bias. 
+    * MRW_GFSv16beta and MRW_GFSv15p2 generate left-of-track bias. Hurricane track from MRW_GFSv15p2 is closer to the Best Track compared with MRW_GFSv16beta. 
     * MRW_GFSv16beta and MRW_GFSv15p2 do not capture the hurricane intensities (represented by max WS), especially before the landfall.
 
 
@@ -92,6 +93,9 @@ Hurricane Track and Intensity
       :align: center
 
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
+
+    * The maximum surface wind speed at the vortex center in MRW_GFSv15p2 (80 kts) is larger than MRW_GFSv16beta (60 kts). However, both two physics compsets do not reach the peak intensity identified in Best Track data (140 kts).
+    * The minimum sea level pressures from MRW_GFSv15p2 and MRW_GFSv16beta are 965 hPa and 985 hPa, respectively, which are larger than Best Track data.
   
   .. group-tab:: GFS.v16.0.10
 
@@ -107,6 +111,9 @@ Hurricane Track and Intensity
       :width: 1200
       :align: center
       
-      Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel) 
+      Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
+
+    * The maximum surface wind speed at the vortex center in GFS.v16.0.10 reaches to 90 kts, which is 50 kts lower than Best Track data.
+    * The minimum sea level pressure from GFS.v16.0.10 is 950 hPa, versus 919 hPa from Best Track data. 
 
 

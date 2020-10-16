@@ -5,6 +5,10 @@ Plotting Hurricane Track and Intensity Map
 This example plots the hurricane tracks and intensity estimated from `GFDL tc-tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ as well as the Best Track data.
 
 """
+# Purpose: plot hurricane tracks and intensity (maximum wind speed) map from GFDL tc-tracker results.
+# Usage: python TC_Tracks_Intensity.py
+# Author: Xia Sun, xia.sun@noaa.gov, Oct 15, 2020
+
 from matplotlib import pyplot as plt
 from mpl_toolkits.basemap import Basemap
 import numpy as np

@@ -17,6 +17,9 @@ This example plots the 500mb geopotential height and absolute vorticity.
 
 .. code-block:: default
 
+    # Purpose: plot 500mb geopotential height and absolute vorticity from UFS Medium-Range Weather App model run outputs.
+    # Usage: python 500mb_HGT_ABS.py
+    # Author: Xia Sun, xia.sun@noaa.gov, Oct 15, 2020
 
     from __future__ import print_function
     import Ngl, Nio
