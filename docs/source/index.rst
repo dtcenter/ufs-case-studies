@@ -45,7 +45,7 @@ This documentation provides resources for representative case studies in the Uni
   * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
   * :ref:`2020 January Cold Bias <2020 January Cold Bias>`
   * :ref:`2017 Denver Inversion <2017 Denver Inversion>`
-:Date of last update:  |today|
+:Date of Last Update:  |today|
 
 ..............................
 Notable Links

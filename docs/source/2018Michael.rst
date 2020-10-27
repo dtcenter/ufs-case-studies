@@ -116,4 +116,12 @@ Hurricane Track and Intensity
     * The maximum surface wind speed at the vortex center in GFS.v16.0.10 reaches to 90 kts, which is 50 kts lower than Best Track data.
     * The minimum sea level pressure from GFS.v16.0.10 is 950 hPa, versus 919 hPa from Best Track data. 
 
+......................
+Summary and Discussion
+......................
 
+The physics compset of GFS.v16beta in MRW.v1.0 does not show improvements compared with the compset of GFS.v15p2 in simulating Hurricane Michael track and intensity. The physics for MRW_GFS.v16beta was frozen in Jan 2020 for the public release of UFS MRW App version 1.0. Several major changes have been made to the GFS model after that, which include the modified background diffusivity as a function of stability in the PBL scheme (`Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_). In GFS.v16.0.10 (GitHub tag created in Jun 2020), the simulated hurricane landfall location and hurricane intensity is slightly more close to Best Track data compared to MRW_GFSv15p2.
+
+**References**
+
+Yang F. (2020). Development and evaluation of NCEP's Global Forecast System Version 16. *Unified Forecast System Community Webinar*, Oct 22, 2020. [`Link <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_]

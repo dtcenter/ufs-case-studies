@@ -139,3 +139,9 @@ Surface Temperature and Wind Speed
       Surface gust (m/s)
 
     * GFS.v16.0.10 simulates weaker wind speed across Midwest and Ontario.
+
+......................
+Summary and Discussion
+......................
+
+The GFS model generates consistent cold biases from the three model versions (MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10) during this extreme temperature event in the winter season. 

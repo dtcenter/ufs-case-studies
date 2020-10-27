@@ -185,3 +185,13 @@ Moisture/Precipitation
       Composite reflectivity (dB) valid at 00z 1 Nov 2019  
 
     * Lower composite reflectivity values suggest less intensive precipitation over the Northeastern U.S. 
+      
+......................
+Summary and Discussion
+......................
+
+MRW_GFSv15p2 generates a progressive synoptic pattern during the 2019 Halloween Storm, while MRW_GFSv16beta generates a regressive synoptic pattern compared with GFS analysis data. GFS.v16.0.10 alleviates the progressiveness of MRW_GFSv15p2 but still generates a cold bias along the U.S. east coast. Major changes in GFS.v16 from GFS.v15 can be referred to `Yang (2020) <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_.
+
+**References**
+
+Yang F. (2020). Development and evaluation of NCEP's Global Forecast System Version 16. *Unified Forecast System Community Webinar*, Oct 22, 2020. [`Link <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_]
