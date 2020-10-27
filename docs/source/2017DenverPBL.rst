@@ -82,6 +82,11 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 
       Skew-T Log-P plot from observed and simulated sounding profiles. Indices including K-index and lapse rate are shown in the bottom.
 
-    * GFS.v16.0.10 underestimates the temperature inversion strength at 800 hPa with a warmer near surface temperature and a colder temperature at the top of inversion.  
+    * GFS.v16.0.10 underestimates the temperature inversion strength at 800 hPa with a warmer near surface temperature and a colder temperature at the top of inversion. 
+ 
+......................
+Summary and Discussion
+......................
 
+The 2017 Denver Inversion results show that the GFS model lacks skills in forecasting the boundary layer temperature inversion for MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10, with a warmer near-surface temperature and a colder temperature at the top of the inversion. 
 

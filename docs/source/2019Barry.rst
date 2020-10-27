@@ -147,6 +147,16 @@ Hovmöller diagram of 850 hPa WS after Landfall
 
       Hovmöller diagram of wind speed and 850 hPa and the radius of maximum wind (RMW, white line) after landfall
 
-    * The low-level wind speed in UFS weather model is smaller than GFS_ANL.
+    * The low-level wind speed in GFS model is smaller than GFS_ANL.
     * The MRW_GFSv16beta has the largest inner core size. MRW_GFS15p2 has similar inner core sizes and GFS_ANL.
     * Hurricane intensity attenuates faster in the model compared with Best Track after landfall.
+      
+......................
+Summary and Discussion
+......................
+
+The exacerbated right-of-track bias exists in both GFS.v16.0.10 and MRW_GFSv16beta compared with GFSv15p2. The right-of-track bias is likely associated with overactive convection and vortex tilt. This tends to induce convergence towards that excessive convection and leads to track bias (`Lybarger et al. 2020 <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_).
+
+**References**
+
+Lybarger N. D., Kalina E., and Newman K. (2020). Diagnosing Hurricane Track Errors in the UFS Short-Range Weather Application (SRW). *The First UFS Users' Workshop*, July 27-29, 2020. [`Link <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_]

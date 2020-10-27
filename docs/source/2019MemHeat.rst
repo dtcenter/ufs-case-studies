@@ -8,7 +8,7 @@
 2019 Memorial Day Heat Wave
 =====================================
 
-A heat wave occurred on the weekend of 2019 Memorial Day across the Southeast U.S. 
+A heat wave occurred on the weekend of 2019 Memorial Day across the Southeastern U.S. 
 
 ..............................
 Model Configuration and Datasets
@@ -107,7 +107,7 @@ Surface Temperature
       2-m temperature (F) 
 
     * MRW_GFSv15p2 forecasts the heat wave better than MRW_GFSv16beta across the Southeast.
-    * There is cold bias over the contiguous U.S. in MRW_GFSv16beta.
+    * There is cold bias over the contiguous U.S. (CONUS) in MRW_GFSv16beta.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -118,3 +118,11 @@ Surface Temperature
       2-m temperature (F)
 
     * GFS.v16.0.10 successfully captures the high temperatures across the Southeast.
+
+......................
+Summary and Discussion
+......................
+
+MRW_GFSv16beta generates a cold bias for 2-m temperature over most of CONUS during the 2019 Memorial Day Heat Wave event. However, both MRW.GFSv15p2 and GFS.v16.0.10 simulate the extreme temperature well over the Southeastern U.S. This means that the cold bias of this extreme temperature case in the GFS model is already fixed in the following physics developments (see `Timeline of physics frozen`_ for the different model versions).
+
+.. _Timeline of physics frozen: _images/TimeLine_Oct2020.png

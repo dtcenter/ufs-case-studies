@@ -7,9 +7,25 @@
 Introduction
 =====================================
 
-Challenges for accurate weather prediction still exist in numerical models. To facilitate the development and improvement of the NOAA `Unified Forecast System (UFS) <https://ufscommunity.org/>`_ Weather Model (WM), case studies are needed based on these forecast challenges. There are several `known model biases in the UFS WM <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_. These known biases include but are not limited to progressive synoptic patters, degraded tropical cyclone tracks, and incapability to simulate stable boundary layer structures.
+Challenges for accurate weather predictions still exist in numerical models. To facilitate the development and improvement of the NOAA operational model, NOAA's Global Forecast System (GFS) is shared with the broad community through the `Unified Forecast System (UFS) <https://ufscommunity.org/>`_ applications. The UFS Medium-Range Weather (MRW) Application (App) provides the source code of GFS, including physics schemes for GFS version 15 (CompSet ``GFS.v15p2``) and additional developmental schemes for GFS version 16 (CompSet ``GFS.v16beta``). The most up-to-date source codes for GFS.v16 can be accessed from the `ufs-weather-model <https://github.com/ufs-community/ufs-weather-model>`_ GitHub repository. GFS.v15 went into operations in June 2019, the operational implementation fo GFS.v16 is currently planned for February 2021 (`Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_). The known biases and development priorities related to GFS.v15 (`Stan et al. 2019 <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_) and GFS.v16 (recently presented by `Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_) have been identified and listed below: 
 
-This document provides case studies evaluation results for the UFS Weather Model using `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ and `NOAA Enviromental Model Center (EMC) Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_. It should be noted that this is an ongoing effort that is aligned with the model public release and model development. Namely these evaluation results only apply to specific model versions.
+.. tabs::
+  .. group-tab:: GFS.v15 
+
+    - Less skillful hurricane track forecasts for strong storms in the Atlantic basin
+    - Progressive with synoptic patterns
+    - Extreme 2-m temperature biases in the mid-west region in the warm season
+    - Cold bias in the lower troposphere and near the surface in the winter season
+    - Precipitation dry bias for moderate rainfall
+    - Struggle to capture boundary layer inversions    
+  .. group-tab:: GFS.v16
+
+    - Increased right-of-track bias for tropical cyclones (TC) at longer lead times at North Atlantic
+    - Larger TC False Alarm Rate in the western North Atlantic
+    - Exacerbated low instability bias, which is largely related to dry soil moisture
+    - Poor representation of radiation inversions
+   
+This document provides case studies evaluation results for GFS using the `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ with the target audience being a broad community. These cases are also run using the NOAA Environmental Model Center (EMC) `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_, which points to the most up-to-date GFS codes, and are expected to provide insights for the on-going model development. Brief descriptions for MRW App and Global Workflow are below. 
 
 .. tabs::
   .. group-tab:: Medium-Range Weather (MRW) App 
@@ -18,11 +34,23 @@ This document provides case studies evaluation results for the UFS Weather Model
   
   .. group-tab:: Global Workflow
 
-	The `Global Workflow <https://github.com/NOAA-EMC/global-workflow>`_ developed by `NOAA EMC <https://www.emc.ncep.noaa.gov/emc_new.php>`_ is a superstructure that supports the Finite-Volume on a Cubed-Sphere Global Forecast System (FV3GFS) development. It includes submodules that points to the most up-to-date GFS model development codes. The current UFS weather model version employed in the global workflow is the ``GFS.v16.0.10`` git tag from the `ufs-weather-model repository <https://github.com/ufs-community/ufs-weather-model>`_. Case study results are updated each time the physics innovations are included in the GFS model between two subsequent public releases.
+	The `Global Workflow <https://github.com/NOAA-EMC/global-workflow>`_ developed by `NOAA EMC <https://www.emc.ncep.noaa.gov/emc_new.php>`_ is a superstructure that supports the Finite-Volume on a Cubed-Sphere Global Forecast System (FV3GFS) development. It includes submodules that points to the most up-to-date GFS model development codes located in the `ufs-weather-model <https://github.com/ufs-community/ufs-weather-model>`_ GitHub repository. Case study results are continually updated when substantial physics innovations are included and GitHub tags (e.g., ``GFS.v16.0.10``) are created between two subsequent public releases.
 
-The goal of this ongoing effort is to provide the community, as well as the physics development team, with a model testing platform where they can use the resources to conduct model runs and evaluate the model performance for representative meteorological cases. These case studies will provide insights for future model developments in aim to improve NOAA numerical weather forecasts. 
+The goal of this ongoing effort is to provide the community, as well as the physics development team, with a model testing platform where they can use the resources to conduct model runs and evaluate the model performance for representative meteorological cases. These case studies will provide insights for future model developments and aim at improving NOAA numerical weather forecasts. It should be noted that this is an ongoing effort that is aligned with the model public release and model development. Namely these evaluation results only apply to specific model versions. Timeline of physics frozen date in different model versions, including both UFS MRW APP CompSets and ufs-weather-model GitHub tags, are shown below:
 
-The case catalogue in this documentation are created based on the known biases of the UFS WM. This is a list that we are updating diligently. Please come back to check updates anytime.
+.. figure:: images/TimeLine_Oct2020.png
+   :scale: 38%
+   :align: center
+
+   Timeline of physics frozen date
+
+The case catalogue in this documentation are created based on the known biases of GFS model. This is a list that we are updating diligently. Please come back to check updates anytime.
+
+**References**
+
+Stan C., Yang F., and Harris L. (2019). UFS Development Goals and Priorities for Medium-Range and S2S Applications. *Unified Forecast System Community*. [`Link <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_]
+
+Yang F. (2020). Development and evaluation of NCEP's Global Forecast System Version 16. *Unified Forecast System Community Webinar*, Oct 22, 2020. [`Link <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_]
 
 
 
