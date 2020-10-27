@@ -155,7 +155,7 @@ Hovmöller diagram of 850 hPa WS after Landfall
 Summary and Discussion
 ......................
 
-The exacerbated right-of-track bias exists in both GFS.v16.0.10 and MRW_GFSv16beta compared with GFSv15p2. The right-of-track bias is suspected to associate with overactive convection and vortex tilt, which induces convergence towards the excessive convection and leads to track bias (`Lybarger et al. 2020 <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_).
+The exacerbated right-of-track bias exists in both GFS.v16.0.10 and MRW_GFSv16beta compared with GFSv15p2. The right-of-track bias is likely associated with overactive convection and vortex tilt. This tends to induce convergence towards that excessive convection and leads to track bias (`Lybarger et al. 2020 <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_).
 
 **References**
 

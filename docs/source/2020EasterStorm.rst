@@ -141,4 +141,4 @@ Surface Temperature and Wind Speed
 Summary and Discussion
 ......................
 
-The upper-level trough simulated in MRW_GFSv15p2 moves too fast northeastwards compared with GFS analysis, leading to the cold bias over the region east of the trough axis. The upper-level trough does not form over the western U.S in MRW_GFSv16beta. In GFS.v16.0.10, the synoptic pattern progressiveness still exists, although to a lesser extent. 
+The upper-level trough simulated in MRW_GFSv15p2 moves too fast northeastwards compared with GFS analysis, leading to a cold bias over the region east of the trough axis. The upper-level trough does not form over the western U.S in MRW_GFSv16beta. In GFS.v16.0.10, the synoptic pattern progressiveness still exists, although to a lesser extent. 

@@ -120,7 +120,7 @@ Hurricane Track and Intensity
 Summary and Discussion
 ......................
 
-The physics compset of GFS.v16beta in MRW.v1.0 does not show improvements compared with the compset of GFS.v15p2 in simulating Hurricane Michael track and intensity. The physics for MRW_GFS.v16beta was frozen in Jan 2020 for the public release of UFS MRW App version 1.0. Several major changes have been made to the GFS model after that, which include the modified background diffusivity as a function of stability in the PBL scheme (`Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_). In GFS.v16.0.10 (GitHub tag created in Jun 2020), the simulated hurricane landfall location and hurricane intensity is slightly more close to Best Track data compared to MRW_GFSv15p2.
+The physics compset of GFS.v16beta in MRW.v1.0 does not show improvements compared with the compset of GFS.v15p2 in simulating Hurricane Michael track and intensity. The physics for MRW_GFS.v16beta was frozen in Jan 2020 for the public release of UFS MRW App version 1.0. Several major changes have been made to the GFS model after that, which include more vertical levels, several tuning parameters, and modified background diffusivity as a function of stability in the PBL scheme, etc. (`Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_). In GFS.v16.0.10 (GitHub tag created in Jun 2020), the simulated hurricane landfall location and hurricane intensity is closer to Best Track data compared to MRW_GFSv15p2.
 
 **References**
 

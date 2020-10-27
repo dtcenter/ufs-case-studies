@@ -88,5 +88,5 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 Summary and Discussion
 ......................
 
-The 2017 Denver Inversion results show that the GFS model lacks improvement in forecasting the boundary layer temperature inversion, with a warmer near-surface temperature and a colder temperature at the top of the inversion. 
+The 2017 Denver Inversion results show that the GFS model lacks skills in forecasting the boundary layer temperature inversion for MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10, with a warmer near-surface temperature and a colder temperature at the top of the inversion. 
 
