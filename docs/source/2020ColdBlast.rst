@@ -1,14 +1,14 @@
-.. 2020ColdBiasCase documentation master file, created by
+.. 2020ColdBlastCase documentation master file, created by
    sphinx-quickstart on Mon Jul  6 13:31:15 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 
-.. _2020 January Cold Bias:
-2020 January Cold Bias
+.. _2020 January Cold Blast:
+2020 January Cold Blast
 =====================================
 
-Arctic blast brought cold air to Iowa, Minnesota, and Wisconsin on Jan 20, 2020.
+The GFS model generates cold bias during this extreme temperature case. The arctic blast brought cold air to Iowa, Minnesota, and Wisconsin on Jan 20, 2020.
 
 ..............................
 Model Configuration and Datasets

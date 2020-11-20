@@ -43,7 +43,7 @@ This documentation provides resources for representative case studies in the Uni
   * :ref:`2019 Halloween Storm <2019 Halloween Storm>`
   * :ref:`2020 Easter Sunday Storm <2020 Easter Sunday Storm>`
   * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
-  * :ref:`2020 January Cold Bias <2020 January Cold Bias>`
+  * :ref:`2020 January Cold Blast <2020 January Cold Blast>`
   * :ref:`2017 Denver Inversion <2017 Denver Inversion>`
 :Date of Last Update:  |today|
 
@@ -71,7 +71,7 @@ Contents
    2019HaloweenStorm.rst
    2020EasterStorm.rst
    2019MemHeat.rst
-   2020ColdBias.rst
+   2020ColdBlast.rst
    2017DenverPBL.rst
    example.rst
 
