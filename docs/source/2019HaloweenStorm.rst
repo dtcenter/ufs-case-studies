@@ -110,40 +110,39 @@ Surface Temperature and Wind Speed
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/2019Halloween/2mT_MRW_v1.0_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/2mT_MRW_v1.0_RAP_2019HalloweenStorm_trim.png
       :width: 1200
       :align: center
 
       2-m temperature (F) valid at 00z 1 Nov 2019 
 
-    * Colder 2-m T in MRW_GFSv15p2 along the U.S. east coast compared with GFS_ANL
-    * Colder 2-m T at New England and warmer 2-m T at the Southeast in MRW_GFSv16beta  
+    * Colder 2-m T in MRW_GFSv15p2 along the U.S. east coast compared with RAP_ANL.
+    * Colder 2-m T at New England and warmer 2-m T at the Southeast in MRW_GFSv16beta.
 
-    .. figure:: images/2019Halloween/GUST_MRW_v1.0_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/GUST_MRW_v1.0_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
       Surface gust (m/s) valid at 00z 1 Nov 2019
 
-    * MRW_GFSv15p2 captures the magnitudes of surface gust as in GFS_ANL. 
-    * MRW_GFSv16beta does not reach the peak of surface gust as in GFS_ANL.
+    * Negative biases of surface gust over the eastern U.S. for both MRW_GFSv15p2 and MRW_GFSv16beta compared with RAP_ANL.
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/2019Halloween/2mT_GFS.v16.0.10_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/2mT_GFS.v16.0.10_RAP_2019HalloweenStorm_trim.png
       :width: 1200
       :align: center
 
       2-m temperature (F) valid at 00z 1 Nov 2019 
 
-    * Colder 2-m T in GFS.v16.0.10 along the U.S. east coast compared with GFS_ANL
+    * Colder 2-m T in GFS.v16.0.10 along the U.S. east coast compared with RAP_ANL.
 
-    .. figure:: images/2019Halloween/GUST_GFS.v16.0.10_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/GUST_GFS.v16.0.10_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
       Surface gust (m/s) valid at 00z 1 Nov 2019
 
-    * GFS.v16.0.10 does not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with GFS_ANL. 
+    * GFS.v16.0.10 does not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with analysis data.
 
 
 ====================================
@@ -152,7 +151,7 @@ Moisture/Precipitation
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/2019Halloween/2mRH_MRW_v1.0_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/2mRH_MRW_v1.0_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
@@ -160,16 +159,16 @@ Moisture/Precipitation
 
     * Dryline across the central U.S. is not simulated well in the two physics compsets.
 
-    .. figure:: images/2019Halloween/Refc_MRW_v1.0_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/Refc_MRW_v1.0_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
       Composite reflectivity (dB) valid at 00z 1 Nov 2019 
 
-    * The precipitation location lags behind the MRW_GFSv16beta compared with GFS_ANL, while the precipitation location moves further northeastwards in MRW_GFSv15p2 compared with GFS_ANL. 
+    * The precipitation location lags behind the MRW_GFSv16beta compared with RAP_ANL, while the precipitation location moves further northeastwards in MRW_GFSv15p2 compared with RAP_ANL. 
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/2019Halloween/2mRH_GFS.v16.0.10_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/2mRH_GFS.v16.0.10_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
@@ -178,7 +177,7 @@ Moisture/Precipitation
     * The dryline across the middle U.S. blurs out in GFS.v16.0.10.
     * Dry bias over the Eastern U.S. and wet bias over the Western U.S.  
 
-    .. figure:: images/2019Halloween/Refc_GFS.v16.0.10_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/Refc_GFS.v16.0.10_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
