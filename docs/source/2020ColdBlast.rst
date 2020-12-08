@@ -124,7 +124,7 @@ Surface Temperature and Wind Speed
 
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/2020JanCold/2mT_GFS.v16.0.10_2020JanCold_trim_RAP.png
+    .. figure:: images/2020JanCold/2mT_GFS.v16.0.10_2020JanCold_RAP_trim.png
       :width: 1200
       :align: center
 

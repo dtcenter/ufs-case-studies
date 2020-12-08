@@ -100,7 +100,7 @@ Surface Temperature
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/2019MemHeat/2mT_MRW_v1.0_2019MemHeat_RAP_rim.png
+    .. figure:: images/2019MemHeat/2mT_MRW_v1.0_2019MemHeat_RAP_trim.png
       :width: 1200
       :align: center
 
