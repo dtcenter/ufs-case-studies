@@ -105,7 +105,7 @@ Surface Temperature and Wind Speed
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/2020Easter/2mT_MRW_v1.0_2020EasterStorm_trim.png
+    .. figure:: images/2020Easter/2mT_MRW_v1.0_2020EasterStorm_RAP_trim.png
       :width: 1200
       :align: center
 
@@ -113,29 +113,29 @@ Surface Temperature and Wind Speed
 
     * Colder 2-m T in both MRW_GFSv15p2 and MRW_GFSv16beta over central and eastern U.S.
 
-    .. figure:: images/2020Easter/GUST_MRW_v1.0_2020EasterStorm_trim.png
+    .. figure:: images/2020Easter/GUST_MRW_v1.0_2020EasterStorm_RAP_trim.png
       :width: 1200
       :align: center
 
       Surface gust (m/s)
 
-    * MRW_GFSv16beta more correctly captures the magnitudes of surface gust at the Gulf of Mexico compared with MRW_GFSv15p2.
+    * Both MRW_GFSv16beta and MRW_GFSv15p2 do not captures the magnitudes of surface gust at the Gulf of Mexico and Midwest Plains.
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/2020Easter/2mT_GFS.v16.0.10_2020EasterStorm_trim.png
+    .. figure:: images/2020Easter/2mT_GFS.v16.0.10_2020EasterStorm_RAP_trim.png
       :width: 1200
       :align: center
 
       2-m temperature (F)
 
-    * Colder 2-m T in GFS.v16.0.10 over Texas and Oklahoma compared with GFS_ANL
-    .. figure:: images/2020Easter/GUST_GFS.v16.0.10_2020EasterStorm_trim.png
+    * Colder 2-m T in GFS.v16.0.10 over Texas and Oklahoma compared with RAP_ANL.
+    .. figure:: images/2020Easter/GUST_GFS.v16.0.10_2020EasterStorm_RAP_trim.png
       :width: 1200
       :align: center
 
       Surface gust (m/s)
 
-    * GFS.v16.0.10 generates higher magnitudes of surface gust over the Southeastern U.S. which is related to the progressive synoptic pattern compared with GFS_ANL.
+    * GFS.v16.0.10 does not capture the magnitudes of surface gust at the Gulf of Mexico and Midwest Plains.
 
 ......................
 Summary and Discussion
