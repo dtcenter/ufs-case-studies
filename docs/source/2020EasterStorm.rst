@@ -105,7 +105,7 @@ Surface Temperature and Wind Speed
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/2020Easter/2mT_MRW_v1.0_RAP_2020EasterStorm_trim.png
+    .. figure:: images/2020Easter/2mT_MRW_v1.0_2020EasterStorm_RAP_trim.png
       :width: 1200
       :align: center
 
@@ -122,7 +122,7 @@ Surface Temperature and Wind Speed
     * Both MRW_GFSv16beta and MRW_GFSv15p2 do not captures the magnitudes of surface gust at the Gulf of Mexico and Midwest Plains.
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/2020Easter/2mT_GFS.v16.0.10_RAP_2020EasterStorm_trim.png
+    .. figure:: images/2020Easter/2mT_GFS.v16.0.10_2020EasterStorm_RAP_trim.png
       :width: 1200
       :align: center
 

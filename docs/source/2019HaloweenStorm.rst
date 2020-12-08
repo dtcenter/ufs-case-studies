@@ -110,7 +110,7 @@ Surface Temperature and Wind Speed
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    .. figure:: images/2019Halloween/2mT_MRW_v1.0_RAP_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/2mT_MRW_v1.0_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
@@ -128,7 +128,7 @@ Surface Temperature and Wind Speed
     * Negative biases of surface gust over the eastern U.S. for both MRW_GFSv15p2 and MRW_GFSv16beta compared with RAP_ANL.
   .. group-tab:: GFS.v16.0.10
 
-    .. figure:: images/2019Halloween/2mT_GFS.v16.0.10_RAP_2019HalloweenStorm_trim.png
+    .. figure:: images/2019Halloween/2mT_GFS.v16.0.10_2019HalloweenStorm_RAP_trim.png
       :width: 1200
       :align: center
 
