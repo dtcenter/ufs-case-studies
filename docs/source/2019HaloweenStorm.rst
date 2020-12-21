@@ -8,7 +8,7 @@
 2019 Halloween Storm
 =====================================
 
-The 2019 Halloween storm stroke the eastern U.S. cities with wind gusts, thunderstorms, and flash flooding. 
+The 2019 Halloween storm struck the eastern U.S. cities with wind gusts, thunderstorms, and flash flooding. 
 
 ..............................
 Model Configuration and Datasets
