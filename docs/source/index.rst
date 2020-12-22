@@ -44,7 +44,7 @@ This documentation provides resources for representative case studies in the Uni
   * :ref:`2020 Easter Sunday Storm <2020 Easter Sunday Storm>`
   * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
   * :ref:`2020 January Cold Blast <2020 January Cold Blast>`
-  * :ref:`2020 Cold Air Damming <2020 Cold Air Dammingr>`
+  * :ref:`2020 Cold Air Damming <2020 Cold Air Damming>`
   * :ref:`2020 Bismarck Radiation Inversion <2020 Bismarck Radiation Inversion>`
 :Date of Last Update:  |today|
 
