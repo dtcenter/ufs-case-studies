@@ -45,7 +45,7 @@ This documentation provides resources for representative case studies in the Uni
   * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
   * :ref:`2020 January Cold Blast <2020 January Cold Blast>`
   * :ref:`2020 Cold Air Damming <2020 Cold Air Dammingr>`
-  * :ref:`2017 Denver Inversion <2017 Denver Inversion>`
+  * :ref:`2020 Bismarck Radiation Inversion <2020 Bismarck Radiation Inversion>`
 :Date of Last Update:  |today|
 
 ..............................
@@ -74,7 +74,7 @@ Contents
    2019MemHeat.rst
    2020ColdBlast.rst
    2020CAD.rst
-   2017DenverPBL.rst
+   2020BisInversion.rst
    example.rst
 
 
