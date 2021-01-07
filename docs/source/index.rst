@@ -17,7 +17,7 @@ This documentation provides resources for representative case studies in the Uni
    :width: 300
    :align: top
 
-.. |logo3| image:: images/2017DNR/2017101700_84z_DNR_16betavsObs_indices-1.png 
+.. |logo3| image:: images/2020BisInversion/2020042912_f024_BIS_GFS.v16.0.10.10vsObs_indices.png 
    :width: 300
    :align: top
 
