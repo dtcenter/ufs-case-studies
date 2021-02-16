@@ -40,6 +40,7 @@ This documentation provides resources for representative case studies in the Uni
 :Case Catalog:
   * :ref:`2018 Hurricane Michael <2018 Hurricane Michael>`
   * :ref:`2019 Hurricane Barry <2019 Hurricane Barry>`
+  * :ref:`2019 Hurricane Lorenzo <2019 Hurricane Lorenzo>`
   * :ref:`2019 Halloween Storm <2019 Halloween Storm>`
   * :ref:`2020 Easter Sunday Storm <2020 Easter Sunday Storm>`
   * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
@@ -69,6 +70,7 @@ Contents
    Intro.rst
    2018Michael.rst
    2019Barry.rst
+   2019Lorenzo.rst
    2019HaloweenStorm.rst
    2020EasterStorm.rst
    2019MemHeat.rst
