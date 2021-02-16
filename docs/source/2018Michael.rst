@@ -82,7 +82,7 @@ Hurricane Track and Intensity
       :width: 400
       :align: center
 
-      Hurricane tracks from MRW_GFSv16beta (red line), MRW_GFSv15p2 (blue line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+      Hurricane tracks from MRW_GFSv16beta (blue line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
     * MRW_GFSv16beta and MRW_GFSv15p2 generate left-of-track bias. Hurricane track from MRW_GFSv15p2 is closer to the Best Track compared with MRW_GFSv16beta. 
     * MRW_GFSv16beta and MRW_GFSv15p2 do not capture the hurricane intensities (represented by max WS), especially before the landfall.
