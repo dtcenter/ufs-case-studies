@@ -47,6 +47,7 @@ This documentation provides resources for representative case studies in the Uni
   * :ref:`2020 January Cold Blast <2020 January Cold Blast>`
   * :ref:`2020 Cold Air Damming <2020 Cold Air Damming>`
   * :ref:`2020 Bismarck Radiation Inversion <2020 Bismarck Radiation Inversion>`
+  * :ref:`2020 July CAPE Case <2020 July CAPE Case>`
 :Date of Last Update:  |today|
 
 ..............................
@@ -77,6 +78,7 @@ Contents
    2020ColdBlast.rst
    2020CAD.rst
    2020BisInversion.rst
+   2020CAPE.rst
    example.rst
 
 
