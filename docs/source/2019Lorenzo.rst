@@ -23,7 +23,7 @@
 .. _2019 Hurricane Lorenzo:
 2019 Hurricane Lorenzo
 =====================================
-Hurricane Lorenzo was a category 5 hurricane and the second deadliest hurricane in 2019. The initial peak intensity of 125 kt occurred at around 0000 UTC on 27 September. Meanwhile, the hurricane slowed and turned northwestward in response to a break that developed within the subtropical ridge at the Atlantic Ocean. (`Zelinsky 2019 <https://www.nhc.noaa.gov/data/tcr/AL132019_Lorenzo.pdf>`_).
+Hurricane Lorenzo was a category 5 hurricane and the second deadliest hurricane in 2019. The initial peak intensity of 125 kt occurred at around 0000 UTC on 27 September. Meanwhile, the hurricane slowed and turned northwestward in response to a break that developed within the subtropical ridge at the Atlantic Ocean (`Zelinsky 2019 <https://www.nhc.noaa.gov/data/tcr/AL132019_Lorenzo.pdf>`_).
 
 ................................
 Model Configuration and Datasets
