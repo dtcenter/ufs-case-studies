@@ -16,7 +16,7 @@ Model Configuration and Datasets
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    The case runs are initialized at 00z Jul 23, 2020 with 24 hours forecasting. The corresponding namelist options that need to be changed are listed below. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
+    The case runs are initialized at 00z Jul 23, 2020 with a 24 hour forecast length. The corresponding namelist options that need to be changed are listed below. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
 
     .. code-block:: bash
  
@@ -37,7 +37,7 @@ Model Configuration and Datasets
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
 
-    The case runs are initialized at 00z Jul 23, 2020 with 24 hours forecasting. The settings that need to be modified to set up the start date and directories are listed below. 
+    The case runs are initialized at 00z Jul 23, 2020 with a 24 hour forecast length. The settings that need to be modified to set up the start date and directories are listed below. 
 
     .. code-block:: bash
  
