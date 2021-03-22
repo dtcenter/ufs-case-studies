@@ -23,7 +23,7 @@ Model Configuration and Datasets
       ./xmlchange RUN_STARTDATE=2020-07-23,START_TOD=0,STOP_OPTION=nhours,STOP_N=24
 
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ is used as 'truth' to compare with simulated synoptic dynamic fields. The CAPE field is evaluated based on `Rapid Refresh (RAP) analysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ and `atmospheric sounding <http://weather.uwyo.edu/upperair/sounding.html>`_.
 
     .. container:: sphx-glr-footer
         :class: sphx-glr-footer-example
