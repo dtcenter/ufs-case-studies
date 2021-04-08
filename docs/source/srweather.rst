@@ -6,7 +6,7 @@
 The Case Study with the UFS Short-Range Weather Application 
 =======================================================
 
-This documentation provides resources for representative case studies in the Unified Forecast System (UFS) Weather model using `UFS Short-Range Weather Application <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ (for community) and NOAA Environmental Modeling Center's `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_ (for developers).
+This documentation provides resources for representative case studies using `UFS Short-Range Weather Application <https://ufs-srweather-app.readthedocs.io/en/latest/index.html>`_.
 
 
 .. |logo1| image:: images/2019Barry/tracker_Barry_ufsv1.png  
@@ -28,7 +28,7 @@ This documentation provides resources for representative case studies in the Uni
 .. tabs::
   .. group-tab:: Short-Range Weather (SRW) App 
 
-    :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
+    :GitHub: `ufs-community/ufs-srweather-app <https://github.com/ufs-community/ufs-srweather-app>`_
     :Public Release:  *v1.0*
     :Compsets:  ``GFSv16beta``, ``GFSv15p2``
 
