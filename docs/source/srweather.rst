@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the Case Studies Page for the UFS Short-Range Weather Application 
+The Case Study with the UFS Short-Range Weather Application 
 =======================================================
 
 This documentation provides resources for representative case studies in the Unified Forecast System (UFS) Weather model using `UFS Short-Range Weather Application <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ (for community) and NOAA Environmental Modeling Center's `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_ (for developers).
@@ -31,7 +31,6 @@ This documentation provides resources for representative case studies in the Uni
     :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
     :Public Release:  *v1.0*
     :Compsets:  ``GFSv16beta``, ``GFSv15p2``
-  .. group-tab:: Global Workflow
 
 
 ..............................
