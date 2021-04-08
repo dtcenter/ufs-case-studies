@@ -14,7 +14,7 @@ Cold air damming (CAD) occurs when the cold dense air is topographically trapped
 Model Configuration and Datasets
 ..............................
 .. tabs::
-  .. group-tab:: MRW.v1.0
+  .. group-tab:: SRW.v1.0
 
     The case runs are initialized at 12z Feb 03, 2020 with 120 hours forecasting. The corresponding namelist options that need to be changed are listed below. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
 
@@ -62,7 +62,7 @@ Case Results
 Synoptic Dynamics
 ======================================================
 .. tabs::
-  .. group-tab:: MRW.v1.0
+  .. group-tab:: SRW.v1.0
 
     .. figure:: images/2020CAD/MSLP_MRW_v1.0_2020CAD_trim.png
       :width: 1200
@@ -70,7 +70,7 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * MRW_GFSv16beta more correctly forecasts the surface low than MRW_GFSv15p2.
+    * SRW_GFSv16beta more correctly forecasts the surface low than SRW_GFSv15p2.
 
     .. figure:: images/2020CAD/500mb_MRW_v1.0_2020CAD_trim.png
       :width: 1200
@@ -78,8 +78,8 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * A suspicious upper-level cut-off low is simulated in MRW_GFSv16beta.
-    * Both MRW_GFSv16beta and MRW_GFSv15p2 simulate a positively tilted trough, same as GFS_ANL.
+    * A suspicious upper-level cut-off low is simulated in SRW_GFSv16beta.
+    * Both SRW_GFSv16beta and SRW_GFSv15p2 simulate a positively tilted trough, same as GFS_ANL.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -103,7 +103,7 @@ Synoptic Dynamics
 Surface Temperature and Wind Speed
 ======================================================
 .. tabs::
-  .. group-tab:: MRW.v1.0
+  .. group-tab:: SRW.v1.0
 
     .. figure:: images/2020CAD/2mT_MRW_v1.0_RAP_2020CAD_RAP_trim.png
       :width: 1200
@@ -112,8 +112,8 @@ Surface Temperature and Wind Speed
       2-m temperature (F) 
 
     * Cold air was dammed up along the Appalachian mountains in RAP_ANL.
-    * Both MRW_GFSv16beta and MRW_GFSv15p2 generates warm bias along the east side of Appalachian.
-    * Specifically, MRW_GFSv16beta simulates warmer temperatures over Ohio.
+    * Both SRW_GFSv16beta and SRW_GFSv15p2 generates warm bias along the east side of Appalachian.
+    * Specifically, SRW_GFSv16beta simulates warmer temperatures over Ohio.
     
     .. figure:: images/2020CAD/GUST_MRW_v1.0_2020CAD_RAP_trim.png
       :width: 1200
@@ -121,7 +121,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * Stronger surface winds are simulated by MRW_GFSv16beta and MRW_GFSv15p2.
+    * Stronger surface winds are simulated by SRW_GFSv16beta and SRW_GFSv15p2.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -146,4 +146,4 @@ Surface Temperature and Wind Speed
 Summary and Discussion
 ......................
 
-GFSv.16.0.10 shows improvements in handling the shallow cold air mass during CAD events compared with its prior versions (MRW_GFSv16beta and MRW_GFSv15p2). But the warm bias still exists. This could lead to weaker temperature inversions with the warmer low-level temperatures at sites along the east side of Appalachian.
+GFSv.16.0.10 shows improvements in handling the shallow cold air mass during CAD events compared with its prior versions (SRW_GFSv16beta and SRW_GFSv15p2). But the warm bias still exists. This could lead to weaker temperature inversions with the warmer low-level temperatures at sites along the east side of Appalachian.
