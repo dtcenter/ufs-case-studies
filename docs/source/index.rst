@@ -17,7 +17,7 @@ This documentation provides resources for representative case studies in the Uni
    :width: 300
    :align: top
 
-.. |logo3| image:: images/2020BisInversion/2020042912_f024_BIS_GFS.v16.0.10.10vsObs_indices.png 
+.. |logo3| image:: images/2020DNRInversion/2020042912_f024_DNR_GFS.v16.0.10vsObs_indices.png 
    :width: 300
    :align: top
 
@@ -46,7 +46,7 @@ This documentation provides resources for representative case studies in the Uni
   * :ref:`2019 Memorial Day Heat Wave <2019 Memorial Day Heat Wave>`
   * :ref:`2020 January Cold Blast <2020 January Cold Blast>`
   * :ref:`2020 Cold Air Damming <2020 Cold Air Damming>`
-  * :ref:`2020 Bismarck Radiation Inversion <2020 Bismarck Radiation Inversion>`
+  * :ref:`2020 Denver Radiation Inversion <2020 Denver Radiation Inversion>`
   * :ref:`2020 July CAPE Case <2020 July CAPE Case>`
 :Date of Last Update:  |today|
 
@@ -77,7 +77,7 @@ Contents
    2019MemHeat.rst
    2020ColdBlast.rst
    2020CAD.rst
-   2020BisInversion.rst
+   2020DNRInversion.rst
    2020CAPE.rst
    example.rst
 
