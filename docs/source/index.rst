@@ -79,8 +79,8 @@ Contents
    2020CAD.rst
    2020BisInversion.rst
    2020CAPE.rst
-   example.rst
    srweather.rst
+   example.rst
 
 
 
