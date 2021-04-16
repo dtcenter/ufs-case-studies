@@ -54,6 +54,25 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab 2020CAD.crontab  
+  .. group-tab:: SRW.v1.0
+
+    The case runs are initialized at 12z Feb 03, 2020 with 120 hours forecasting. The corresponding namelist options that need to be changed are listed below. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
+
+    .. code-block:: bash
+ 
+      ./xmlchange RUN_STARTDATE=2020-02-03,START_TOD=43200,STOP_OPTION=nhours,STOP_N=120
+
+
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2020020312.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020020312.gfs.nemsio.tar.gz>`
 
 ..............
 Case Results
@@ -99,6 +118,25 @@ Synoptic Dynamics
 
     * GFS.v16.0.10 shows a tendency of the positively tilted trough at 500 hPa, which is consistent with GFS_ANL.
 
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020CAD/MSLP_MRW_v1.0_2020CAD_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea level pressure (hPa)
+
+    * MRW_GFSv16beta more correctly forecasts the surface low than MRW_GFSv15p2.
+
+    .. figure:: images/2020CAD/500mb_MRW_v1.0_2020CAD_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * A suspicious upper-level cut-off low is simulated in MRW_GFSv16beta.
+    * Both MRW_GFSv16beta and MRW_GFSv15p2 simulate a positively tilted trough, same as GFS_ANL.
+
 ======================================================
 Surface Temperature and Wind Speed
 ======================================================
@@ -141,6 +179,29 @@ Surface Temperature and Wind Speed
       Surface gust (m/s)
 
     * Stronger surface winds are simulated by GFS.v16.0.10.
+
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020CAD/2mT_MRW_v1.0_RAP_2020CAD_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m temperature (F) 
+
+    * Cold air was dammed up along the Appalachian mountains in RAP_ANL.
+    * Both MRW_GFSv16beta and MRW_GFSv15p2 generates warm bias along the east side of Appalachian.
+    * Specifically, MRW_GFSv16beta simulates warmer temperatures over Ohio.
+    
+    .. figure:: images/2020CAD/GUST_MRW_v1.0_2020CAD_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      Surface gust (m/s)
+
+    * Stronger surface winds are simulated by MRW_GFSv16beta and MRW_GFSv15p2.
+
+  .. group-tab:: GFS.v16.0.10
+
 
 ......................
 Summary and Discussion
