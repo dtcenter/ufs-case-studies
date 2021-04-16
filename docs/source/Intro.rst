@@ -44,7 +44,7 @@ This document provides case studies evaluation results for GFS using the `UFS Me
 
 	The `Global Workflow <https://github.com/NOAA-EMC/global-workflow>`_ developed by `NOAA EMC <https://www.emc.ncep.noaa.gov/emc_new.php>`_ is a superstructure that supports the Finite-Volume on a Cubed-Sphere Global Forecast System (FV3GFS) development. It includes submodules that points to the most up-to-date GFS model development codes located in the `ufs-weather-model <https://github.com/ufs-community/ufs-weather-model>`_ GitHub repository. Case study results are continually updated when substantial physics innovations are included and GitHub tags (e.g., ``GFS.v16.0.10``) are created between two subsequent public releases.
 
-  .. group-tab:: Medium-Range Weather (MRW) App 
+  .. group-tab:: Short-Range Weather (MRW) App 
 
 	The `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ uses the `Common Infrastructure for Modeling the Earth (CIME) workflow <https://esmci.github.io/cime/versions/ufs_release_v1.0/html/index.html>`_ that incorporates pre-processing software, forecast model, and post-processor. The app serves as a useful tool to conduct the UFS WM runs. The latest evaluation results are based on physics compsets of ``GFSv15p2`` and ``GFSv16beta`` employed in UFS Medium Range Weather App *v1.0* (MRW.v1.0), hereafter referred to as MRW_GFSv15p2 and MRW_GFSv16beta, respectively.
   
