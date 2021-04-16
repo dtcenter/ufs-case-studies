@@ -26,14 +26,6 @@ Challenges for accurate weather predictions still exist in numerical models. To 
     - Poor representation of radiation inversions
    
 This document provides case studies evaluation results for GFS using the `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ with the target audience being a broad community. These cases are also run using the NOAA Environmental Model Center (EMC) `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_, which points to the most up-to-date GFS codes, and are expected to provide insights for the on-going model development. Brief descriptions for MRW App and Global Workflow are below. 
-  .. group-tab:: RRFS.v1beta 
-
-    - Less skillful hurricane track forecasts for strong storms in the Atlantic basin
-    - Progressive with synoptic patterns
-    - Extreme 2-m temperature biases in the mid-west region in the warm season
-    - Cold bias in the lower troposphere and near the surface in the winter season
-    - Precipitation dry bias for moderate rainfall
-    - Struggle to capture boundary layer inversions    
 
 .. tabs::
   .. group-tab:: Medium-Range Weather (MRW) App 
