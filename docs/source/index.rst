@@ -37,6 +37,12 @@ This documentation provides resources for representative case studies in the Uni
     :Branch:  *feature/gfs16b*
     :ufs-weather-model: ``GFS.v16.0.10`` 
 
+  .. group-tab:: Short-Range Weather (SRW) App 
+
+    :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
+    :Public Release:  *v1.0*
+    :Compsets:  ``RRFSv1alpha``, ``GFSv15p2``
+
 :Case Catalog:
   * :ref:`2018 Hurricane Michael <2018 Hurricane Michael>`
   * :ref:`2019 Hurricane Barry <2019 Hurricane Barry>`
