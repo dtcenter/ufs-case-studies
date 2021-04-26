@@ -38,8 +38,8 @@ This document provides case studies evaluation results for GFS using the `UFS Me
 
 The goal of this ongoing effort is to provide the community, as well as the physics development team, with a model testing platform where they can use the resources to conduct model runs and evaluate the model performance for representative meteorological cases. These case studies will provide insights for future model developments and aim at improving NOAA numerical weather forecasts. It should be noted that this is an ongoing effort that is aligned with the model public release and model development. Namely these evaluation results only apply to specific model versions. Timeline of physics frozen date in different model versions, including both UFS MRW APP CompSets and ufs-weather-model GitHub tags, are shown below:
 
-.. figure:: images/TimeLine_Oct2020.png
-   :scale: 38%
+.. figure:: images/timeline_Apr2021.png
+   :scale: 20%
    :align: center
 
    Timeline of physics frozen date
