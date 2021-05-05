@@ -73,12 +73,12 @@ Model Configuration and Datasets
     The case runs are initialized at 00z Oct 09, 2018 with 90 hours forecasting. The app uses ``config.sh`` to set the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, cycle hour, and fcst length are listed below.
 
     .. code-block:: bash
- 
-    FCST_LEN_HRS="96"
-    LBC_SPEC_INTVL_HRS="6"
-    DATE_FIRST_CYCL="20181009"
-    DATE_LAST_CYCL="20181009"
-    CYCL_HRS=( "00" ) 
+
+      FCST_LEN_HRS="96"
+      LBC_SPEC_INTVL_HRS="6"
+      DATE_FIRST_CYCL="20181009"
+      DATE_LAST_CYCL="20181009"
+      CYCL_HRS=( "00" ) 
 
     Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `Best Track dataset <https://www.nhc.noaa.gov/data/#hurdat>`_ provides the ‘truth’ data for hurricane evolution.
 
