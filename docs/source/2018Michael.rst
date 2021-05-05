@@ -70,11 +70,15 @@ Model Configuration and Datasets
       crontab Michael.crontab     
   .. group-tab:: SRW.v1.0
 
-    The case runs are initialized at 00z Oct 07, 2018 with 120 hours forecasting. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
+    The case runs are initialized at 00z Oct 09, 2018 with 90 hours forecasting. The app uses ``config.sh`` to set the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, cycle hour, and fcst length are listed below.
 
     .. code-block:: bash
  
-      ./xmlchange RUN_STARTDATE=2018-10-07,START_TOD=0,STOP_OPTION=nhours,STOP_N=120
+    FCST_LEN_HRS="96"
+    LBC_SPEC_INTVL_HRS="6"
+    DATE_FIRST_CYCL="20181009"
+    DATE_LAST_CYCL="20181009"
+    CYCL_HRS=( "00" ) 
 
     Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `Best Track dataset <https://www.nhc.noaa.gov/data/#hurdat>`_ provides the ‘truth’ data for hurricane evolution.
 
@@ -85,7 +89,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2018100700.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2018100700.gfs.nemsio.tar.gz>`
+        :download:`Download initial and boundary condition files: 2018100900.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2018100900.gfs.nemsio.tar.gz>`
 ..............
 Case Results
 ..............
@@ -136,24 +140,23 @@ Hurricane Track and Intensity
 
   .. group-tab:: SRW.v1.0
 
-    .. figure:: images/2018Michael/tracker_Michael_ufsv1.png
+    .. figure:: images/2018Michael/tracker_Michael_srwv1.png
       :width: 400
       :align: center
 
-      Hurricane tracks from MRW_GFSv16beta (blue line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+      Hurricane tracks from SRW_GFSv15p2 (purple dash line), MRW_GFSv16beta (blue line), MRW_GFSv15p2 (red line),  and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
-    * MRW_GFSv16beta and MRW_GFSv15p2 generate left-of-track bias. Hurricane track from MRW_GFSv15p2 is closer to the Best Track compared with MRW_GFSv16beta. 
-    * MRW_GFSv16beta and MRW_GFSv15p2 do not capture the hurricane intensities (represented by max WS), especially before the landfall.
+    * Hurricane track from SRW_GFSv15p2 is closer to the Best Track compared with MRW_GFSv15p2 and MRW_GFSv16beta. 
 
 
-    .. figure:: images/2018Michael/tracker_timeseries_Michael_ufsv1.png
+    .. figure:: images/2018Michael/tracker_timeseries_Michael_srwv1.png
       :width: 1200
       :align: center
 
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
-    * The maximum surface wind speed at the vortex center in MRW_GFSv15p2 (80 kts) is larger than MRW_GFSv16beta (60 kts). However, both two physics compsets do not reach the peak intensity identified in Best Track data (140 kts).
-    * The minimum sea level pressures from MRW_GFSv15p2 and MRW_GFSv16beta are 965 hPa and 985 hPa, respectively, which are larger than Best Track data.
+    * The maximum surface wind speed at the vortex center in SRW_GFSv15p2 (90 kts) does not reach the peak intensity identified in Best Track data (140 kts).
+    * The minimum sea level pressure from SRW_GFSv15p2 948 hpa, which is larger than Best Track data.
   
 
 ......................
@@ -161,6 +164,7 @@ Summary and Discussion
 ......................
 
 The physics compset of GFS.v16beta in MRW.v1.0 does not show improvements compared with the compset of GFS.v15p2 in simulating Hurricane Michael track and intensity. The physics for MRW_GFS.v16beta was frozen in Jan 2020 for the public release of UFS MRW App version 1.0. Several major changes have been made to the GFS model after that, which include more vertical levels, several tuning parameters, and modified background diffusivity as a function of stability in the PBL scheme, etc. (`Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_). In GFS.v16.0.10 (GitHub tag created in Jun 2020), the simulated hurricane landfall location and hurricane intensity is closer to Best Track data compared to MRW_GFSv15p2.
+The results from SRWapp v1.0 has better track and intensity in simulating Hurricane Michael comparing with the results from MRW app v1.0; however, the SRWapp v1.0 has a newer model and shorter forcasts.
 
 **References**
 
