@@ -1,4 +1,4 @@
-Sphinx~=2.2
+Sphinx~=3.4
 sphinx-gallery
 sphinx_copybutton
-sphinx-tabs>=1.3
+sphinx-tabs>=2.0
