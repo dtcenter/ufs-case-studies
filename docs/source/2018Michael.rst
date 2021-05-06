@@ -74,7 +74,7 @@ Model Configuration and Datasets
 
     .. code-block:: bash
 
-      FCST_LEN_HRS="96"
+      FCST_LEN_HRS="90"
       LBC_SPEC_INTVL_HRS="6"
       DATE_FIRST_CYCL="20181009"
       DATE_LAST_CYCL="20181009"
