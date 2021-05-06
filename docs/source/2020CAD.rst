@@ -200,8 +200,6 @@ Surface Temperature and Wind Speed
 
     * Stronger surface winds are simulated by MRW_GFSv16beta and MRW_GFSv15p2.
 
-  .. group-tab:: GFS.v16.0.10
-
 
 ......................
 Summary and Discussion
