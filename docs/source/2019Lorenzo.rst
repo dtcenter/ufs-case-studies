@@ -71,7 +71,7 @@ Model Configuration and Datasets
 
   .. group-tab:: SRW.v1.0
 
-    The case runs are initialized at 12z Sep 25, 2019 with 90 hours forecasting. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
+    The case runs are initialized at 12z Sep 25, 2019 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
 
     .. code-block:: bash
 
