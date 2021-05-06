@@ -76,10 +76,10 @@ Model Configuration and Datasets
     .. code-block:: bash
 
       FCST_LEN_HRS="90"
-      LBC_SPEC_INTVL_HRS="6"
-      DATE_FIRST_CYCL="20181009"
-      DATE_LAST_CYCL="20181009"
-      CYCL_HRS=( "00" )
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190925"
+      DATE_LAST_CYCL="20190925"
+      CYCL_HRS=( "12" )
 
     Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `Stand-alone Geophysical Fluid Dynamics Laboratory (GFDL) Vortex Tracker <https://dtcenter.org/community-code/gfdl-vortex-tracker>`_ is a tool to estimate hurricane tracks and intensities. The `Best Track dataset <https://www.nhc.noaa.gov/data/#hurdat>`_ provides the ‘truth’ data for hurricane evolution.
 
