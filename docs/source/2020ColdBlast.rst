@@ -55,6 +55,29 @@ Model Configuration and Datasets
    
       crontab 2020ColdBias.crontab  
 
+  .. group-tab:: SRW.v1.0
+
+    The case runs are initialized at 12z Jan 18, 2020 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below. 
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20200118"
+      DATE_LAST_CYCL="20200118"
+      CYCL_HRS=( "12" )
+
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2020011812.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011812.gfs.nemsio.tar.gz>`
+
 ..............
 Case Results
 ..............
@@ -100,6 +123,25 @@ Synoptic Dynamics
 
     * A positive tilted trough is located at Ontario in GFS.v16.0.10, while not in GFS_ANL
 
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020JanCold/MSLP_SRW_v1.0_2020JanCold_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea level pressure (hPa)
+
+    * Positive bias of sea level pressure in Midwestern U.S. and Southern Ontario exist in both SRW_GFSv15p2 and SRW_RRFS_v1alpha simulations, featuring with clearer skies.
+    * The surface flow pattern over Midwestern U.S is from northwest in the model, which leads more cold air from Canada compared with RAP_ANL.
+
+    .. figure:: images/2020JanCold/500mb_SRW_v1.0_2020JanCold_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * Both two physics compsets simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
+
 ======================================================
 Surface Temperature and Wind Speed
 ======================================================
@@ -139,6 +181,23 @@ Surface Temperature and Wind Speed
       Surface gust (m/s)
 
     * GFS.v16.0.10 generates stronger winds at Deep North region and weaker winds over Ontario.
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020JanCold/2mT_SRW_v1.0_2020JanCold_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m temperature (F) 
+
+    * SRW_RRFS_v1alpha and SRW_GFSv15p2 generates a cold bias over central U.S. and Ontario during this Arctic cold blast event.
+
+    .. figure:: images/2020JanCold/GUST_SRW_v1.0_2020JanCold_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      Surface gust (m/s)
+
+    * The surface wind gust over Ontario is not simulated well in the model, which is related to the higher simulated surface pressure and weaker pressure gradient at this region.
 
 ......................
 Summary and Discussion
