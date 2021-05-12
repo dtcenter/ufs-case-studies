@@ -39,7 +39,7 @@ This documentation provides resources for representative case studies in the Uni
 
   .. group-tab:: Short-Range Weather (SRW) App 
 
-    :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
+    :GitHub: `ufs-community/ufs-srweather-app <https://github.com/ufs-community/ufs-srweather-app>`_
     :Public Release:  *v1.0*
     :Compsets:  ``RRFSv1alpha``, ``GFSv15p2``
 
