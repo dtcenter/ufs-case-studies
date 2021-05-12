@@ -55,6 +55,29 @@ Model Configuration and Datasets
    
       crontab 2019MemHeat.crontab
 
+  .. group-tab:: SRW.v1.0
+
+    The case runs are initialized at 00z May 23, 2019 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below. 
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190523"
+      DATE_LAST_CYCL="20190523"
+      CYCL_HRS=( "00" )
+
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. 
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2019052300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300_srw.gfs.nemsio.tar.gz>`
+
 ..............
 Case Results
 ..............
@@ -93,6 +116,22 @@ Synoptic Dynamics
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
     * The synoptic patterns at surface and 500hPa from GFS.v16.0.10 agree well with GFS_ANL.
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019MemHeat/MSLP_SRW_v1.0_2019MemHeat_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea level pressure (hPa)
+
+    .. figure:: images/2019MemHeat/500mb_SRW_v1.0_2019MemHeat_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * The synoptic patterns at surface and 500hPa from the two physics compsets agree well with RAP_ANL.
+    
 
 ======================================================
 Surface Temperature
@@ -118,6 +157,16 @@ Surface Temperature
       2-m temperature (F)
 
     * GFS.v16.0.10 successfully captures the high temperatures across the Southeast.
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019MemHeat/2mT_SRW_v1.0_2019MemHeat_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m temperature (F) 
+
+    * SRW_GFSv15p2 forecasts the heat wave better than SRW_RRFS_v1alpha across the Southeast.
+    * There is cold bias over the contiguous U.S. (CONUS) in SRW_RRFS_v1alpha.
 
 ......................
 Summary and Discussion
