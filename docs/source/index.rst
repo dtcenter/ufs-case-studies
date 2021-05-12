@@ -6,7 +6,7 @@
 Welcome to the Case Studies Page for the UFS Weather Model
 =======================================================
 
-This documentation provides resources for representative case studies in the Unified Forecast System (UFS) Weather model using `UFS Medium-Range Weather Application <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ (for community) and NOAA Environmental Modeling Center's `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_ (for developers).
+This documentation provides resources for representative case studies in the Unified Forecast System (UFS) Weather model using `UFS Medium-Range Weather Application <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ (for community), `UFS Short-Range Weather Application <https://ufs-srweather-app.readthedocs.io/en/latest/index.html>`_ (for community) and NOAA Environmental Modeling Center's `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_ (for developers).
 
 
 .. |logo1| image:: images/2019Barry/tracker_Barry_ufsv1.png  
@@ -65,6 +65,7 @@ Notable Links
 * `Unified Forecast System (UFS) <https://ufscommunity.org/>`_
 * `The UFS Medium-Range Weather App Users Guide <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_
 * `NOAA Environmental Modeling Center (EMC) global-workflow GitHub Wiki page <https://github.com/NOAA-EMC/global-workflow/wiki>`_
+* `The UFS Short-Range Weather App Users Guide <https://ufs-srweather-app.readthedocs.io/en/latest/index.html>`_
 
 ..............................
 Contents
