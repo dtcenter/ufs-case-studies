@@ -58,6 +58,30 @@ Model Configuration and Datasets
    
       crontab 2019Halloween.crontab  
         
+  .. group-tab:: SRW.v1.0
+
+    The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``RRFS_v1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
+
+    The case runs are initialized at 12z Oct 28, 2019 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20191028"
+      DATE_LAST_CYCL="20191028"
+      CYCL_HRS=( "12" )
+
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
+
+    .. container:: sphx-glr-footer
+       :class: sphx-glr-footer-example
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2019102812.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019102812.gfs.nemsio.tar.gz>`
+  
 ..............
 Case Results
 ..............
@@ -104,6 +128,26 @@ Synoptic Dynamics
     * GFS.v16.0.10 generates a progressive synoptic pattern compared with reanalysis data.
     * The positive tilted trough in GFS.v16.0.10, versus the negative tilted trough in GFS_ANL, indicates a less severe storm over the eastern U.S.
 
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019Halloween/MSLP_SRW_v1.0_2019HalloweenStorm_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea-level pressure (MSLP, hPa)
+
+    * SRW_GFSv15p2 simulates the sea level pressure structure more reasonably than SRW_RRFS_v1alpha.
+
+    .. figure:: images/2019Halloween/500mb_SRW_v1.0_2019HalloweenStorm_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * SRW_GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data.
+    * SRW_RRFS_v1alpha alleviates the progressiveness of synoptic pattern.     
+
+
 ====================================
 Surface Temperature and Wind Speed
 ====================================
@@ -144,6 +188,24 @@ Surface Temperature and Wind Speed
 
     * GFS.v16.0.10 does not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with analysis data.
 
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019Halloween/2mT_SRW_v1.0_2019HalloweenStorm_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m temperature (F) valid at 00z 1 Nov 2019 
+
+    * Colder 2-m T in SRW_GFSv15p2 along the U.S. east coast compared with RAP_ANL.
+    * Colder 2-m T at New England and warmer 2-m T at the Southeast in SRW_RRFS_v1alpha.
+
+    .. figure:: images/2019Halloween/GUST_SRW_v1.0_2019HalloweenStorm_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      Surface gust (m/s) valid at 00z 1 Nov 2019
+
+    * Negative biases of surface gust over the eastern U.S. for both SRW_GFSv15p2 and SRW_RRFS_v1alpha compared with RAP_ANL.
 
 ====================================
 Moisture/Precipitation
