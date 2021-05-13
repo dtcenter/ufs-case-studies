@@ -60,7 +60,7 @@ Model Configuration and Datasets
         
   .. group-tab:: SRW.v1.0
 
-    The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``RRFS_v1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
+    The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``RRFSv1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
 
     The case runs are initialized at 12z Oct 28, 2019 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
 
@@ -80,7 +80,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019102812.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019102812.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2019102812_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019102812_srw.gfs.nemsio.tar.gz>`
   
 ..............
 Case Results
@@ -136,7 +136,8 @@ Synoptic Dynamics
 
       Mean sea-level pressure (MSLP, hPa)
 
-    * SRW_GFSv15p2 simulates the sea level pressure structure more reasonably than SRW_RRFS_v1alpha.
+    * SRW_GFSv15p2 simulates the sea level pressure structure more reasonably than SRW_RRFSv1alpha.
+The MSLP from SRW_RRFSv1alpha is very noisy over Rocky mountain area.
 
     .. figure:: images/2019Halloween/500mb_SRW_v1.0_2019HalloweenStorm_trim.png
       :width: 1200
@@ -144,8 +145,8 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * SRW_GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data.
-    * SRW_RRFS_v1alpha alleviates the progressiveness of synoptic pattern.     
+    * The trough position is well represented in SRW_GFSv15p2 and SRW_RRFSv1alpha
+    * The results over Rocky mountain are noisy for both SRW_GFSv15p2 and SRW_RRFSv1alpha.
 
 
 ====================================
@@ -196,8 +197,9 @@ Surface Temperature and Wind Speed
 
       2-m temperature (F) valid at 00z 1 Nov 2019 
 
-    * Colder 2-m T in SRW_GFSv15p2 along the U.S. east coast compared with RAP_ANL.
-    * Colder 2-m T at New England and warmer 2-m T at the Southeast in SRW_RRFS_v1alpha.
+    * Colder 2-m T in SRW_RRFSv1apha  along the U.S. northeast coast compared with RAP_ANL.
+    * Warmer 2-m T in SRW_RRFSv1alpha at central and eastern U.S.
+    * Colder 2-m T at New England and warmer 2-m T at the Northwest in SRW_GFSv15p2.
 
     .. figure:: images/2019Halloween/GUST_SRW_v1.0_2019HalloweenStorm_RAP_trim.png
       :width: 1200
@@ -205,7 +207,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s) valid at 00z 1 Nov 2019
 
-    * Negative biases of surface gust over the eastern U.S. for both SRW_GFSv15p2 and SRW_RRFS_v1alpha compared with RAP_ANL.
+    * Negative biases of surface gust over the eastern U.S. for both SRW_GFSv15p2 and SRW_RRFSv1alpha compared with RAP_ANL.
 
 ====================================
 Moisture/Precipitation
@@ -247,6 +249,24 @@ Moisture/Precipitation
 
     * Lower composite reflectivity values suggest less intensive precipitation over the Northeastern U.S. 
       
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019Halloween/2mRH_SRW_v1.0_2019HalloweenStorm_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m relative Humidity (RH,%) valid at 00z 1 Nov 2019
+
+    * Dryline across the central U.S. is not simulated well in the two physics compsets.
+
+    .. figure:: images/2019Halloween/Refc_SRW_v1.0_2019HalloweenStorm_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      Composite reflectivity (dB) valid at 00z 1 Nov 2019 
+
+    * The precipitation location lags behind the SRW_RRFSv1alpha compared with RAP_ANL, while the precipitation location moves further northeastwards in SRW_GFSv15p2 compared with RAP_ANL. 
+
 ......................
 Summary and Discussion
 ......................
