@@ -265,7 +265,7 @@ Moisture/Precipitation
 
       Composite reflectivity (dB) valid at 00z 1 Nov 2019 
 
-    * The precipitation location lags behind the SRW_RRFSv1alpha compared with RAP_ANL, while the precipitation location moves further northeastwards in SRW_GFSv15p2 compared with RAP_ANL. 
+    * The rainband orientation in SRW_RRFSv1alpha and SRW_GFSv15p2 is slightly different with that in RAP_ANL. The results from SRW_GFSv15p2 is sligtly stronger and better than that from SRW_RRFSv1alpha. 
 
 ......................
 Summary and Discussion
