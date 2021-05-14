@@ -29,7 +29,7 @@ Challenges for accurate weather predictions still exist in numerical models. To 
     - Better hurricane track forecasts for strong storms in the Atlantic basin
     - Weak hurricane intensity forecasts
     - Unstable signal over mountain area
-    - Slightly better cold air daming signal
+    - Slightly better cold air damming signal
     - The heat wave signal is too strong
    
 This document provides case studies evaluation results for GFS using the `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ with the target audience being a broad community. These cases are also run using the NOAA Environmental Model Center (EMC) `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_, which points to the most up-to-date GFS codes, and are expected to provide insights for the on-going model development. Brief descriptions for MRW App and Global Workflow are below. 
