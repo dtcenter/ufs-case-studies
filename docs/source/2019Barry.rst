@@ -94,7 +94,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019071200.gfs.nemsio.tar.gz  <https://ufs-case-studies.s3.amazonaws.com/2019071200.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2019071200_srw.gfs.nemsio.tar.gz  <https://ufs-case-studies.s3.amazonaws.com/2019071200_srw.gfs.nemsio.tar.gz>`
 
 
 ..............
@@ -151,7 +151,7 @@ Hurricane Track and Intensity
       :width: 400
       :align: center
 
-      Hurricane tracks from SRW_RRFS_v1alpha (blue line), SRW_GFSv15p2 (purple dash line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+      Hurricane tracks from SRW_RRFSv1alpha (blue line), SRW_GFSv15p2 (purple dash line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
     * Both MRW_GFSv15p2 and SRW_GFSv15p2 generate right-of-track biases. 
     * Hurricane track and intensity simulated by SRW_RRFSv1apha are closer to Best Track compared with SRW_GFSv15p2 and MRW_GFSv15p2.
@@ -163,7 +163,7 @@ Hurricane Track and Intensity
 
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
-    * The peak wind speeds at the vortex center in MRW_GFSv15p2 (58 kts) SRW_RRFS_v1alpha (58 kts) are closer to Best Track (67 kts) compared with SRW_GFSv15p2 (52 kts).
+    * The peak wind speeds at the vortex center in MRW_GFSv15p2 (58 kts) SRW_RRFSv1alpha (58 kts) are closer to Best Track (67 kts) compared with SRW_GFSv15p2 (52 kts).
     * Both two physics compsets simulate the minimum sea level pressure relatively well. The results from SRW app v1.0 slightly overestimate the minimum sea level pressure. 
 
 
