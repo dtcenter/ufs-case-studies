@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020072300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020072300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300_srw.gfs.nemsio.tar.gz>`
   .. group-tab:: GFS.v16.0.10
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
@@ -132,7 +132,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * Both SRW_RRFS_v1alpha and SRW_GFSv15p2 simulate 500hPa HGT fields and MSLP well.
+    * Both SRW_RRFSv1alpha and SRW_GFSv15p2 simulate 500hPa HGT fields and MSLP well.
 
 
 ======================================================
@@ -180,14 +180,14 @@ Convective Available Potential Energy
 
   .. group-tab:: SRW.v1.0
 
-    .. figure:: images/2020CAPE/CAPE_MRW_v1.0_2020CAPE_RAP_trim.png
+    .. figure:: images/2020CAPE/CAPE_SRW_v1.0_2020CAPE_RAP_trim.png
       :width: 1200
       :align: center
 
       Spatial distribution of Convective Available Potential Energy (CAPE)
 
-    *  Both SRW_v15p2 and SRW_RRFS_v1alpha underestimate the CAPE values compared with RAP_ANL.
-    *  The CAPE values simulated in SRW_v15p2 are correctly larger than SRW_RRFS_v1alpha.
+    *  Both SRW_v15p2 and SRW_RRFSv1alpha underestimate the CAPE values compared with RAP_ANL.
+    *  The CAPE values simulated in SRW_v15p2 are correctly larger than SRW_RRFSv1alpha.
     
     .. figure:: images/2020CAPE/2020072300_f024_BIS_MRW_v1.0_Obs_indices.png
       :width: 1200
@@ -195,7 +195,7 @@ Convective Available Potential Energy
 
       Simulated and observed sounding profile at the sounding site of Bismark (BIS), ND. CAPE values are listed at the bottom.
 
-    * The CAPE simulated from SRW_GFSv15p2 and SRW_RRFS_v1alpha at BIS are 2284 and 1893 J/kg, both smaller than the CAPE from observed sounding (3331 J/kg) at the BIS sounding site.
+    * The CAPE simulated from SRW_GFSv15p2 and SRW_RRFSv1alpha at BIS are 2284 and 1893 J/kg, both smaller than the CAPE from observed sounding (3331 J/kg) at the BIS sounding site.
     * CAPE from RAP_ANL is larger than the observed CAPE computed from the sounding profile at the BIS sounding site.
     
 ......................
