@@ -107,7 +107,6 @@ Synoptic Dynamics
 
     * MRW_GFSv15p2 generates a progressive synoptic pattern compared with reanalysis data.
     * MRW_GFSv16beta alleviates the progressiveness of synoptic pattern.     
-
   .. group-tab:: GFS.v16.0.10
 
     .. figure:: images/2019Halloween/MSLP_GFS.v16.0.10_2019HalloweenStorm_trim.png
@@ -127,7 +126,6 @@ Synoptic Dynamics
 
     * GFS.v16.0.10 generates a progressive synoptic pattern compared with reanalysis data.
     * The positive tilted trough in GFS.v16.0.10, versus the negative tilted trough in GFS_ANL, indicates a less severe storm over the eastern U.S.
-
   .. group-tab:: SRW.v1.0
 
     .. figure:: images/2019Halloween/MSLP_SRW_v1.0_2019HalloweenStorm_trim.png
@@ -147,7 +145,6 @@ The MSLP from SRW_RRFSv1alpha is very noisy over Rocky mountain area.
 
     * The trough position is well represented in SRW_GFSv15p2 and SRW_RRFSv1alpha
     * The results over Rocky mountain are noisy for both SRW_GFSv15p2 and SRW_RRFSv1alpha.
-
 
 ====================================
 Surface Temperature and Wind Speed
@@ -188,7 +185,6 @@ Surface Temperature and Wind Speed
       Surface gust (m/s) valid at 00z 1 Nov 2019
 
     * GFS.v16.0.10 does not capture the surface gust at the Great Lakes Region, accompanied by a faster-moving and narrower trough compared with analysis data.
-
   .. group-tab:: SRW.v1.0
 
     .. figure:: images/2019Halloween/2mT_SRW_v1.0_2019HalloweenStorm_RAP_trim.png
