@@ -90,7 +90,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019092512.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019092512.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2019092512_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019092512_srw.gfs.nemsio.tar.gz>`
 
 ..............
 Case Results
