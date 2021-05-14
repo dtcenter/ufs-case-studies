@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020011712.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011712.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020011712_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011712_srw.gfs.nemsio.tar.gz>`
   .. group-tab:: GFS.v16.0.10
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
@@ -76,7 +76,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020011812.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011812.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020011812_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011812_srw.gfs.nemsio.tar.gz>`
 
 ..............
 Case Results
@@ -131,8 +131,7 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * Positive bias of sea level pressure in Midwestern U.S. and Southern Ontario exist in both SRW_GFSv15p2 and SRW_RRFS_v1alpha simulations, featuring with clearer skies.
-    * The surface flow pattern over Midwestern U.S is from northwest in the model, which leads more cold air from Canada compared with RAP_ANL.
+    * The high pressure system in SRW_RRFSv1alpha simulation is slightly weaker than the RAP_ANL.
 
     .. figure:: images/2020JanCold/500mb_SRW_v1.0_2020JanCold_trim.png
       :width: 1200
@@ -189,7 +188,7 @@ Surface Temperature and Wind Speed
 
       2-m temperature (F) 
 
-    * SRW_RRFS_v1alpha and SRW_GFSv15p2 generates a cold bias over central U.S. and Ontario during this Arctic cold blast event.
+    * SRW_RRFSv1alpha and SRW_GFSv15p2 generate a cold bias over central U.S. and Ontario during this Arctic cold blast event.
 
     .. figure:: images/2020JanCold/GUST_SRW_v1.0_2020JanCold_RAP_trim.png
       :width: 1200
@@ -197,7 +196,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * The surface wind gust over Ontario is not simulated well in the model, which is related to the higher simulated surface pressure and weaker pressure gradient at this region.
+    * The surface wind gust over Ontario is simulated well in the model.
 
 ......................
 Summary and Discussion
