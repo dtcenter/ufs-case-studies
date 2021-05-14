@@ -70,7 +70,7 @@ Model Configuration and Datasets
       crontab Michael.crontab     
   .. group-tab:: SRW.v1.0
 
-    The case runs are initialized at 00z Oct 09, 2018 with 90 hours forecasting. The app uses ``config.sh`` to set the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, cycle hour, and fcst length are listed below.
+    The case runs are initialized at 00z Oct 09, 2018 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, cycle hour, and fcst length are listed below.
 
     .. code-block:: bash
 
@@ -147,6 +147,7 @@ Hurricane Track and Intensity
       Hurricane tracks from SRW_GFSv15p2 (purple dash line), MRW_GFSv16beta (blue line), MRW_GFSv15p2 (red line),  and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
 
     * Hurricane track from SRW_GFSv15p2 is closer to the Best Track compared with MRW_GFSv15p2 and MRW_GFSv16beta. 
+    * SRW_RRFSv1alpha  can not run with the old initial and boundary conditions and crashed.
 
 
     .. figure:: images/2018Michael/tracker_timeseries_Michael_srwv1.png
@@ -156,7 +157,7 @@ Hurricane Track and Intensity
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
     * The maximum surface wind speed at the vortex center in SRW_GFSv15p2 (90 kts) does not reach the peak intensity identified in Best Track data (140 kts).
-    * The minimum sea level pressure from SRW_GFSv15p2 948 hpa, which is larger than Best Track data.
+    * The minimum sea level pressure from SRW_GFSv15p2 is 948 hpa, which is larger than Best Track data.
   
 
 ......................
