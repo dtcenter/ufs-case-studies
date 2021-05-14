@@ -134,8 +134,7 @@ Synoptic Dynamics
 
       Mean sea-level pressure (MSLP, hPa)
 
-    * SRW_GFSv15p2 simulates the sea level pressure structure more reasonably than SRW_RRFSv1alpha.
-The MSLP from SRW_RRFSv1alpha is very noisy over Rocky mountain area.
+    * SRW_GFSv15p2 simulates the sea level pressure structure more reasonably than SRW_RRFSv1alpha. The MSLP from SRW_RRFSv1alpha is very noisy over Rocky mountain area.
 
     .. figure:: images/2019Halloween/500mb_SRW_v1.0_2019HalloweenStorm_trim.png
       :width: 1200
