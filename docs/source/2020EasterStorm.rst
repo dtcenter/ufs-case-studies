@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020040712.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040712.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020040712_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040712_srw.gfs.nemsio.tar.gz>`
   
   .. group-tab:: GFS.v16.0.10
 
@@ -58,7 +58,7 @@ Model Configuration and Datasets
         
   .. group-tab:: SRW.v1.0
 
-    The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``RRFS_v1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
+    The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``RRFSv1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
 
     The case runs are initialized at 12z Apr 09, 2020 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
 
@@ -78,7 +78,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020040912.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040912.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020040912_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040912_srw.gfs.nemsio.tar.gz>`
   
 ..............
 Case Results
@@ -131,7 +131,7 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * SRW_RRFS_v1alpha more correctly forecasts the surface low compared with SRW_GFSv15p2.
+    * The surface low shifts to the southeast side of the actual position in both SRW_RRFSv1alpha and SRW_GFSv15p2 forecasts.
 
     .. figure:: images/2020Easter/500mb_SRW_v1.0_2020EasterStorm_trim.png
       :width: 1200
@@ -139,7 +139,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * More positively tilted trough in SRW_GFSv15p2, suggesting a weakening weather system compared with RAP_ANL.
+    * Both SRW_GFSv15p2 and SRW_RRFSv1apha forecast the upper level trouh sitting at the downstream of the acutal position.
 
 
 ====================================
@@ -187,7 +187,7 @@ Surface Temperature and Wind Speed
 
       2-m temperature (F)
 
-    * Colder 2-m T in both SRW_GFSv15p2 and SRW_RRFS_v1alpha over central and eastern U.S.
+    * Colder 2-m T in both SRW_GFSv15p2 and SRW_RRFSv1alpha over central and eastern U.S.
 
     .. figure:: images/2020Easter/GUST_SRW_v1.0_2020EasterStorm_RAP_trim.png
       :width: 1200
@@ -195,7 +195,7 @@ Surface Temperature and Wind Speed
 
       Surface gust (m/s)
 
-    * Both SRW_RRFS_v1alpha and SRW_GFSv15p2 do not captures the magnitudes of surface gust at the Gulf of Mexico and Midwest Plains.
+    * Both SRW_RRFSv1alpha and SRW_GFSv15p2 overestimate the magnitudes of surface gust at the eastern U.S.
 
 
 ......................
