@@ -89,7 +89,8 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial and boundary condition files: 2018100900.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2018100900.gfs.nemsio.tar.gz>`,`2018100900_bc.gfs.nemsio.tar.gz  <https://ufs-case-studies.s3.amazonaws.com/2018100900_bc.gfs.nemsio.tar.gz>` 
+        :download:`Download initial condition files: 2018100900.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2018100900.gfs.nemsio.tar.gz>` 
+        :download:`Download boundary condition files: 2018100900_bc.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2018100900_bc.gfs.nemsio.tar.gz>` 
 ..............
 Case Results
 ..............
