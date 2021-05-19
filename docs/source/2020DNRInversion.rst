@@ -54,6 +54,29 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab 2020DNRInversion.crontab 
+  .. group-tab:: SRW.v1.0
+
+    The case runs are initialized at 12z Apr 29, 2020 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+
+    .. code-block:: bash
+
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190523"
+      DATE_LAST_CYCL="20190523"
+      CYCL_HRS=( "00" )
+
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format.
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download boundary condition files: 2020042912_bc.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020042912_bc.gfs.nemsio.tar.gz>`
+
 ..............
 Case Results
 ..............
