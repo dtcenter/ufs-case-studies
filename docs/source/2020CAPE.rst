@@ -189,13 +189,13 @@ Convective Available Potential Energy
     *  Both SRW_v15p2 and SRW_RRFSv1alpha underestimate the CAPE values compared with RAP_ANL.
     *  The CAPE values simulated in SRW_v15p2 are correctly larger than SRW_RRFSv1alpha.
     
-    .. figure:: images/2020CAPE/2020072300_f024_BIS_MRW_v1.0_Obs_indices.png
+    .. figure:: images/2020CAPE/2020072300_f024_BIS_SRW_v1.0_Obs_indices.png
       :width: 1200
       :align: center
 
       Simulated and observed sounding profile at the sounding site of Bismark (BIS), ND. CAPE values are listed at the bottom.
 
-    * The CAPE simulated from SRW_GFSv15p2 and SRW_RRFSv1alpha at BIS are 2284 and 1893 J/kg, both smaller than the CAPE from observed sounding (3331 J/kg) at the BIS sounding site.
+    * The CAPE simulated from SRW_GFSv15p2 and SRW_RRFSv1alpha at BIS are 2752 and 2491 J/kg, RRFSv1alpha is slightly smaller than the CAPE from observed sounding (2696 J/kg) at the BIS sounding site.
     * CAPE from RAP_ANL is larger than the observed CAPE computed from the sounding profile at the BIS sounding site.
     
 ......................
