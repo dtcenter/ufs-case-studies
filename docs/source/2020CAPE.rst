@@ -67,7 +67,7 @@ Model Configuration and Datasets
       DATE_LAST_CYCL="20190523"
       CYCL_HRS=( "00" )
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. The CAPE field is evaluated based on `Rapid Refresh (RAP) analysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ and `atmospheric sounding <http://weather.uwyo.edu/upperair/sounding.html>`_.
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. The CAPE field is evaluated based on `Rapid Refresh (RAP) analysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ and `atmospheric sounding <http://weather.uwyo.edu/upperair/sounding.html>`_.
 
     .. container:: sphx-glr-footer
         :class: sphx-glr-footer-example
@@ -76,7 +76,8 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020072300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300_srw.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020072300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300.gfs.nemsio.tar.gz>`
+        :download:`Download boundary condition files: 2020072300_bc.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300_bc.gfs.nemsio.tar.gz>`
 
 ..............
 Case Results

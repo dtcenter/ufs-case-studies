@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019052300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2019052300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300_srw.gfs.nemsio.tar.gz>`
   .. group-tab:: GFS.v16.0.10
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
@@ -67,7 +67,7 @@ Model Configuration and Datasets
       DATE_LAST_CYCL="20190523"
       CYCL_HRS=( "00" )
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. 
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. 
 
     .. container:: sphx-glr-footer
         :class: sphx-glr-footer-example
@@ -76,7 +76,8 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019052300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300_srw.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2019052300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300.gfs.nemsio.tar.gz>`
+        :download:`Download boundary condition files: 2019052300_bc.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300_bc.gfs.nemsio.tar.gz>`
 
 ..............
 Case Results
@@ -165,8 +166,8 @@ Surface Temperature
 
       2-m temperature (F) 
 
-    * SRW_GFSv15p2 forecasts the heat wave better than SRW_RRFS_v1alpha across the Southeast.
-    * There is cold bias over the contiguous U.S. (CONUS) in SRW_RRFS_v1alpha.
+    * SRW_GFSv15p2 forecasts the heat wave better than SRW_RRFSv1alpha across the Southeast.
+    * There is warm bias over the contiguous U.S. (CONUS) in SRW_RRFSv1alpha.
 
 ......................
 Summary and Discussion

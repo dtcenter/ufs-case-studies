@@ -70,7 +70,7 @@ Model Configuration and Datasets
       DATE_LAST_CYCL="20200409"
       CYCL_HRS=( "12" )
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format.  The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format.  The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
 
     .. container:: sphx-glr-footer
        :class: sphx-glr-footer-example
@@ -78,7 +78,8 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020040912_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040912_srw.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020040912.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040912.gfs.nemsio.tar.gz>`
+        :download:`Download boundary condition files: 2020040912_bc.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020040912_bc.gfs.nemsio.tar.gz>`
   
 ..............
 Case Results
