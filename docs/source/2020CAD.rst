@@ -63,9 +63,9 @@ Model Configuration and Datasets
  
       FCST_LEN_HRS="90"
       LBC_SPEC_INTVL_HRS="3"
-      DATE_FIRST_CYCL="20190523"
-      DATE_LAST_CYCL="20190523"
-      CYCL_HRS=( "00" )
+      DATE_FIRST_CYCL="20200203"
+      DATE_LAST_CYCL="20200203"
+      CYCL_HRS=( "12" )
 
     Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format.  The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
 

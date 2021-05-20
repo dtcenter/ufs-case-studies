@@ -62,9 +62,9 @@ Model Configuration and Datasets
 
       FCST_LEN_HRS="90"
       LBC_SPEC_INTVL_HRS="3"
-      DATE_FIRST_CYCL="20190523"
-      DATE_LAST_CYCL="20190523"
-      CYCL_HRS=( "00" )
+      DATE_FIRST_CYCL="20190429"
+      DATE_LAST_CYCL="20190429"
+      CYCL_HRS=( "12" )
 
 
     Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format.
@@ -75,6 +75,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
+        :download:`Download initial condition files: 2020042912.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020042912.gfs.nemsio.tar.gz>`
         :download:`Download boundary condition files: 2020042912_bc.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020042912_bc.gfs.nemsio.tar.gz>`
 
 ..............
