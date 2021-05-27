@@ -7,7 +7,16 @@
 Introduction
 =====================================
 
-Challenges for accurate weather predictions still exist in numerical models. To facilitate the development and improvement of the NOAA operational model, NOAA's Global Forecast System (GFS) is shared with the broad community through the `Unified Forecast System (UFS) <https://ufscommunity.org/>`_ applications. The UFS Medium-Range Weather (MRW) Application (App) provides the source code of GFS, including physics schemes for GFS version 15 (CompSet ``GFS.v15p2``) and additional developmental schemes for GFS version 16 (CompSet ``GFS.v16beta``). The most up-to-date source codes for GFS.v16 can be accessed from the `ufs-weather-model <https://github.com/ufs-community/ufs-weather-model>`_ GitHub repository. The UFS Short-Range Weather (SRW) Application (App) is the a limited area version for the UFS, including physics schemes for  The UFS Short-Range Weather (SRW) Application (App) is the a limited area version for the UFS, including physics schemes for ``GFS.v15p2`` and ``RRFS.v1alpha``. GFS.v15 went into operations in June 2019, the operational implementation fo GFS.v16 is currently planned for February 2021 (`Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_). The known biases and development priorities related to GFS.v15 (`Stan et al. 2019 <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_) and GFS.v16 (recently presented by `Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_) have been identified and listed below. The knowing bugs in SRW App 1.0 can be found at `SRW App website <https://github.com/ufs-community/ufs-srweather-app/wiki/Release-Notes-and-Known-Bugs>`_. 
+Challenges for accurate weather prediction still exist in numerical models. This catalog of case studies aims at facilitating the development and improvement of NOAA operational modeling systems by making available datasets and codes that allow researchers to configure and run the `Unified Forecast System (UFS) <https://ufscommunity.org/>`_ for a number of cases that represent known biases of the NOAA operational Global Forecast System (GFS).
+
+The catalog offers both global and limited-area domain configurations of the case studies to provide flexibility to users. Given this catalog's current focus on GFS biases, at this time, both global and limited-area configurations use the operational GFS horizontal grid spacing of approximately 13 km. Two types of global configurations are available, both of which focus on suites ``GFS.v15p2`` (used in the GFS v15 implemented operationally in June 2019) and ``GFS.v16beta`` (associated with the GFS v16 implemented operationally in March 2021).
+
+- The UFS Medium-Range Weather (MRW) Application (App) public release, which contains stable and well tested code. It should be noted that the public release code precedes the operational implementation of GFS v16 and therefore does not reflect the final updates that are part of the operational implementation.
+- UFS Global Workflow, which invokes the most up-to-date source codes and housed in the `ufs-weather-model <https://github.com/ufs-community/ufs-weather-model>`_ GitHub repository.
+
+The limited area configurations of the case studies use the UFS Short-Range Weather (SRW) Application (App), which employs suites ``GFS.v15p2`` and ``RRFS.v1alpha``. An operational implementation of the SRW App is planned for 2024. 
+
+The known biases and development priorities related to GFS v15 (`Stan et al. 2019 <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_) and GFS v16 (presented by `Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_) have been summarized below. The known bugs in the SRW App 1.0 can be found at `SRW App website <https://github.com/ufs-community/ufs-srweather-app/wiki/Release-Notes-and-Known-Bugs>`_. 
 
 .. tabs::
   .. group-tab:: GFS.v15 
@@ -62,6 +71,5 @@ The case catalogue in this documentation are created based on the known biases o
 Stan C., Yang F., and Harris L. (2019). UFS Development Goals and Priorities for Medium-Range and S2S Applications. *Unified Forecast System Community*. [`Link <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_]
 
 Yang F. (2020). Development and evaluation of NCEP's Global Forecast System Version 16. *Unified Forecast System Community Webinar*, Oct 22, 2020. [`Link <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_]
-
 
 
