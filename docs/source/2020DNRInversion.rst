@@ -116,13 +116,14 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
       :width: 1200
       :align: center
 
-      Skew-T Log-P plot from observed and simulated sounding profiles. Indices including K-index and lapse rate are shown in the bottom.
+      Skew-T Log-P plot from observed and simulated sounding profiles. Indices are shown in the bottom.
 
-    * The physics compset, SRW_GFSv15p2 underestimates the temperature inversion strength with a warmer near surface temperature.  
+    * The physics suite, SRW_GFSv15p2 underestimates the temperature inversion strength with a warmer near surface temperature.  
+    * The temperature inversion strength is well captured in SRW_RRFSv1alpha.  
  
 ......................
 Summary and Discussion
 ......................
 
 The 2020 Denver Radiation Inversion results show that the GFS model lacks skills in forecasting the boundary layer temperature inversion for MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10, with a warmer near-surface temperature. 
-
+The inversion is well captured by physics suite RRFSv1alpha in SRW App.
