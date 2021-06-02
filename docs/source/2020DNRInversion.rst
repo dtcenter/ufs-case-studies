@@ -118,7 +118,7 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
 
       Skew-T Log-P plot from observed and simulated sounding profiles. Indices are shown in the bottom.
 
-    * The physics suite, SRW_GFSv15p2 underestimates the temperature inversion strength with a warmer near surface temperature.  
+    * The physics suite SRW_GFSv15p2 underestimates the temperature inversion strength with a warmer near surface temperature.  
     * The temperature inversion strength is well captured in SRW_RRFSv1alpha.  
  
 ......................
