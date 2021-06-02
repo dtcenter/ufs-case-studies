@@ -56,7 +56,7 @@ Model Configuration and Datasets
       crontab 2020DNRInversion.crontab 
   .. group-tab:: SRW.v1.0
 
-    The case runs are initialized at 12z Apr 29, 2020 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+    The case was initialized at 12z Apr 29, 2020 and forecast to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
 
     .. code-block:: bash
 
