@@ -44,7 +44,7 @@ The known biases and development priorities related to GFS v15 (`Stan et al. 201
 .. tabs::
   .. group-tab:: Medium-Range Weather (MRW) App 
 
-	The `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ uses the `Common Infrastructure for Modeling the Earth (CIME) workflow <https://esmci.github.io/cime/versions/ufs_release_v1.0/html/index.html>`_ that incorporates pre-processing software, forecast model, and post-processor. The app serves as a useful tool to conduct the UFS WM runs. The latest evaluation results are based on physics compsets of ``GFSv15p2`` and ``GFSv16beta`` employed in UFS Medium Range Weather App *v1.0* (MRW.v1.0), hereafter referred to as MRW_GFSv15p2 and MRW_GFSv16beta, respectively.
+	The `UFS Medium Range Weather (MRW) App <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ uses the `Common Infrastructure for Modeling the Earth (CIME) workflow <https://esmci.github.io/cime/versions/ufs_release_v1.0/html/index.html>`_ that incorporates pre-processing software, forecast model, and post-processor. The app serves as a useful tool to conduct the UFS WM runs. The latest evaluation results are based on physics suites of ``GFSv15p2`` and ``GFSv16beta`` employed in UFS Medium Range Weather App *v1.0* (MRW.v1.0), hereafter referred to as MRW_GFSv15p2 and MRW_GFSv16beta, respectively.
   
   .. group-tab:: Global Workflow
 
@@ -54,7 +54,7 @@ The known biases and development priorities related to GFS v15 (`Stan et al. 201
 
 	The `UFS Short Range Weather (SRW) App <https://ufs-srweather-app.readthedocs.io/en/latest/index.html>`_ uses the `regional workflow` that incorporates pre-processing software, forecast model, and post-processor. The app serves as a useful tool to conduct the UFS Weather Model (WM) runs. The latest evaluation results are based on physics suites of ``GFSv15p2`` and ``RRFSv1alpha`` employed in UFS Short Range Weather App *v1.0* (SRW.v1.0), hereafter referred to as SRW_GFSv15p2 and SRW_RRFSv1alpha, respectively.
   
-The goal of this ongoing effort is to provide the community, as well as the physics development team, with a model testing platform where they can use the resources to conduct model runs and evaluate the model performance for representative meteorological cases. These case studies will provide insights for future model developments and aim at improving NOAA numerical weather forecasts. It should be noted that this is an ongoing effort that is aligned with the model public release and model development. Namely these evaluation results only apply to specific model versions. Timeline of physics frozen date in different model versions, including both UFS MRW/SRW APP CompSets and ufs-weather-model GitHub tags, are shown below:
+The goal of this ongoing effort is to provide the community, as well as the physics development team, with a model testing platform where they can use the resources to conduct model runs and evaluate the model performance for representative meteorological cases. These case studies will provide insights for future model developments and aim at improving NOAA numerical weather forecasts. It should be noted that this is an ongoing effort that is aligned with the model public release and model development. Namely these evaluation results only apply to specific model versions. Timeline of physics frozen date in different model versions, including both UFS MRW/SRW App suites and ufs-weather-model GitHub tags, are shown below:
 
 .. figure:: images/timeline_Apr2021.png
    :scale: 20%
