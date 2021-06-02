@@ -103,7 +103,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * Both two physics compsets simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
+    * Both physics suites simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -140,7 +140,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * Both two physics compsets simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
+    * Both physics suites simulate a positive trough over Ontario, which usually indicates less severe weather.
 
 ======================================================
 Surface Temperature and Wind Speed
