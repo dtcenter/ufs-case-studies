@@ -60,7 +60,7 @@ Model Configuration and Datasets
 
     The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``RRFSv1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
 
-    The case runs are initialized at 12z Apr 09, 2020 with 90 hours forecasting. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+    The case was initialized at 12z Apr 09, 2020 and forecast out to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
 
     .. code-block:: bash
  
@@ -140,7 +140,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * Both SRW_GFSv15p2 and SRW_RRFSv1apha forecast the upper level trouh sitting at the downstream of the acutal position.
+    * Both SRW_GFSv15p2 and SRW_RRFSv1apha forecast the upper level trough downstream of the acutal position.
 
 
 ====================================
