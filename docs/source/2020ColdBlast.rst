@@ -203,4 +203,4 @@ Surface Temperature and Wind Speed
 Summary and Discussion
 ......................
 
-The GFS model generates consistent cold biases from the three model versions (MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10) during this extreme temperature event in the winter season. 
+The GFS model generates consistent cold biases from the three model versions (MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10) during this extreme temperature event in the winter season. The cold signal in SRW_RRFSv1alpha is too strong. 
