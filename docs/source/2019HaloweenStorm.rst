@@ -72,7 +72,7 @@ Model Configuration and Datasets
       DATE_LAST_CYCL="20191028"
       CYCL_HRS=( "12" )
 
-    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset (RAP_ANL) <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
 
     .. container:: sphx-glr-footer
        :class: sphx-glr-footer-example
@@ -268,6 +268,7 @@ Summary and Discussion
 ......................
 
 MRW_GFSv15p2 generates a progressive synoptic pattern during the 2019 Halloween Storm, while MRW_GFSv16beta generates a regressive synoptic pattern compared with GFS analysis data. GFS.v16.0.10 alleviates the progressiveness of MRW_GFSv15p2 but still generates a cold bias along the U.S. east coast. Major changes in GFS.v16 from GFS.v15 can be referred to `Yang (2020) <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_.
+The sea level structure in SRW_GFSv15p2 is more reasonably simulated than that in SRW_RRFSv1alpha. The MSLP and 500mb Height from SRW_RRFSv1alpha are very noisy.
 
 **References**
 
