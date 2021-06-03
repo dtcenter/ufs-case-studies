@@ -16,7 +16,7 @@ The catalog offers both global and limited-area domain configurations of the cas
 
 The limited area configurations of the case studies use the UFS Short-Range Weather (SRW) Application (App), which employs suites ``GFS.v15p2`` and ``RRFS.v1alpha``. An operational implementation of the SRW App is planned for 2024. 
 
-The known biases and development priorities related to GFS v15 (`Stan et al. 2019 <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_) and GFS v16 (presented by `Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_) have been summarized below. The known bugs and biases in the SRW App 1.0 can be found at `SRW App website <https://github.com/ufs-community/ufs-srweather-app/wiki/Release-Notes-and-Known-Bugs>` and `the Developmental Testbed Center (DTC) report <https://docs.google.com/document/d/1kVK2mLN9RxchJRWqaGvxRT_cjk7sgUGNaX-ewnSQn_E/edit>`_. 
+The known biases and development priorities related to GFS v15 (`Stan et al. 2019 <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_) and GFS v16 (presented by `Yang 2020 <https://ufscommunity.org/wp-content/uploads/2020/10/UFS_Webnair_GFSv16_20201022_FanglinYang.pdf>`_) have been summarized below. The known bugs and biases in the SRW App 1.0 can be found at `SRW App website <https://github.com/ufs-community/ufs-srweather-app/wiki/Release-Notes-and-Known-Bugs>`_ and `the Developmental Testbed Center (DTC) report <https://docs.google.com/document/d/1kVK2mLN9RxchJRWqaGvxRT_cjk7sgUGNaX-ewnSQn_E/edit>`_. 
 
 .. tabs::
   .. group-tab:: GFS.v15 
