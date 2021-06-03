@@ -173,6 +173,6 @@ Surface Temperature
 Summary and Discussion
 ......................
 
-MRW_GFSv16beta generates a cold bias for 2-m temperature over most of CONUS during the 2019 Memorial Day Heat Wave event. However, both MRW.GFSv15p2 and GFS.v16.0.10 simulate the extreme temperature well over the Southeastern U.S. This means that the cold bias of this extreme temperature case in the GFS model is already fixed in the following physics developments (see `Timeline of physics frozen`_ for the different model versions).
+MRW_GFSv16beta generates a cold bias for 2-m temperature over most of CONUS during the 2019 Memorial Day Heat Wave event. However, both MRW.GFSv15p2 and GFS.v16.0.10 simulate the extreme temperature well over the Southeastern U.S. This means that the cold bias of this extreme temperature case in the GFS model is already fixed in the following physics developments (see `Timeline of physics frozen`_ for the different model versions). The heat wave signal in SRW_RRFSv1alpha is too strong.
 
 .. _Timeline of physics frozen: _images/TimeLine_Oct2020.png
