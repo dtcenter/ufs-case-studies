@@ -149,7 +149,7 @@ Hurricane Track and Intensity
 
       Hurricane tracks from SRW_RRFSv1alpha (blue line), SRW_GFSv15p2 (purple dash line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color-coded with the vortex maximum 10-m wind speed (WS, kt). 
 
-    * All generate right-of-track bias. Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared with SRW_GFSv15p2 and MRW_GFSv15p2. 
+    * All generate right-of-track bias. Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared to SRW_GFSv15p2 and MRW_GFSv15p2. 
     * SRW_RRFSv1alpha, SRW_GFSv15p2 and MRW_GFSv15p2 do not capture the hurricane intensities (represented by max WS).
 
 
@@ -193,6 +193,7 @@ Summary and Discussion
 ......................
 
 The physics compset of GFS.v16beta shows improvements in simulating the tracks of hurricane Lorenzo compared with MRW_GFSv15p2. This is related to its better handling of the subtropical high location over the N. Atl. Ocean. However, the MRW_GFSv16beta does not show improvements in capturing the maximum wind speed and minimum surface pressure at the vortex center. In GFS.v.16.10, the right-of-track bias of hurricane Lorenzo over the N. Atl. Ocean still exists. The misrepresentation of the position and/or strength of the subtropical ridge is a key element to explain Lorenzo's early recurvature.
+Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared to SRW_GFSv15p2 and MRW_GFSv15p2. They all do not capture the hurrican intensities.
 
 **References**
 
