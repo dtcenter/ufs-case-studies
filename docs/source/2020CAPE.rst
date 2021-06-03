@@ -204,6 +204,7 @@ Summary and Discussion
 ......................
 
 Both MRW App v1.0 and GFS.v16.0.10 simulate a lower value of CAPE compared with RAP_ANL and sounding observation in this summertime case study. Further investigations (`MEG 2021 <https://www.emc.ncep.noaa.gov/users/meg/home/>`_) show that this is related to the drier soil layers in GFS initial conditions. 
+The SRW_RRFSv1alpha also underestimates the CAPE.
 
 **References**
 
