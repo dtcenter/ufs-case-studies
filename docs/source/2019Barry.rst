@@ -164,8 +164,8 @@ Hurricane Track and Intensity
 
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
-    * The peak wind speeds at the vortex center in MRW_GFSv15p2 (58 kts) and SRW_RRFSv1alpha (58 kts) are closer to Best Track (67 kts) compared with SRW_GFSv15p2 (52 kts).
-    * Both physics suites simulate the minimum sea level pressure relatively well. The results from SRW app v1.0 slightly overestimate the minimum sea level pressure. 
+    * The peak wind speeds at the vortex center in MRW_GFSv15p2 (58 kts) and SRW_RRFSv1alpha (58 kts) are closer to Best Track (67 kts) compared to SRW_GFSv15p2 (52 kts).
+    * Both physics suites simulate the minimum sea level pressure relatively well. The results from SRW App v1.0 slightly overestimate the minimum sea level pressure. 
 
 
 ====================================
@@ -204,7 +204,7 @@ Summary and Discussion
 ......................
 
 The exacerbated right-of-track bias exists in both GFS.v16.0.10 and MRW_GFSv16beta compared with GFSv15p2. The right-of-track bias is likely associated with overactive convection and vortex tilt. This tends to induce convergence towards that excessive convection and leads to track bias (`Lybarger et al. 2020 <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_).
-Hurricane track and intensity simulated by RRFSv1apha are closer to Best Track compared to the results from GFSv15p2.
+Hurricane track and intensity simulated by RRFSv1apha are closer to Best Track compared to the results from GFSv15p2 in SRW App v1.0.
 
 **References**
 
