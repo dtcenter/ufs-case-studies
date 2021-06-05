@@ -155,7 +155,7 @@ Surface Temperature and Wind Speed
       2-m temperature (F) 
 
     * Cold air was dammed up along the Appalachian mountains in RAP_ANL.
-    * Both MRW_GFSv16beta and MRW_GFSv15p2 generates warm bias along the east side of Appalachian.
+    * Both MRW_GFSv16beta and MRW_GFSv15p2 generate warm bias along the east side of Appalachian.
     * Specifically, MRW_GFSv16beta simulates warmer temperatures over Ohio.
     
     .. figure:: images/2020CAD/GUST_MRW_v1.0_2020CAD_RAP_trim.png
