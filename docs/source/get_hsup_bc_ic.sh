@@ -44,7 +44,7 @@ echo $ifcst
  echo $ifcst_str
 #
 echo "Downloading file ${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz"
-#  wget -c https://ufs-case-studies.s3.amazonaws.com/${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz
+wget -c https://ufs-case-studies.s3.amazonaws.com/${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz
 #
 ifcst=$[$ifcst+$nfcst_int]
 done
