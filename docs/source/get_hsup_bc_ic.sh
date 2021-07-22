@@ -14,7 +14,7 @@ else
   nfcst=90
 fi
 
-## forecast interval, the default interval are 3 hours
+## forecast interval, the default interval is 3 hours
 if [ $yyyymmddhh -le 2019052300 ]; then
    nfcst_int=6
 else 
@@ -43,8 +43,12 @@ echo $ifcst
  fi
  echo $ifcst_str
 #
-echo "Downloading file ${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz"
-wget -c https://ufs-case-studies.s3.amazonaws.com/${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz
+if [ -f "${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz" ]; then
+   echo "${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz exists."
+else
+   echo "Downloading file ${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz"
+   wget -c https://ufs-case-studies.s3.amazonaws.com/${yyyymmddhh}_bc.atmf${ifcst_str}.nemsio.tar.gz
+fi
 #
 ifcst=$[$ifcst+$nfcst_int]
 done
