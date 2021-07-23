@@ -14,6 +14,8 @@ else
   nfcst=90
 fi
 
+
+
 ## forecast interval, the default interval is 3 hours
 if [ $yyyymmddhh -le 2019052300 ]; then
    nfcst_int=6
@@ -25,6 +27,14 @@ fi
 mkdir -p $yyyymmddhh
 echo "Download files for cycle $yyyymmddhh ..."
 cd $yyyymmddhh
+
+if [ $nfcst -eq 0 ]; then
+  if [  -f "${yyyymmddhh}.gfs.nemsio.tar.gz" ]; then
+    echo "${yyyymmddhh}.gfs.nemsio.tar.gz exists!"
+  else
+    wget -c https://ufs-case-studies.s3.amazonaws.com/${yyyymmddhh}.gfs.nemsio.tar.gz
+  fi
+fi
 
 
 #getting online forecast data
