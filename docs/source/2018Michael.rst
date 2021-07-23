@@ -90,7 +90,7 @@ Model Configuration and Datasets
       .. container:: sphx-glr-download sphx-glr-download-python
 
         :download:`Download initial condition files: 2018100900.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2018100900.gfs.nemsio.tar.gz>` 
-        :download:`Downloading script for getting the boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>` 
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>` 
 ..............
 Case Results
 ..............
