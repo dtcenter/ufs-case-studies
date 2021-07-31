@@ -34,7 +34,7 @@ Model Configuration and Datasets
 
     The UFS Medium-Range Weather (MRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and postprocess the raw model outputs. Two model configuration suites (``GFSv15p2`` and ``GFSv16beta``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
 
-    The case runs are initialized at 00z Jul 11, 2019 with 120 hours forecasting. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
+    The case runs are initialized at 00z Jul 11, 2019 with a forecast length of 120 hours. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
 
     .. code-block:: bash
  
