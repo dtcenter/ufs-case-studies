@@ -193,7 +193,7 @@ Surface Temperature and Wind Speed
 
       2-m temperature (F) 
 
-    * Cold air was dammed up along the Appalachian mountains in RAP_ANL.
+    * Cold air was blocked by the Appalachian mountains in RAP_ANL.
     * Both SRW_RRFSv1alpha and SRW_GFSv15p2 generate warm bias along the east side of Appalachian.
     * The result from SRW_RRFSv1alpha is slightly better than that of SRW_GFSv15p2.
     
