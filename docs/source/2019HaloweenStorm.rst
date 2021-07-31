@@ -261,7 +261,7 @@ Moisture/Precipitation
 
       Composite reflectivity (dB) valid at 00z 1 Nov 2019 
 
-    * The rainband orientation in SRW_RRFSv1alpha and SRW_GFSv15p2 is slightly different with that in RAP_ANL. The results from SRW_GFSv15p2 is sligtly stronger and better than that from SRW_RRFSv1alpha. 
+    * The rainband orientation in SRW_RRFSv1alpha and SRW_GFSv15p2 is slightly different than that in RAP_ANL. The results from SRW_GFSv15p2 is sligtly stronger and better than that from SRW_RRFSv1alpha. 
 
 ......................
 Summary and Discussion
