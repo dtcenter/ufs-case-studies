@@ -132,7 +132,7 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * The high pressure system in SRW_RRFSv1alpha simulation is slightly weaker than the RAP_ANL.
+    * The high pressure system in the SRW_RRFSv1alpha simulation is slightly weaker than the RAP_ANL.
 
     .. figure:: images/2020JanCold/500mb_SRW_v1.0_2020JanCold_trim.png
       :width: 1200
