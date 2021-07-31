@@ -131,7 +131,7 @@ Synoptic Dynamics
 
       Mean sea level pressure (hPa)
 
-    * SRW_RRFSv1alpha more correctly forecasts the surface low than SRW_GFSv15p2.
+    * SRW_RRFSv1alpha forecasts the surface low more accurately than SRW_GFSv15p2.
 
     .. figure:: images/2020CAD/500mb_SRW_v1.0_2020CAD_trim.png
       :width: 1200
