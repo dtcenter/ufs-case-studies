@@ -203,7 +203,7 @@ Summary and Discussion
 ......................
 
 The exacerbated right-of-track bias exists in both GFS.v16.0.10 and MRW_GFSv16beta compared with GFSv15p2. The right-of-track bias is likely associated with overactive convection and vortex tilt. This tends to induce convergence towards that excessive convection and leads to track bias (`Lybarger et al. 2020 <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_).
-Hurricane track and intensity simulated by RRFSv1apha are closer to Best Track compared to the results from GFSv15p2 in SRW App v1.0.
+Hurricane track and intensity simulated by RRFSv1apha are closer to Best Track compared to the results from GFSv15p2 in SRW App v1.0. The SRW App forecasts have shorter duration because of limitations in the availability of lateral boundary conditions for longer lead times.
 
 **References**
 

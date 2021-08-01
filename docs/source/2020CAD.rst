@@ -209,4 +209,4 @@ Surface Temperature and Wind Speed
 Summary and Discussion
 ......................
 
-GFSv.16.0.10 shows improvements in handling the shallow cold air mass during CAD events compared with its prior versions (MRW_GFSv16beta and MRW_GFSv15p2). But the warm bias still exists. This could lead to weaker temperature inversions with the warmer low-level temperatures at sites along the east side of Appalachian.SRW_RRFSv1alpah has improved simulation of the cold air mass compare to the result from SRW_GFSv15p2.
+GFSv.16.0.10 shows improvements in handling the shallow cold air mass during CAD events compared with its prior versions (MRW_GFSv16beta and MRW_GFSv15p2). But the warm bias still exists. This could lead to weaker temperature inversions with the warmer low-level temperatures at sites along the east side of Appalachian. SRW_RRFSv1alpah has improved simulation of the cold air mass compare to the result from SRW_GFSv15p2.
