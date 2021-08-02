@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020011712.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011712.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020011712_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011712_srw.gfs.nemsio.tar.gz>`
   .. group-tab:: GFS.v16.0.10
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
@@ -54,6 +54,31 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab 2020ColdBias.crontab  
+
+  .. group-tab:: SRW.v1.0
+
+    The case was initialized at 12z Jan 18, 2020 and forecast out to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below. 
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20200118"
+      DATE_LAST_CYCL="20200118"
+      CYCL_HRS=( "12" )
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results.
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2020011812.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020011812.gfs.nemsio.tar.gz>`
+	      
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>`
 
 ..............
 Case Results
@@ -79,7 +104,7 @@ Synoptic Dynamics
 
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
-    * Both two physics compsets simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
+    * Both physics suites simulate a positive trough over Ontario, which usually generates the least amount of severe weather.
 
   .. group-tab:: GFS.v16.0.10
 
@@ -99,6 +124,24 @@ Synoptic Dynamics
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
     * A positive tilted trough is located at Ontario in GFS.v16.0.10, while not in GFS_ANL
+
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020JanCold/MSLP_SRW_v1.0_2020JanCold_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea level pressure (hPa)
+
+    * The high pressure system in the SRW_RRFSv1alpha simulation is slightly weaker than the RAP_ANL.
+
+    .. figure:: images/2020JanCold/500mb_SRW_v1.0_2020JanCold_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * Both physics suites simulate a positive trough over Ontario, which usually indicates less severe weather.
 
 ======================================================
 Surface Temperature and Wind Speed
@@ -139,9 +182,26 @@ Surface Temperature and Wind Speed
       Surface gust (m/s)
 
     * GFS.v16.0.10 generates stronger winds at Deep North region and weaker winds over Ontario.
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020JanCold/2mT_SRW_v1.0_2020JanCold_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m temperature (F) 
+
+    * SRW_RRFSv1alpha and SRW_GFSv15p2 generate a cold bias over central U.S. and Ontario during this Arctic cold blast event.
+
+    .. figure:: images/2020JanCold/GUST_SRW_v1.0_2020JanCold_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      Surface gust (m/s)
+
+    * The surface wind gust over Ontario is simulated well in the model.
 
 ......................
 Summary and Discussion
 ......................
 
-The GFS model generates consistent cold biases from the three model versions (MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10) during this extreme temperature event in the winter season. 
+The GFS model generates consistent cold biases from the three model versions (MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10) during this extreme temperature event in the winter season. The cold signal in SRW_RRFSv1alpha is too strong. 

@@ -68,6 +68,32 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab Lorenzo.crontab     
+
+  .. group-tab:: SRW.v1.0
+
+    The case was initialized at 12z Sep 25, 2019 and forecast out to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+
+    .. code-block:: bash
+
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190925"
+      DATE_LAST_CYCL="20190925"
+      CYCL_HRS=( "12" )
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. 
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2019092512.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019092512.gfs.nemsio.tar.gz>`
+	
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>`
+
 ..............
 Case Results
 ..............
@@ -116,6 +142,28 @@ Hurricane Track and Intensity
     * The maximum surface wind speed at the vortex center in GFS.v16.0.10 is lower than Best Track data.
     * The minimum sea level pressure from GFS.v16.0.10 is larger than the Best Track data. 
 
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019Lorenzo/tracker_Lorenzo_SRW.v1.0.png
+      :width: 400
+      :align: center
+
+      Hurricane tracks from SRW_RRFSv1alpha (blue line), SRW_GFSv15p2 (purple dash line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color-coded with the vortex maximum 10-m wind speed (WS, kt). 
+
+    * All generate right-of-track bias. Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared to SRW_GFSv15p2 and MRW_GFSv15p2. 
+    * SRW_RRFSv1alpha, SRW_GFSv15p2 and MRW_GFSv15p2 do not capture the hurricane intensities (represented by max WS).
+
+
+    .. figure:: images/2019Lorenzo/tracker_ws_mslp_Lorenzo_SRW.v1.0.png
+      :width: 1200
+      :align: center
+
+      Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
+
+    * The maximum surface wind speed at the vortex center in SRW_GFSv15p2 is larger than MRW_GFSv15p2 and SRW_RRFSv1alpha. However, none of the physics compsets reaches the peak intensity identified in Best Track data.
+    * The minimum sea level pressures from SRW_RRFSv1alpha, SRW_GFSv15p2 and MRW_GFSv15p2 are all larger than Best Track data.
+  
+
 ==============================
 N. Atl. Subtropical High
 ==============================
@@ -146,6 +194,7 @@ Summary and Discussion
 ......................
 
 The physics compset of GFS.v16beta shows improvements in simulating the tracks of hurricane Lorenzo compared with MRW_GFSv15p2. This is related to its better handling of the subtropical high location over the N. Atl. Ocean. However, the MRW_GFSv16beta does not show improvements in capturing the maximum wind speed and minimum surface pressure at the vortex center. In GFS.v.16.10, the right-of-track bias of hurricane Lorenzo over the N. Atl. Ocean still exists. The misrepresentation of the position and/or strength of the subtropical ridge is a key element to explain Lorenzo's early recurvature.
+Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared to SRW_GFSv15p2 and MRW_GFSv15p2; however, the SRW App forecasts have shorter duration because of limitations in the availability of lateral boundary conditions for longer lead times. Neither of them captures the hurricane intensity correctly.
 
 **References**
 

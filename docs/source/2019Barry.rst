@@ -32,9 +32,9 @@ Model Configuration and Datasets
 .. tabs::
   .. group-tab:: MRW.v1.0
 
-    The UFS Medium-Range Weather (MRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and post process the raw model outputs. Two model configuration compsets (``GFSv15p2`` and ``GFSv16beta``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
+    The UFS Medium-Range Weather (MRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and postprocess the raw model outputs. Two model configuration suites (``GFSv15p2`` and ``GFSv16beta``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
 
-    The case runs are initialized at 00z Jul 11, 2019 with 120 hours forecasting. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
+    The case runs are initialized at 00z Jul 11, 2019 with a forecast length of 120 hours. The app uses ``./xmlchange`` to change the runtime settings. The settings that need to be modified to set up the start date, start time, and run time are listed below.
 
     .. code-block:: bash
  
@@ -72,6 +72,32 @@ Model Configuration and Datasets
    
       crontab Barry.crontab  
 
+  .. group-tab:: SRW.v1.0
+
+    The UFS Short-Range Weather (SRW) Application (App) is used to prepare initial conditions, compile and run the UFS model, and postprocess the raw model outputs. Two model configuration suites (``GFSv15p2`` and ``RRFSv1alpha``) are tested using the :emphasis:`C768` (~13km) spatial resolution with 64 vertical levels (default).
+
+    The case was initialized at 00z Jul 12, 2019 and forecast out to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190712"
+      DATE_LAST_CYCL="20190712"
+      CYCL_HRS=( "00" )
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format.
+
+    .. container:: sphx-glr-footer
+       :class: sphx-glr-footer-example
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2019071200.gfs.nemsio.tar.gz  <https://ufs-case-studies.s3.amazonaws.com/2019071200.gfs.nemsio.tar.gz>`
+        
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>`
+
 ..............
 Case Results
 ..............
@@ -99,7 +125,7 @@ Hurricane Track and Intensity
       Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
 
     * The peak wind speed at the vortex center in MRW_GFSv15p2 (60 kts) is closer to Best Track (67 kts) compared with MRW_GFSv16beta (50 kts).
-    * Both two physics compsets simulate the minimum sea level pressure relatively well.  
+    * Both physics suites simulate the minimum sea level pressure relatively well.  
 
   .. group-tab:: GFS.v16.0.10
 
@@ -119,6 +145,28 @@ Hurricane Track and Intensity
 
     * The time variation of maximum wind speed in GFS.v16.0.10 agrees well with Best Track.
     * The minimum sea level pressure reaches to a lower value in GFS.v16.0.10 (982 hPa) compared with Best Track (993 hPa). 
+
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019Barry/tracker_Barry_srwv1.png
+      :width: 400
+      :align: center
+
+      Hurricane tracks from SRW_RRFSv1alpha (blue line), SRW_GFSv15p2 (purple dash line), MRW_GFSv15p2 (red line), and Best Track (black line). The dots are color coded with the vortex maximum 10-m wind speed (WS, kt). 
+
+    * Both MRW_GFSv15p2 and SRW_GFSv15p2 generate right-of-track biases. 
+    * Hurricane track and intensity simulated by SRW_RRFSv1apha are closer to Best Track compared with SRW_GFSv15p2 and MRW_GFSv15p2.
+
+
+    .. figure:: images/2019Barry/tracker_ws_mslp_Barry_srwv1.png
+      :width: 1200
+      :align: center
+
+      Time series of the vortex maximum surface wind speed (WS, left panel) and minimum mean sea level pressure (MSLP, right panel)
+
+    * The peak wind speeds at the vortex center in MRW_GFSv15p2 (58 kts) and SRW_RRFSv1alpha (58 kts) are closer to Best Track (67 kts) compared to SRW_GFSv15p2 (52 kts).
+    * Both physics suites simulate the minimum sea level pressure relatively well. The results from SRW App v1.0 slightly overestimate the minimum sea level pressure. 
+
 
 ====================================
 Comparison with Satellite Data
@@ -156,6 +204,7 @@ Summary and Discussion
 ......................
 
 The exacerbated right-of-track bias exists in both GFS.v16.0.10 and MRW_GFSv16beta compared with GFSv15p2. The right-of-track bias is likely associated with overactive convection and vortex tilt. This tends to induce convergence towards that excessive convection and leads to track bias (`Lybarger et al. 2020 <https://dtcenter.org/sites/default/files/events/2020/2-lybarger-nick.pdf>`_).
+Hurricane track and intensity simulated by RRFSv1apha are closer to Best Track compared to the results from GFSv15p2 in SRW App v1.0. The SRW App forecasts have shorter duration because of limitations in the availability of lateral boundary conditions for longer lead times.
 
 **References**
 

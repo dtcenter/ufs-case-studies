@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2020072300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2020072300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300_srw.gfs.nemsio.tar.gz>`
   .. group-tab:: GFS.v16.0.10
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
@@ -54,6 +54,31 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab 2020CAPE.crontab  
+
+  .. group-tab:: SRW.v1.0
+
+    The case was initialized at 00z Jul 23, 2020 and forecast out to 24 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190723"
+      DATE_LAST_CYCL="20190723"
+      CYCL_HRS=( "00" )
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. The CAPE field is evaluated based on `Rapid Refresh (RAP) analysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ and `atmospheric sounding <http://weather.uwyo.edu/upperair/sounding.html>`_.
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2020072300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020072300.gfs.nemsio.tar.gz>`
+	      
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>`
 
 ..............
 Case Results
@@ -94,6 +119,22 @@ Synoptic Dynamics
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
     * GFS.v16.0.10 simulates 500hPa HGT fields and MSLP well.
+
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020CAPE/MSLP_SRW_v1.0_2020CAPE_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea level pressure (hPa)
+
+    .. figure:: images/2020CAPE/500mb_SRW_v1.0_2020CAPE_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * Both SRW_RRFSv1alpha and SRW_GFSv15p2 simulate 500hPa HGT fields and MSLP well.
 
 
 ======================================================
@@ -138,11 +179,33 @@ Convective Available Potential Energy
 
     * The CAPE simulated from GFS.v16.0.10 at BIS are 2421 J/kg, smaller than the CAPE from observed sounding (3331 J/kg) at the BIS sounding site. 
     * GFS.v16.0.10 simulates a slightly larger CAPE than the two compsets of MRW_GFSv16beta and MRW_GFSv15p2 at the BIS sounding site.  
+
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020CAPE/CAPE_SRW_v1.0_2020CAPE_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      Spatial distribution of Convective Available Potential Energy (CAPE)
+
+    *  Both SRW_v15p2 and SRW_RRFSv1alpha underestimate the CAPE values compared with RAP_ANL.
+    *  The CAPE values simulated in SRW_v15p2 are correctly larger than SRW_RRFSv1alpha.
+    
+    .. figure:: images/2020CAPE/2020072300_f024_BIS_SRW_v1.0_Obs_indices.png
+      :width: 1200
+      :align: center
+
+      Simulated and observed sounding profile at the sounding site of Bismark (BIS), ND. CAPE values are listed at the bottom.
+
+    * The CAPE simulated from SRW_GFSv15p2 and SRW_RRFSv1alpha at BIS are 2752 and 2491 J/kg, RRFSv1alpha is slightly smaller than the CAPE from observed sounding (2696 J/kg) at the BIS sounding site.
+    * CAPE from RAP_ANL is larger than the observed CAPE computed from the sounding profile at the BIS sounding site.
+    
 ......................
 Summary and Discussion
 ......................
 
 Both MRW App v1.0 and GFS.v16.0.10 simulate a lower value of CAPE compared with RAP_ANL and sounding observation in this summertime case study. Further investigations (`MEG 2021 <https://www.emc.ncep.noaa.gov/users/meg/home/>`_) show that this is related to the drier soil layers in GFS initial conditions. 
+The SRW_RRFSv1alpha also underestimates the CAPE.
 
 **References**
 

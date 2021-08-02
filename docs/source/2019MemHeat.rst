@@ -32,7 +32,7 @@ Model Configuration and Datasets
 
       .. container:: sphx-glr-download sphx-glr-download-python
 
-        :download:`Download initial condition files: 2019052300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300.gfs.nemsio.tar.gz>`
+        :download:`Download initial condition files: 2019052300_srw.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300_srw.gfs.nemsio.tar.gz>`
   .. group-tab:: GFS.v16.0.10
 
     The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
@@ -54,6 +54,31 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab 2019MemHeat.crontab
+
+  .. group-tab:: SRW.v1.0
+
+    The case was initialized at 00z May 23, 2019 and forecast out to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below. 
+
+    .. code-block:: bash
+ 
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190523"
+      DATE_LAST_CYCL="20190523"
+      CYCL_HRS=( "00" )
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format. The `RAP reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/rapid-refresh-rap>`_ are used as 'truth' to compare with simulation results. 
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2019052300.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2019052300.gfs.nemsio.tar.gz>`
+	      
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>`
 
 ..............
 Case Results
@@ -93,6 +118,22 @@ Synoptic Dynamics
       500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
 
     * The synoptic patterns at surface and 500hPa from GFS.v16.0.10 agree well with GFS_ANL.
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019MemHeat/MSLP_SRW_v1.0_2019MemHeat_trim.png
+      :width: 1200
+      :align: center
+
+      Mean sea level pressure (hPa)
+
+    .. figure:: images/2019MemHeat/500mb_SRW_v1.0_2019MemHeat_trim.png
+      :width: 1200
+      :align: center
+
+      500 hPa geopotential heights (dam) and absolute vorticity (10 :sup:`-5`/s)
+
+    * The synoptic patterns at surface and 500hPa from the two physics compsets agree well with RAP_ANL.
+    
 
 ======================================================
 Surface Temperature
@@ -118,11 +159,21 @@ Surface Temperature
       2-m temperature (F)
 
     * GFS.v16.0.10 successfully captures the high temperatures across the Southeast.
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2019MemHeat/2mT_SRW_v1.0_2019MemHeat_RAP_trim.png
+      :width: 1200
+      :align: center
+
+      2-m temperature (F) 
+
+    * SRW_GFSv15p2 forecasts the heat wave better than SRW_RRFSv1alpha across the Southeast.
+    * There is warm bias over the contiguous U.S. (CONUS) in SRW_RRFSv1alpha.
 
 ......................
 Summary and Discussion
 ......................
 
-MRW_GFSv16beta generates a cold bias for 2-m temperature over most of CONUS during the 2019 Memorial Day Heat Wave event. However, both MRW.GFSv15p2 and GFS.v16.0.10 simulate the extreme temperature well over the Southeastern U.S. This means that the cold bias of this extreme temperature case in the GFS model is already fixed in the following physics developments (see `Timeline of physics frozen`_ for the different model versions).
+MRW_GFSv16beta generates a cold bias for 2-m temperature over most of CONUS during the 2019 Memorial Day Heat Wave event. However, both MRW.GFSv15p2 and GFS.v16.0.10 simulate the extreme temperature well over the Southeastern U.S. This means that the cold bias of this extreme temperature case in the GFS model is already fixed in the following physics developments (see `Timeline of physics frozen`_ for the different model versions). The heat wave signal in SRW_RRFSv1alpha is too strong.
 
 .. _Timeline of physics frozen: _images/TimeLine_Oct2020.png

@@ -6,7 +6,7 @@
 Welcome to the Case Studies Page for the UFS Weather Model
 =======================================================
 
-This documentation provides resources for representative case studies in the Unified Forecast System (UFS) Weather model using `UFS Medium-Range Weather Application <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ (for community) and NOAA Environmental Modeling Center's `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_ (for developers).
+This documentation provides resources for representative case studies in the Unified Forecast System (UFS) Weather model using `UFS Medium-Range Weather (MRW) Application <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_ (for community), `UFS Short-Range Weather (SRW) Application <https://ufs-srweather-app.readthedocs.io/en/latest/index.html>`_ (for community), and NOAA Environmental Modeling Center's `Global Workflow <https://github.com/NOAA-EMC/global-workflow/wiki>`_ (for developers).
 
 
 .. |logo1| image:: images/2019Barry/tracker_Barry_ufsv1.png  
@@ -26,7 +26,7 @@ This documentation provides resources for representative case studies in the Uni
 +---------+---------+---------+
 
 .. tabs::
-  .. group-tab:: Medium-Range Weather (MRW) App 
+  .. group-tab:: MRW App 
 
     :GitHub: `ufs-community/ufs-mrweather-app <https://github.com/ufs-community/ufs-mrweather-app>`_
     :Public Release:  *v1.0*
@@ -36,6 +36,12 @@ This documentation provides resources for representative case studies in the Uni
     :GitHub: `NOAA-EMC/global-workflow <https://github.com/NOAA-EMC/global-workflow>`_
     :Branch:  *feature/gfs16b*
     :ufs-weather-model: ``GFS.v16.0.10`` 
+
+  .. group-tab:: SRW App 
+
+    :GitHub: `ufs-community/ufs-srweather-app <https://github.com/ufs-community/ufs-srweather-app>`_
+    :Public Release:  *v1.0*
+    :Compsets:  ``RRFSv1alpha``, ``GFSv15p2``
 
 :Case Catalog:
   * :ref:`2018 Hurricane Michael <2018 Hurricane Michael>`
@@ -59,6 +65,7 @@ Notable Links
 * `Unified Forecast System (UFS) <https://ufscommunity.org/>`_
 * `The UFS Medium-Range Weather App Users Guide <https://ufs-mrweather-app.readthedocs.io/en/latest/index.html>`_
 * `NOAA Environmental Modeling Center (EMC) global-workflow GitHub Wiki page <https://github.com/NOAA-EMC/global-workflow/wiki>`_
+* `The UFS Short-Range Weather App Users Guide <https://ufs-srweather-app.readthedocs.io/en/latest/index.html>`_
 
 ..............................
 Contents

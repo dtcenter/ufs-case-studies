@@ -54,6 +54,31 @@ Model Configuration and Datasets
     .. code-block:: bash
    
       crontab 2020DNRInversion.crontab 
+  .. group-tab:: SRW.v1.0
+
+    The case was initialized at 12z Apr 29, 2020 and forecast to 90 hours. The app uses ``config.sh`` to define the runtime settings. The settings that need to be modified to set up the first cycle, last cycle, forecast length and cycle hour are listed below.
+
+    .. code-block:: bash
+
+      FCST_LEN_HRS="90"
+      LBC_SPEC_INTVL_HRS="3"
+      DATE_FIRST_CYCL="20190429"
+      DATE_LAST_CYCL="20190429"
+      CYCL_HRS=( "12" )
+
+
+    Initial condition (IC) and boundary condition (BC) files are created from GFS operational dataset in NEMSIO format.
+
+    .. container:: sphx-glr-footer
+        :class: sphx-glr-footer-example
+
+
+      .. container:: sphx-glr-download sphx-glr-download-python
+
+        :download:`Download initial condition files: 2020042912.gfs.nemsio.tar.gz <https://ufs-case-studies.s3.amazonaws.com/2020042912.gfs.nemsio.tar.gz>`
+	      
+        :download:`Download the script for getting boundary conditions: get_hsup_bc_ic.sh <./get_hsup_bc_ic.sh>`
+
 ..............
 Case Results
 ..............
@@ -85,10 +110,21 @@ The Skew-T Log-P plot is created using the script adapted from `SHARPpy <https:/
       Skew-T Log-P plot from observed and simulated sounding profiles. Indices including K-index and lapse rate are shown in the bottom.
     
     * GFS.v16.0.10 underestimates the temperature inversion strength with a warmer near surface temperature.
+
+  .. group-tab:: SRW.v1.0
+
+    .. figure:: images/2020DNRInversion/2020042912_f024_DNR_SRWvsObs_indices.png
+      :width: 1200
+      :align: center
+
+      Skew-T Log-P plot from observed and simulated sounding profiles. Indices are shown in the bottom.
+
+    * The physics suite SRW_GFSv15p2 underestimates the temperature inversion strength with a warmer near surface temperature.  
+    * The temperature inversion strength is well captured in SRW_RRFSv1alpha.  
  
 ......................
 Summary and Discussion
 ......................
 
 The 2020 Denver Radiation Inversion results show that the GFS model lacks skills in forecasting the boundary layer temperature inversion for MRW_GFSv15p2, MRW_GFSv16beta, and GFS.v16.0.10, with a warmer near-surface temperature. 
-
+The inversion is well captured by physics suite RRFSv1alpha in SRW App.
