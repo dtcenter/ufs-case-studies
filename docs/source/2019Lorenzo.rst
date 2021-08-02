@@ -193,7 +193,7 @@ Summary and Discussion
 ......................
 
 The physics compset of GFS.v16beta shows improvements in simulating the tracks of hurricane Lorenzo compared with MRW_GFSv15p2. This is related to its better handling of the subtropical high location over the N. Atl. Ocean. However, the MRW_GFSv16beta does not show improvements in capturing the maximum wind speed and minimum surface pressure at the vortex center. In GFS.v.16.10, the right-of-track bias of hurricane Lorenzo over the N. Atl. Ocean still exists. The misrepresentation of the position and/or strength of the subtropical ridge is a key element to explain Lorenzo's early recurvature.
-Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared to SRW_GFSv15p2 and MRW_GFSv15p2; however, the SRW App forecasts have shorter duration because of limitations in the availability of lateral boundary conditions for longer lead times. They all do not capture the hurrican intensities.
+Hurricane track from SRW_RRFSv1alpha is closer to the Best Track compared to SRW_GFSv15p2 and MRW_GFSv15p2; however, the SRW App forecasts have shorter duration because of limitations in the availability of lateral boundary conditions for longer lead times. Neither of them captures the hurricane intensity correctly.
 
 **References**
 
