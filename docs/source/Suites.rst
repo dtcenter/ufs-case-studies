@@ -44,7 +44,7 @@ In MRW app that adopts the Common Infrastructure for Modeling the Earth (CIME) w
 
 In Global Workflow to run the up-to-date UFS weather model, the namelist can be changed in ``exglobal_forecast.sh`` under the directory of ``global-workflow/scripts``. 
 
-In SRW app that uses the regional workflow, the namelist parameters are changed in the ``config.sh`` within the ``ush`` directory (Source: `UFS Short-Range Weather App Users Guide <https://ufs-srweather-app.readthedocs.io/en/latest/ConfigWorkflow.html#forecast-parametersl>`_).
+In the SRW App, which uses the regional workflow, the namelist parameters are changed in the file ``config.sh`` within the ``ush`` directory (Source: `UFS Short-Range Weather App Users Guide <https://ufs-srweather-app.readthedocs.io/en/latest/ConfigWorkflow.html#forecast-parametersl>`_).
 
 
 
