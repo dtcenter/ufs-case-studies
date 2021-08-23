@@ -19,7 +19,7 @@ The currently supported physics suites for UFS MRW App v1.1, UFS weather model, 
 .. table::  Supported physics suites
 
    +---------------------+----------------+---------------+
-   | **MRW.v1.0**        | **CCPP.v5.0**  | **SRW.v1.0**  |
+   | **MRW v1.1**        | **CCPP v5.0**  | **SRW v1.0**  |
    +=====================+================+===============+
    | GFSv15p2            | GFSv15p2       | GFSv15p2      |
    +---------------------+----------------+---------------+
