@@ -14,7 +14,7 @@ There are occasions when researchers are interested in using another physics sui
 Check if the suite is supported
 ..............................
 
-The currently supported physics suites for UFS MRW app v1.0, UFS weather model, UFS SRW app v1.0 are shown in the table below. Regarding the UFS weather model, the physics suites supported by the public release of CCPP v5.0 are listed here.
+The currently supported physics suites for UFS MRW App v1.1, UFS weather model, UFS SRW App v1.0 are shown in the table below. Regarding the UFS weather model, the physics suites supported by the public release of CCPP v5.0 are listed here.
 
 .. table::  Supported physics suites
 
