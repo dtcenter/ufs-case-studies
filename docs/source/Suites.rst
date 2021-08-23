@@ -40,7 +40,7 @@ In addition to the physics suites supported by the public release listed above, 
 Change the namelist
 ..............................
 
-In MRW app that adopts the Common Infrastructure for Modeling the Earth (CIME) workflow. One can change the namelist through editing the file ``user_nl_ufsatm`` and run ``./case.submit`` to update the namelist (Source: `UFS Medium-Range Weather App Users Guide <https://ufs-mrweather-app.readthedocs.io/en/ufs-v1.0.0/faq.html#how-do-i-change-a-namelist-option-for-chgres-cube-or-the-model>`_).
+The MRW App adopts the Common Infrastructure for Modeling the Earth (CIME) workflow. One can change the namelist through editing the file ``user_nl_ufsatm`` and running ``./case.submit`` to update the namelist (Source: `UFS Medium-Range Weather App Users Guide <https://ufs-mrweather-app.readthedocs.io/en/ufs-v1.0.0/faq.html#how-do-i-change-a-namelist-option-for-chgres-cube-or-the-model>`_).
 
 The Global Workflow is used to run the up-to-date UFS weather model. Here, the namelist can be changed in ``exglobal_forecast.sh`` under the directory of ``global-workflow/scripts``. 
 
