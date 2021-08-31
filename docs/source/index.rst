@@ -87,6 +87,7 @@ Contents
    2020DNRInversion.rst
    2020CAPE.rst
    example.rst
+   Suites.rst
 
 
 
