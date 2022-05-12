@@ -24,7 +24,7 @@ Model Configuration and Datasets
  
       ./xmlchange RUN_STARTDATE=20200407,START_TOD=43200,STOP_OPTION=nhours,STOP_N=120
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS analysis dataset <https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast>`_ are used as 'truth' to compare with simulation results.
 
     .. container:: sphx-glr-footer
        :class: sphx-glr-footer-example

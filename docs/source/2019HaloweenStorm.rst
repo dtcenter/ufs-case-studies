@@ -26,7 +26,7 @@ Model Configuration and Datasets
 
     .. warning:: The model run time step is reduced from the default 225s to 150s in this case due to the model instability in GFSv16beta. To set the time step, add ``dt_atmos=150`` to ``user_nl_ufsatm``
 
-    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS reanalysis dataset <https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs>`_ are used as 'truth' to compare with simulation results.
+    Initial condition (IC) files are created from GFS operational dataset in NEMSIO format. The `GFS analysis dataset <https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast>`_ are used as 'truth' to compare with simulation results.
 
     .. container:: sphx-glr-footer
        :class: sphx-glr-footer-example
