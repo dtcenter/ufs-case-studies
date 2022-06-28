@@ -35,13 +35,13 @@ Model Configuration and Datasets
 
   .. group-tab:: GFS.v16.0.10
 
-    The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt_fcstonly.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
+    The GFS model EMC global workflow points to the most up-to-date GFS model development code. The GFS.v16.0.10 is tested in C768 (~13km) resolution and in 128 vertical levels. It uses two scripts, ``setup_expt.py`` and ``setup_workflow_fcstonly.py`` to set up the mode simulation date and case directories.
 
     The case runs are initialized at 12z Apr 29, 2020 with 120 hours forecasting. The settings that need to be modified to set up the start date and directories are listed below. 
 
     .. code-block:: bash
  
-      ./setup_expt_fcstonly.py --pslot 2020DNRInversion --configdir /PATH/TO/YOUR/GLOBAL/WORKFLOW/parm/config --idate 2020042912 --edate 2020042912 --res 768 --comrot /PATH/TO/YOUR/EXP/DIR/comrot --expdir /PATH/TO/YOUR/EXP/OUTPUT/expdir 
+      ./setup_expt.py forecast-only --pslot 2020DNRInversion --configdir /PATH/TO/YOUR/GLOBAL/WORKFLOW/parm/config --idate 2020042912 --edate 2020042912 --res 768 --comrot /PATH/TO/YOUR/EXP/DIR/comrot --expdir /PATH/TO/YOUR/EXP/OUTPUT/expdir 
 
     The account and simulation duration time can be set up in ``/expdir/2020DNRInversion/config.base`` file. 
 
