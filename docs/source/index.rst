@@ -88,6 +88,7 @@ Contents
    2020CAPE.rst
    example.rst
    Suites.rst
+   HTF.rst
 
 
 
