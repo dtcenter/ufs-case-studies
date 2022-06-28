@@ -41,11 +41,11 @@ The key findings for the CAD case are:
 
 **References**
 
-Pan, L., Heinzeller, D., Bernardet, L., Sun, X., & Brown, J. M. (2022, January). Surface biases in forecasting extreme events using the Unified Forecast System with different physics suites. 31st Conference on Weather Analysis and Forecasting.
+Pan, L., Heinzeller, D., Bernardet, L., Sun, X., & Brown, J. M. (2022, January). Surface biases in forecasting extreme events using the Unified Forecast System with different physics suites. 31st Conference on Weather Analysis and Forecasting. [`Link <https://ams.confex.com/ams/102ANNUAL/meetingapp.cgi/Paper/3917435>`_]
 
-Sun, X., Heinzeller, D., Bernardet, L., Pan, L., & Brown, J. M. (2021, January). Case studies that exemplify known biases of the Unified Forecast System (UFS) Weather Model. 11th Conference on the Transition of Research to Operations.
+Sun, X., Heinzeller, D., Bernardet, L., Pan, L., & Brown, J. M. (2021, January). Case studies that exemplify known biases of the Unified Forecast System (UFS) Weather Model. 11th Conference on the Transition of Research to Operations. [`Link <https://ams.confex.com/ams/101ANNUAL/meetingapp.cgi/Paper/381125>`_]
 
-Sun, X., Heinzeller, D., Bernardet, L., Pan, L., & Brown, J. M. (2022, January). Confronting the low summer CAPE behavior in GFSv16. 12th Conference on the Transition of Research to Operations.
+Sun, X., Heinzeller, D., Bernardet, L., Pan, L., & Brown, J. M. (2022, January). Confronting the low summer CAPE behavior in GFSv16. 12th Conference on the Transition of Research to Operations. [`Link <https://ams.confex.com/ams/102ANNUAL/meetingapp.cgi/Paper/392453>`_]
 
 Sun, X., Heinzeller, D., Bernardet, L., Pan, L., Li, W., Turner, D., & Brown, J. M. On the factors leading to the low surface-based CAPE behavior in the Global Forecast System. In preparation.
 
