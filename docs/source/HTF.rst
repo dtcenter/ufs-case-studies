@@ -33,7 +33,7 @@ We adopted the Short-Range Weather (SRWeather) App v 1.0 to investigate the 2020
 The key findings for the CAD case are:
 
 - The spatial pattern of the 2-meter surface temperature field obtained with the SRWeather App is slightly improved over the one obtained with the global configuration.
-- Using the code version of April 10 th, 2022 and more vertical levels leads to
+- Using the April 10th, 2022 code version and more vertical levels leads to
 - Improvements for this case when using the GFS v16 suite
 - Degradation when using the (uncoupled) GFS v17α suite
 - When the 3-km horizontal grid spacing configuration is used with the GFS v15.2 and GFS v16 suites (but not with the GFS v17α suite), the cold air is not maintained and the CAD strength is reduced, which is a degradation when compared to experiments conducted at lower resolutions.
