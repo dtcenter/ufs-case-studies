@@ -21,7 +21,7 @@ Key findings for the CAPE case are listed below:
 - The lower CAPE in GFS is attributed to air at low levels being drier than observed.
 - The larger-than-observed Bowen ratio in GFS suggests an incorrect surface energy partitioning associated with soil moisture and soil temperature. 
 - GFS v16 exhibits more vertical mixing leading to a deeper boundary layer than v15.2 and observations.
-- The drier air in GFSv16 is mostly related to local physics not large-scale advection in this case.
+- The drier air in GFSv16 is mostly related to local physics and not large-scale advection in this case.
 - With realistic IC of vertical profiles and surface fluxes, the GFS v16 physics suite is able to produce the large CAPE.
 
 ..............................
