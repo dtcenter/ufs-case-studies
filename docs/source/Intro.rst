@@ -62,7 +62,9 @@ The goal of this ongoing effort is to provide the community, as well as the phys
 
    Timeline of physics frozen date
 
-The case catalog in this documentation was created based on the known biases of GFS model. This is a list that we are updating diligently. Please come back to check updates anytime.
+The case catalog in this documentation was created based on the known biases of GFS model. This is a list that we are updating diligently. Please come back to check updates anytime. 
+
+In addition, we will use the Hierarchical Testing Framework (HTF) tools, including the Single Column Model and case studies provided on this website, to document strengths and weakness of current UFS physics suites, and to inform future model development.
 
 
 **References**
