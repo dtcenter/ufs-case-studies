@@ -37,7 +37,7 @@ The key findings for the CAD case are:
 - Improvements for this case when using the GFS v16 suite
 - Degradation when using the (uncoupled) GFS v17α suite
 - When the 3-km horizontal grid spacing configuration is used with the GFS v15.2 and GFS v16 suites (but not with the GFS v17α suite), the cold air is not maintained and the CAD strength is reduced, which is a degradation when compared to experiments conducted at lower resolutions.
-- Sensitivity tests with suite GFS v17α show that changing the land surface model from NoahMP to Noah can cause a northward shift of the cold air.
+- Sensitivity tests with suite GFS v17α show that changing the land surface model from NoahMP to Noah can cause a northward shift of the cold air, which leads to a warmer 2-m temperature bias and a weaker CAD signal.
 
 **References**
 
