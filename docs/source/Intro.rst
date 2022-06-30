@@ -64,10 +64,12 @@ The goal of this ongoing effort is to provide the community, as well as the phys
 
 The case catalog in this documentation was created based on the known biases of GFS model. This is a list that we are updating diligently. Please come back to check updates anytime. 
 
-In addition, we will use the Hierarchical Testing Framework (HTF) tools, including the Single Column Model and case studies provided on this website, to document strengths and weakness of current UFS physics suites, and to inform future model development.
+In addition, we will use Hierarchical Testing Framework (HTF) tools, including the Common Community Physics Package (CCPP) Single Column Model (Firl et al., 2022) and case studies provided on this website, to document strengths and weakness of current UFS physics suites, and to inform future model development.
 
 
 **References**
+
+Firl, G., D. Swales, L. Carson, L. Bernardet, D. Heinzeller, and M. Harrold, 2021. Common Community Physics Package Single Column Model v6.0.0 User and Technical Guide.Firl, G., D. Swales, L. Carson, L. Bernardet, D. Heinzeller, and M. Harrold, 2021. Common Community Physics Package Single Column Model v6.0.0 User and Technical Guide. [`Link <https://dtcenter.org/sites/default/files/paragraph//scm-ccpp-guide-v6-0-0.pdf>`_]
 
 Stan C., Yang F., and Harris L. (2019). UFS Development Goals and Priorities for Medium-Range and S2S Applications. *Unified Forecast System Community*. [`Link <https://drive.google.com/file/d/1rdFPbY28d7cRrcShy0uo4Mtqwh3BSzYg/view>`_]
 
