@@ -34,8 +34,8 @@ This documentation provides resources for representative case studies in the Uni
   .. group-tab:: Global Workflow
 
     :GitHub: `NOAA-EMC/global-workflow <https://github.com/NOAA-EMC/global-workflow>`_
-    :Branch:  *feature/gfs16b*
-    :ufs-weather-model: ``GFS.v16.0.10`` 
+    :Branch:  *develop*
+    :ufs-weather-model: ``GFS.v16.0.10`` (Note: To change the checkout version, please go to the checkout.sh under the ``global-workflow/sorc`` directory; To add CCPP suites during the build step, please go to build_ufs.sh under the ``global-workflow/sorc`` directory)
 
   .. group-tab:: SRW App 
 
@@ -88,6 +88,7 @@ Contents
    2020CAPE.rst
    example.rst
    Suites.rst
+   HTF.rst
 
 
 
